@@ -1,0 +1,206 @@
+{
+  "version": 1,
+  "level": "A2",
+  "words": [
+    {
+      "id": "de.a2.erfahrung",
+      "lemma": "Erfahrung",
+      "article": "die",
+      "plural": "Erfahrungen",
+      "pos": "noun",
+      "level": "A2",
+      "vi": "kinh nghiệm",
+      "en": "experience",
+      "example": {
+        "de": "Sie hat viel Erfahrung im Verkauf.",
+        "vi": "Cô ấy có nhiều kinh nghiệm bán hàng.",
+        "en": "She has a lot of sales experience."
+      },
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "id": "de.a2.krankenhaus",
+      "lemma": "Krankenhaus",
+      "article": "das",
+      "plural": "Krankenhäuser",
+      "pos": "noun",
+      "level": "A2",
+      "vi": "bệnh viện",
+      "en": "hospital",
+      "example": {
+        "de": "Er liegt seit Montag im Krankenhaus.",
+        "vi": "Anh ấy nằm viện từ thứ Hai.",
+        "en": "He has been in hospital since Monday."
+      },
+      "tags": [
+        "body"
+      ]
+    },
+    {
+      "id": "de.a2.gebaeude",
+      "lemma": "Gebäude",
+      "article": "das",
+      "plural": "Gebäude",
+      "pos": "noun",
+      "level": "A2",
+      "vi": "tòa nhà",
+      "en": "building",
+      "example": {
+        "de": "Das Gebäude hat zwölf Stockwerke.",
+        "vi": "Tòa nhà có mười hai tầng.",
+        "en": "The building has twelve floors."
+      },
+      "tags": [
+        "city"
+      ]
+    },
+    {
+      "id": "de.a2.rechnung",
+      "lemma": "Rechnung",
+      "article": "die",
+      "plural": "Rechnungen",
+      "pos": "noun",
+      "level": "A2",
+      "vi": "hóa đơn",
+      "en": "bill, invoice",
+      "example": {
+        "de": "Die Rechnung, bitte!",
+        "vi": "Làm ơn cho tôi hóa đơn!",
+        "en": "The bill, please!"
+      },
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "id": "de.a2.urlaub",
+      "lemma": "Urlaub",
+      "article": "der",
+      "plural": "Urlaube",
+      "pos": "noun",
+      "level": "A2",
+      "vi": "kỳ nghỉ",
+      "en": "holiday, vacation",
+      "example": {
+        "de": "Im Sommer machen wir Urlaub am Meer.",
+        "vi": "Mùa hè chúng tôi đi nghỉ ở biển.",
+        "en": "In summer we go on holiday by the sea."
+      },
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "de.a2.vergessen",
+      "lemma": "vergessen",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A2",
+      "vi": "quên",
+      "en": "to forget",
+      "example": {
+        "de": "Ich habe meinen Schirm vergessen.",
+        "vi": "Tôi quên mất cái ô.",
+        "en": "I forgot my umbrella."
+      },
+      "tags": [
+        "verbs"
+      ],
+      "verb": {
+        "thirdPerson": "vergisst",
+        "preterite": "vergaß",
+        "participle": "vergessen",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.a2.erklaeren",
+      "lemma": "erklären",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A2",
+      "vi": "giải thích",
+      "en": "to explain",
+      "example": {
+        "de": "Kannst du mir das erklären?",
+        "vi": "Bạn giải thích cho tôi được không?",
+        "en": "Can you explain that to me?"
+      },
+      "tags": [
+        "verbs"
+      ],
+      "verb": {
+        "thirdPerson": "erklärt",
+        "preterite": "erklärte",
+        "participle": "erklärt",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.a2.umziehen",
+      "lemma": "umziehen",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A2",
+      "vi": "chuyển nhà",
+      "en": "to move (house)",
+      "example": {
+        "de": "Wir ziehen nächsten Monat nach Köln um.",
+        "vi": "Tháng sau chúng tôi chuyển đến Köln.",
+        "en": "We're moving to Cologne next month."
+      },
+      "tags": [
+        "verbs",
+        "home"
+      ],
+      "verb": {
+        "thirdPerson": "zieht um",
+        "preterite": "zog um",
+        "participle": "umgezogen",
+        "auxiliary": "sein"
+      }
+    },
+    {
+      "id": "de.a2.gefaehrlich",
+      "lemma": "gefährlich",
+      "article": null,
+      "plural": null,
+      "pos": "adjective",
+      "level": "A2",
+      "vi": "nguy hiểm",
+      "en": "dangerous",
+      "example": {
+        "de": "Die Straße ist im Winter gefährlich.",
+        "vi": "Con đường này nguy hiểm vào mùa đông.",
+        "en": "The road is dangerous in winter."
+      },
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "de.a2.puenktlich",
+      "lemma": "pünktlich",
+      "article": null,
+      "plural": null,
+      "pos": "adjective",
+      "level": "A2",
+      "vi": "đúng giờ",
+      "en": "punctual, on time",
+      "example": {
+        "de": "Der Zug ist heute pünktlich.",
+        "vi": "Hôm nay tàu đến đúng giờ.",
+        "en": "The train is on time today."
+      },
+      "tags": [
+        "adjectives",
+        "time"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "words": [
+    {
+      "lemma": "Brücke",
+      "article": "die",
+      "plural": "Brücken",
+      "pos": "noun",
+      "level": "A2",
+      "vi": "cây cầu",
+      "en": "bridge",
+      "example": {
+        "de": "Die Brücke über den Fluss ist sehr alt.",
+        "vi": "Cây cầu bắc qua sông rất cũ.",
+        "en": "The bridge over the river is very old."
+      },
+      "tags": ["city"]
+    },
+    {
+      "id": "user.a1.schwimmen",
+      "lemma": "schwimmen",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "bơi",
+      "en": "to swim",
+      "example": {
+        "de": "Im Sommer schwimmen wir im See.",
+        "vi": "Mùa hè chúng tôi bơi ở hồ.",
+        "en": "In summer we swim in the lake."
+      },
+      "tags": ["verbs", "sport"],
+      "verb": {
+        "thirdPerson": "schwimmt",
+        "preterite": "schwamm",
+        "participle": "geschwommen",
+        "auxiliary": "sein"
+      }
+    }
+  ]
+}

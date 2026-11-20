@@ -1,0 +1,3330 @@
+{
+  "version": 1,
+  "level": "A1",
+  "words": [
+    {
+      "id": "de.a1.hallo",
+      "lemma": "hallo",
+      "article": null,
+      "plural": null,
+      "pos": "interjection",
+      "level": "A1",
+      "vi": "xin chào",
+      "en": "hello",
+      "example": {
+        "de": "Hallo, wie geht's?",
+        "vi": "Xin chào, bạn khỏe không?",
+        "en": "Hello, how are you?"
+      },
+      "tags": [
+        "greetings"
+      ]
+    },
+    {
+      "id": "de.a1.danke",
+      "lemma": "danke",
+      "article": null,
+      "plural": null,
+      "pos": "interjection",
+      "level": "A1",
+      "vi": "cảm ơn",
+      "en": "thank you",
+      "example": {
+        "de": "Danke für die Hilfe!",
+        "vi": "Cảm ơn vì đã giúp đỡ!",
+        "en": "Thanks for the help!"
+      },
+      "tags": [
+        "greetings"
+      ]
+    },
+    {
+      "id": "de.a1.bitte",
+      "lemma": "bitte",
+      "article": null,
+      "plural": null,
+      "pos": "particle",
+      "level": "A1",
+      "vi": "làm ơn; không có gì",
+      "en": "please; you're welcome",
+      "example": {
+        "de": "Einen Kaffee, bitte.",
+        "vi": "Làm ơn cho tôi một ly cà phê.",
+        "en": "A coffee, please."
+      },
+      "tags": [
+        "greetings"
+      ]
+    },
+    {
+      "id": "de.a1.tschuess",
+      "lemma": "tschüss",
+      "article": null,
+      "plural": null,
+      "pos": "interjection",
+      "level": "A1",
+      "vi": "tạm biệt",
+      "en": "bye",
+      "example": {
+        "de": "Tschüss, bis morgen!",
+        "vi": "Tạm biệt, hẹn mai gặp lại!",
+        "en": "Bye, see you tomorrow!"
+      },
+      "tags": [
+        "greetings"
+      ]
+    },
+    {
+      "id": "de.a1.entschuldigung",
+      "lemma": "Entschuldigung",
+      "article": "die",
+      "plural": "Entschuldigungen",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "xin lỗi; lời xin lỗi",
+      "en": "excuse me; apology",
+      "example": {
+        "de": "Entschuldigung, wo ist der Bahnhof?",
+        "vi": "Xin lỗi, nhà ga ở đâu?",
+        "en": "Excuse me, where is the station?"
+      },
+      "tags": [
+        "greetings"
+      ]
+    },
+    {
+      "id": "de.a1.ja",
+      "lemma": "ja",
+      "article": null,
+      "plural": null,
+      "pos": "particle",
+      "level": "A1",
+      "vi": "vâng, có",
+      "en": "yes",
+      "example": {
+        "de": "Ja, das stimmt.",
+        "vi": "Vâng, đúng vậy.",
+        "en": "Yes, that's right."
+      },
+      "tags": [
+        "function"
+      ]
+    },
+    {
+      "id": "de.a1.nein",
+      "lemma": "nein",
+      "article": null,
+      "plural": null,
+      "pos": "particle",
+      "level": "A1",
+      "vi": "không",
+      "en": "no",
+      "example": {
+        "de": "Nein, danke.",
+        "vi": "Không, cảm ơn.",
+        "en": "No, thank you."
+      },
+      "tags": [
+        "function"
+      ]
+    },
+    {
+      "id": "de.a1.nicht",
+      "lemma": "nicht",
+      "article": null,
+      "plural": null,
+      "pos": "particle",
+      "level": "A1",
+      "vi": "không (phủ định)",
+      "en": "not",
+      "example": {
+        "de": "Ich verstehe das nicht.",
+        "vi": "Tôi không hiểu điều đó.",
+        "en": "I don't understand that."
+      },
+      "tags": [
+        "function"
+      ]
+    },
+    {
+      "id": "de.a1.ich",
+      "lemma": "ich",
+      "article": null,
+      "plural": null,
+      "pos": "pronoun",
+      "level": "A1",
+      "vi": "tôi",
+      "en": "I",
+      "example": {
+        "de": "Ich heiße Anna.",
+        "vi": "Tôi tên là Anna.",
+        "en": "My name is Anna."
+      },
+      "tags": [
+        "function"
+      ]
+    },
+    {
+      "id": "de.a1.du",
+      "lemma": "du",
+      "article": null,
+      "plural": null,
+      "pos": "pronoun",
+      "level": "A1",
+      "vi": "bạn (thân mật)",
+      "en": "you (informal)",
+      "example": {
+        "de": "Du bist sehr nett.",
+        "vi": "Bạn rất tử tế.",
+        "en": "You are very kind."
+      },
+      "tags": [
+        "function"
+      ]
+    },
+    {
+      "id": "de.a1.wir",
+      "lemma": "wir",
+      "article": null,
+      "plural": null,
+      "pos": "pronoun",
+      "level": "A1",
+      "vi": "chúng tôi, chúng ta",
+      "en": "we",
+      "example": {
+        "de": "Wir wohnen in Berlin.",
+        "vi": "Chúng tôi sống ở Berlin.",
+        "en": "We live in Berlin."
+      },
+      "tags": [
+        "function"
+      ]
+    },
+    {
+      "id": "de.a1.sie",
+      "lemma": "Sie",
+      "article": null,
+      "plural": null,
+      "pos": "pronoun",
+      "level": "A1",
+      "vi": "ông/bà/anh/chị (lịch sự)",
+      "en": "you (formal)",
+      "example": {
+        "de": "Woher kommen Sie?",
+        "vi": "Ông/bà đến từ đâu?",
+        "en": "Where are you from?"
+      },
+      "tags": [
+        "function"
+      ]
+    },
+    {
+      "id": "de.a1.und",
+      "lemma": "und",
+      "article": null,
+      "plural": null,
+      "pos": "conjunction",
+      "level": "A1",
+      "vi": "và",
+      "en": "and",
+      "example": {
+        "de": "Ich trinke Tee und Wasser.",
+        "vi": "Tôi uống trà và nước.",
+        "en": "I drink tea and water."
+      },
+      "tags": [
+        "function"
+      ]
+    },
+    {
+      "id": "de.a1.aber",
+      "lemma": "aber",
+      "article": null,
+      "plural": null,
+      "pos": "conjunction",
+      "level": "A1",
+      "vi": "nhưng",
+      "en": "but",
+      "example": {
+        "de": "Das Haus ist klein, aber schön.",
+        "vi": "Ngôi nhà nhỏ nhưng đẹp.",
+        "en": "The house is small but beautiful."
+      },
+      "tags": [
+        "function"
+      ]
+    },
+    {
+      "id": "de.a1.oder",
+      "lemma": "oder",
+      "article": null,
+      "plural": null,
+      "pos": "conjunction",
+      "level": "A1",
+      "vi": "hoặc, hay",
+      "en": "or",
+      "example": {
+        "de": "Möchtest du Tee oder Kaffee?",
+        "vi": "Bạn muốn trà hay cà phê?",
+        "en": "Would you like tea or coffee?"
+      },
+      "tags": [
+        "function"
+      ]
+    },
+    {
+      "id": "de.a1.weil",
+      "lemma": "weil",
+      "article": null,
+      "plural": null,
+      "pos": "conjunction",
+      "level": "A1",
+      "vi": "bởi vì",
+      "en": "because",
+      "example": {
+        "de": "Ich bleibe zu Hause, weil ich krank bin.",
+        "vi": "Tôi ở nhà vì tôi bị ốm.",
+        "en": "I'm staying at home because I'm ill."
+      },
+      "tags": [
+        "function"
+      ]
+    },
+    {
+      "id": "de.a1.in",
+      "lemma": "in",
+      "article": null,
+      "plural": null,
+      "pos": "preposition",
+      "level": "A1",
+      "vi": "trong, ở",
+      "en": "in",
+      "example": {
+        "de": "Das Buch liegt in der Tasche.",
+        "vi": "Quyển sách nằm trong túi.",
+        "en": "The book is in the bag."
+      },
+      "tags": [
+        "function"
+      ]
+    },
+    {
+      "id": "de.a1.mit",
+      "lemma": "mit",
+      "article": null,
+      "plural": null,
+      "pos": "preposition",
+      "level": "A1",
+      "vi": "với, cùng, bằng",
+      "en": "with",
+      "example": {
+        "de": "Ich fahre mit dem Bus.",
+        "vi": "Tôi đi bằng xe buýt.",
+        "en": "I'm going by bus."
+      },
+      "tags": [
+        "function"
+      ]
+    },
+    {
+      "id": "de.a1.fuer",
+      "lemma": "für",
+      "article": null,
+      "plural": null,
+      "pos": "preposition",
+      "level": "A1",
+      "vi": "cho, dành cho",
+      "en": "for",
+      "example": {
+        "de": "Das Geschenk ist für dich.",
+        "vi": "Món quà này dành cho bạn.",
+        "en": "The present is for you."
+      },
+      "tags": [
+        "function"
+      ]
+    },
+    {
+      "id": "de.a1.auf",
+      "lemma": "auf",
+      "article": null,
+      "plural": null,
+      "pos": "preposition",
+      "level": "A1",
+      "vi": "trên",
+      "en": "on",
+      "example": {
+        "de": "Die Tasse steht auf dem Tisch.",
+        "vi": "Cái tách ở trên bàn.",
+        "en": "The cup is on the table."
+      },
+      "tags": [
+        "function"
+      ]
+    },
+    {
+      "id": "de.a1.heute",
+      "lemma": "heute",
+      "article": null,
+      "plural": null,
+      "pos": "adverb",
+      "level": "A1",
+      "vi": "hôm nay",
+      "en": "today",
+      "example": {
+        "de": "Heute ist Montag.",
+        "vi": "Hôm nay là thứ Hai.",
+        "en": "Today is Monday."
+      },
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "de.a1.morgen",
+      "lemma": "morgen",
+      "article": null,
+      "plural": null,
+      "pos": "adverb",
+      "level": "A1",
+      "vi": "ngày mai",
+      "en": "tomorrow",
+      "example": {
+        "de": "Morgen habe ich frei.",
+        "vi": "Ngày mai tôi được nghỉ.",
+        "en": "I have the day off tomorrow."
+      },
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "de.a1.hier",
+      "lemma": "hier",
+      "article": null,
+      "plural": null,
+      "pos": "adverb",
+      "level": "A1",
+      "vi": "ở đây",
+      "en": "here",
+      "example": {
+        "de": "Wohnst du hier?",
+        "vi": "Bạn sống ở đây à?",
+        "en": "Do you live here?"
+      },
+      "tags": [
+        "function"
+      ]
+    },
+    {
+      "id": "de.a1.sehr",
+      "lemma": "sehr",
+      "article": null,
+      "plural": null,
+      "pos": "adverb",
+      "level": "A1",
+      "vi": "rất",
+      "en": "very",
+      "example": {
+        "de": "Das Essen ist sehr gut.",
+        "vi": "Đồ ăn rất ngon.",
+        "en": "The food is very good."
+      },
+      "tags": [
+        "function"
+      ]
+    },
+    {
+      "id": "de.a1.auch",
+      "lemma": "auch",
+      "article": null,
+      "plural": null,
+      "pos": "adverb",
+      "level": "A1",
+      "vi": "cũng",
+      "en": "also, too",
+      "example": {
+        "de": "Ich komme auch mit.",
+        "vi": "Tôi cũng đi cùng.",
+        "en": "I'm coming along too."
+      },
+      "tags": [
+        "function"
+      ]
+    },
+    {
+      "id": "de.a1.immer",
+      "lemma": "immer",
+      "article": null,
+      "plural": null,
+      "pos": "adverb",
+      "level": "A1",
+      "vi": "luôn luôn",
+      "en": "always",
+      "example": {
+        "de": "Er ist immer pünktlich.",
+        "vi": "Anh ấy luôn đúng giờ.",
+        "en": "He is always on time."
+      },
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "de.a1.eins",
+      "lemma": "eins",
+      "article": null,
+      "plural": null,
+      "pos": "numeral",
+      "level": "A1",
+      "vi": "một",
+      "en": "one",
+      "example": {
+        "de": "Wir treffen uns um eins.",
+        "vi": "Chúng ta gặp nhau lúc một giờ.",
+        "en": "We'll meet at one."
+      },
+      "tags": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "de.a1.zwei",
+      "lemma": "zwei",
+      "article": null,
+      "plural": null,
+      "pos": "numeral",
+      "level": "A1",
+      "vi": "hai",
+      "en": "two",
+      "example": {
+        "de": "Ich habe zwei Kinder.",
+        "vi": "Tôi có hai đứa con.",
+        "en": "I have two children."
+      },
+      "tags": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "de.a1.drei",
+      "lemma": "drei",
+      "article": null,
+      "plural": null,
+      "pos": "numeral",
+      "level": "A1",
+      "vi": "ba",
+      "en": "three",
+      "example": {
+        "de": "Drei Kaffee, bitte.",
+        "vi": "Cho ba ly cà phê.",
+        "en": "Three coffees, please."
+      },
+      "tags": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "de.a1.zehn",
+      "lemma": "zehn",
+      "article": null,
+      "plural": null,
+      "pos": "numeral",
+      "level": "A1",
+      "vi": "mười",
+      "en": "ten",
+      "example": {
+        "de": "Der Bus kommt in zehn Minuten.",
+        "vi": "Xe buýt đến trong mười phút nữa.",
+        "en": "The bus comes in ten minutes."
+      },
+      "tags": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "de.a1.hundert",
+      "lemma": "hundert",
+      "article": null,
+      "plural": null,
+      "pos": "numeral",
+      "level": "A1",
+      "vi": "một trăm",
+      "en": "hundred",
+      "example": {
+        "de": "Das kostet hundert Euro.",
+        "vi": "Cái này giá một trăm euro.",
+        "en": "That costs a hundred euros."
+      },
+      "tags": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "de.a1.mutter",
+      "lemma": "Mutter",
+      "article": "die",
+      "plural": "Mütter",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "mẹ",
+      "en": "mother",
+      "example": {
+        "de": "Meine Mutter kocht gern.",
+        "vi": "Mẹ tôi thích nấu ăn.",
+        "en": "My mother likes cooking."
+      },
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "de.a1.vater",
+      "lemma": "Vater",
+      "article": "der",
+      "plural": "Väter",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "bố, cha",
+      "en": "father",
+      "example": {
+        "de": "Mein Vater arbeitet bei einer Bank.",
+        "vi": "Bố tôi làm việc ở ngân hàng.",
+        "en": "My father works at a bank."
+      },
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "de.a1.kind",
+      "lemma": "Kind",
+      "article": "das",
+      "plural": "Kinder",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "đứa trẻ, con",
+      "en": "child",
+      "example": {
+        "de": "Das Kind spielt im Garten.",
+        "vi": "Đứa trẻ chơi trong vườn.",
+        "en": "The child is playing in the garden."
+      },
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "de.a1.bruder",
+      "lemma": "Bruder",
+      "article": "der",
+      "plural": "Brüder",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "anh trai, em trai",
+      "en": "brother",
+      "example": {
+        "de": "Mein Bruder ist älter als ich.",
+        "vi": "Anh trai tôi lớn tuổi hơn tôi.",
+        "en": "My brother is older than me."
+      },
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "de.a1.schwester",
+      "lemma": "Schwester",
+      "article": "die",
+      "plural": "Schwestern",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "chị gái, em gái",
+      "en": "sister",
+      "example": {
+        "de": "Meine Schwester studiert in München.",
+        "vi": "Chị gái tôi học đại học ở München.",
+        "en": "My sister studies in Munich."
+      },
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "de.a1.familie",
+      "lemma": "Familie",
+      "article": "die",
+      "plural": "Familien",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "gia đình",
+      "en": "family",
+      "example": {
+        "de": "Meine Familie ist groß.",
+        "vi": "Gia đình tôi đông người.",
+        "en": "My family is big."
+      },
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "de.a1.freund",
+      "lemma": "Freund",
+      "article": "der",
+      "plural": "Freunde",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "bạn (nam); bạn trai",
+      "en": "friend (male); boyfriend",
+      "example": {
+        "de": "Mein Freund heißt Paul.",
+        "vi": "Bạn tôi tên là Paul.",
+        "en": "My friend is called Paul."
+      },
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "de.a1.freundin",
+      "lemma": "Freundin",
+      "article": "die",
+      "plural": "Freundinnen",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "bạn (nữ); bạn gái",
+      "en": "friend (female); girlfriend",
+      "example": {
+        "de": "Sie trifft ihre Freundin im Café.",
+        "vi": "Cô ấy gặp bạn mình ở quán cà phê.",
+        "en": "She meets her friend at the café."
+      },
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "de.a1.mann",
+      "lemma": "Mann",
+      "article": "der",
+      "plural": "Männer",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "người đàn ông; chồng",
+      "en": "man; husband",
+      "example": {
+        "de": "Der Mann liest eine Zeitung.",
+        "vi": "Người đàn ông đang đọc báo.",
+        "en": "The man is reading a newspaper."
+      },
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "de.a1.frau",
+      "lemma": "Frau",
+      "article": "die",
+      "plural": "Frauen",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "người phụ nữ; vợ; bà",
+      "en": "woman; wife; Mrs",
+      "example": {
+        "de": "Die Frau trinkt einen Tee.",
+        "vi": "Người phụ nữ uống một tách trà.",
+        "en": "The woman is drinking a tea."
+      },
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "de.a1.name",
+      "lemma": "Name",
+      "article": "der",
+      "plural": "Namen",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "tên",
+      "en": "name",
+      "example": {
+        "de": "Wie ist Ihr Name?",
+        "vi": "Tên của ông/bà là gì?",
+        "en": "What is your name?"
+      },
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "de.a1.maedchen",
+      "lemma": "Mädchen",
+      "article": "das",
+      "plural": "Mädchen",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "cô bé, bé gái",
+      "en": "girl",
+      "example": {
+        "de": "Das Mädchen ist sieben Jahre alt.",
+        "vi": "Cô bé bảy tuổi.",
+        "en": "The girl is seven years old."
+      },
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "de.a1.junge",
+      "lemma": "Junge",
+      "article": "der",
+      "plural": "Jungen",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "cậu bé, bé trai",
+      "en": "boy",
+      "example": {
+        "de": "Der Junge spielt Fußball.",
+        "vi": "Cậu bé chơi bóng đá.",
+        "en": "The boy plays football."
+      },
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "de.a1.haus",
+      "lemma": "Haus",
+      "article": "das",
+      "plural": "Häuser",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "ngôi nhà",
+      "en": "house",
+      "example": {
+        "de": "Das Haus hat einen Garten.",
+        "vi": "Ngôi nhà có một khu vườn.",
+        "en": "The house has a garden."
+      },
+      "tags": [
+        "home"
+      ]
+    },
+    {
+      "id": "de.a1.wohnung",
+      "lemma": "Wohnung",
+      "article": "die",
+      "plural": "Wohnungen",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "căn hộ",
+      "en": "flat, apartment",
+      "example": {
+        "de": "Die Wohnung ist hell und ruhig.",
+        "vi": "Căn hộ sáng sủa và yên tĩnh.",
+        "en": "The flat is bright and quiet."
+      },
+      "tags": [
+        "home"
+      ]
+    },
+    {
+      "id": "de.a1.zimmer",
+      "lemma": "Zimmer",
+      "article": "das",
+      "plural": "Zimmer",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "căn phòng",
+      "en": "room",
+      "example": {
+        "de": "Mein Zimmer ist klein.",
+        "vi": "Phòng của tôi nhỏ.",
+        "en": "My room is small."
+      },
+      "tags": [
+        "home"
+      ]
+    },
+    {
+      "id": "de.a1.kueche",
+      "lemma": "Küche",
+      "article": "die",
+      "plural": "Küchen",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "nhà bếp",
+      "en": "kitchen",
+      "example": {
+        "de": "Wir essen in der Küche.",
+        "vi": "Chúng tôi ăn trong bếp.",
+        "en": "We eat in the kitchen."
+      },
+      "tags": [
+        "home"
+      ]
+    },
+    {
+      "id": "de.a1.tisch",
+      "lemma": "Tisch",
+      "article": "der",
+      "plural": "Tische",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "cái bàn",
+      "en": "table",
+      "example": {
+        "de": "Der Schlüssel liegt auf dem Tisch.",
+        "vi": "Chìa khóa nằm trên bàn.",
+        "en": "The key is on the table."
+      },
+      "tags": [
+        "home"
+      ]
+    },
+    {
+      "id": "de.a1.stuhl",
+      "lemma": "Stuhl",
+      "article": "der",
+      "plural": "Stühle",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "cái ghế",
+      "en": "chair",
+      "example": {
+        "de": "Der Stuhl ist bequem.",
+        "vi": "Cái ghế này ngồi rất thoải mái.",
+        "en": "The chair is comfortable."
+      },
+      "tags": [
+        "home"
+      ]
+    },
+    {
+      "id": "de.a1.bett",
+      "lemma": "Bett",
+      "article": "das",
+      "plural": "Betten",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "cái giường",
+      "en": "bed",
+      "example": {
+        "de": "Ich gehe um zehn Uhr ins Bett.",
+        "vi": "Tôi đi ngủ lúc mười giờ.",
+        "en": "I go to bed at ten o'clock."
+      },
+      "tags": [
+        "home"
+      ]
+    },
+    {
+      "id": "de.a1.tuer",
+      "lemma": "Tür",
+      "article": "die",
+      "plural": "Türen",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "cửa ra vào",
+      "en": "door",
+      "example": {
+        "de": "Mach bitte die Tür zu.",
+        "vi": "Làm ơn đóng cửa lại.",
+        "en": "Please close the door."
+      },
+      "tags": [
+        "home"
+      ]
+    },
+    {
+      "id": "de.a1.fenster",
+      "lemma": "Fenster",
+      "article": "das",
+      "plural": "Fenster",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "cửa sổ",
+      "en": "window",
+      "example": {
+        "de": "Das Fenster ist offen.",
+        "vi": "Cửa sổ đang mở.",
+        "en": "The window is open."
+      },
+      "tags": [
+        "home"
+      ]
+    },
+    {
+      "id": "de.a1.schluessel",
+      "lemma": "Schlüssel",
+      "article": "der",
+      "plural": "Schlüssel",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "chìa khóa",
+      "en": "key",
+      "example": {
+        "de": "Ich finde meinen Schlüssel nicht.",
+        "vi": "Tôi không tìm thấy chìa khóa của mình.",
+        "en": "I can't find my key."
+      },
+      "tags": [
+        "home"
+      ]
+    },
+    {
+      "id": "de.a1.garten",
+      "lemma": "Garten",
+      "article": "der",
+      "plural": "Gärten",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "khu vườn",
+      "en": "garden",
+      "example": {
+        "de": "Im Garten blühen Blumen.",
+        "vi": "Trong vườn hoa đang nở.",
+        "en": "Flowers are blooming in the garden."
+      },
+      "tags": [
+        "home"
+      ]
+    },
+    {
+      "id": "de.a1.lampe",
+      "lemma": "Lampe",
+      "article": "die",
+      "plural": "Lampen",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "cái đèn",
+      "en": "lamp",
+      "example": {
+        "de": "Die Lampe ist kaputt.",
+        "vi": "Cái đèn bị hỏng.",
+        "en": "The lamp is broken."
+      },
+      "tags": [
+        "home"
+      ]
+    },
+    {
+      "id": "de.a1.brot",
+      "lemma": "Brot",
+      "article": "das",
+      "plural": "Brote",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "bánh mì",
+      "en": "bread",
+      "example": {
+        "de": "Ich kaufe frisches Brot.",
+        "vi": "Tôi mua bánh mì tươi.",
+        "en": "I'm buying fresh bread."
+      },
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "id": "de.a1.wasser",
+      "lemma": "Wasser",
+      "article": "das",
+      "plural": null,
+      "pos": "noun",
+      "level": "A1",
+      "vi": "nước",
+      "en": "water",
+      "example": {
+        "de": "Ein Glas Wasser, bitte.",
+        "vi": "Làm ơn cho tôi một ly nước.",
+        "en": "A glass of water, please."
+      },
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "id": "de.a1.kaffee",
+      "lemma": "Kaffee",
+      "article": "der",
+      "plural": "Kaffees",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "cà phê",
+      "en": "coffee",
+      "example": {
+        "de": "Der Kaffee ist sehr stark.",
+        "vi": "Cà phê rất đậm.",
+        "en": "The coffee is very strong."
+      },
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "id": "de.a1.tee",
+      "lemma": "Tee",
+      "article": "der",
+      "plural": "Tees",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "trà",
+      "en": "tea",
+      "example": {
+        "de": "Ich trinke morgens Tee.",
+        "vi": "Buổi sáng tôi uống trà.",
+        "en": "I drink tea in the morning."
+      },
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "id": "de.a1.milch",
+      "lemma": "Milch",
+      "article": "die",
+      "plural": null,
+      "pos": "noun",
+      "level": "A1",
+      "vi": "sữa",
+      "en": "milk",
+      "example": {
+        "de": "Die Milch ist im Kühlschrank.",
+        "vi": "Sữa ở trong tủ lạnh.",
+        "en": "The milk is in the fridge."
+      },
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "id": "de.a1.apfel",
+      "lemma": "Apfel",
+      "article": "der",
+      "plural": "Äpfel",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "quả táo",
+      "en": "apple",
+      "example": {
+        "de": "Der Apfel ist süß.",
+        "vi": "Quả táo ngọt.",
+        "en": "The apple is sweet."
+      },
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "id": "de.a1.ei",
+      "lemma": "Ei",
+      "article": "das",
+      "plural": "Eier",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "quả trứng",
+      "en": "egg",
+      "example": {
+        "de": "Zum Frühstück esse ich ein Ei.",
+        "vi": "Bữa sáng tôi ăn một quả trứng.",
+        "en": "I eat an egg for breakfast."
+      },
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "id": "de.a1.kaese",
+      "lemma": "Käse",
+      "article": "der",
+      "plural": "Käse",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "phô mai",
+      "en": "cheese",
+      "example": {
+        "de": "Der Käse kommt aus der Schweiz.",
+        "vi": "Phô mai này đến từ Thụy Sĩ.",
+        "en": "The cheese comes from Switzerland."
+      },
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "id": "de.a1.fleisch",
+      "lemma": "Fleisch",
+      "article": "das",
+      "plural": null,
+      "pos": "noun",
+      "level": "A1",
+      "vi": "thịt",
+      "en": "meat",
+      "example": {
+        "de": "Ich esse kein Fleisch.",
+        "vi": "Tôi không ăn thịt.",
+        "en": "I don't eat meat."
+      },
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "id": "de.a1.fisch",
+      "lemma": "Fisch",
+      "article": "der",
+      "plural": "Fische",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "cá",
+      "en": "fish",
+      "example": {
+        "de": "Heute gibt es Fisch.",
+        "vi": "Hôm nay có món cá.",
+        "en": "There's fish today."
+      },
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "id": "de.a1.reis",
+      "lemma": "Reis",
+      "article": "der",
+      "plural": null,
+      "pos": "noun",
+      "level": "A1",
+      "vi": "gạo, cơm",
+      "en": "rice",
+      "example": {
+        "de": "In Vietnam isst man viel Reis.",
+        "vi": "Ở Việt Nam người ta ăn nhiều cơm.",
+        "en": "In Vietnam people eat a lot of rice."
+      },
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "id": "de.a1.suppe",
+      "lemma": "Suppe",
+      "article": "die",
+      "plural": "Suppen",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "súp, canh",
+      "en": "soup",
+      "example": {
+        "de": "Die Suppe ist heiß.",
+        "vi": "Món súp còn nóng.",
+        "en": "The soup is hot."
+      },
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "id": "de.a1.fruehstueck",
+      "lemma": "Frühstück",
+      "article": "das",
+      "plural": "Frühstücke",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "bữa sáng",
+      "en": "breakfast",
+      "example": {
+        "de": "Das Frühstück ist um acht Uhr.",
+        "vi": "Bữa sáng lúc tám giờ.",
+        "en": "Breakfast is at eight o'clock."
+      },
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "id": "de.a1.kuchen",
+      "lemma": "Kuchen",
+      "article": "der",
+      "plural": "Kuchen",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "bánh ngọt",
+      "en": "cake",
+      "example": {
+        "de": "Möchtest du ein Stück Kuchen?",
+        "vi": "Bạn có muốn một miếng bánh không?",
+        "en": "Would you like a piece of cake?"
+      },
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "id": "de.a1.bier",
+      "lemma": "Bier",
+      "article": "das",
+      "plural": "Biere",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "bia",
+      "en": "beer",
+      "example": {
+        "de": "Ein Bier, bitte!",
+        "vi": "Cho một cốc bia!",
+        "en": "A beer, please!"
+      },
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "id": "de.a1.obst",
+      "lemma": "Obst",
+      "article": "das",
+      "plural": null,
+      "pos": "noun",
+      "level": "A1",
+      "vi": "trái cây",
+      "en": "fruit",
+      "example": {
+        "de": "Obst ist gesund.",
+        "vi": "Trái cây tốt cho sức khỏe.",
+        "en": "Fruit is healthy."
+      },
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "id": "de.a1.gemuese",
+      "lemma": "Gemüse",
+      "article": "das",
+      "plural": null,
+      "pos": "noun",
+      "level": "A1",
+      "vi": "rau",
+      "en": "vegetables",
+      "example": {
+        "de": "Ich kaufe Gemüse auf dem Markt.",
+        "vi": "Tôi mua rau ở chợ.",
+        "en": "I buy vegetables at the market."
+      },
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "id": "de.a1.restaurant",
+      "lemma": "Restaurant",
+      "article": "das",
+      "plural": "Restaurants",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "nhà hàng",
+      "en": "restaurant",
+      "example": {
+        "de": "Das Restaurant ist am Sonntag geschlossen.",
+        "vi": "Nhà hàng đóng cửa vào Chủ nhật.",
+        "en": "The restaurant is closed on Sunday."
+      },
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "id": "de.a1.hunger",
+      "lemma": "Hunger",
+      "article": "der",
+      "plural": null,
+      "pos": "noun",
+      "level": "A1",
+      "vi": "cơn đói",
+      "en": "hunger",
+      "example": {
+        "de": "Ich habe Hunger.",
+        "vi": "Tôi đói.",
+        "en": "I'm hungry."
+      },
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "id": "de.a1.tag",
+      "lemma": "Tag",
+      "article": "der",
+      "plural": "Tage",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "ngày",
+      "en": "day",
+      "example": {
+        "de": "Ich arbeite acht Stunden am Tag.",
+        "vi": "Tôi làm việc tám tiếng mỗi ngày.",
+        "en": "I work eight hours a day."
+      },
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "de.a1.woche",
+      "lemma": "Woche",
+      "article": "die",
+      "plural": "Wochen",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "tuần",
+      "en": "week",
+      "example": {
+        "de": "Die Woche hat sieben Tage.",
+        "vi": "Một tuần có bảy ngày.",
+        "en": "A week has seven days."
+      },
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "de.a1.monat",
+      "lemma": "Monat",
+      "article": "der",
+      "plural": "Monate",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "tháng",
+      "en": "month",
+      "example": {
+        "de": "Im nächsten Monat fliege ich nach Vietnam.",
+        "vi": "Tháng sau tôi bay về Việt Nam.",
+        "en": "Next month I'm flying to Vietnam."
+      },
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "de.a1.jahr",
+      "lemma": "Jahr",
+      "article": "das",
+      "plural": "Jahre",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "năm",
+      "en": "year",
+      "example": {
+        "de": "Ich lerne seit einem Jahr Deutsch.",
+        "vi": "Tôi học tiếng Đức được một năm rồi.",
+        "en": "I've been learning German for a year."
+      },
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "de.a1.uhr",
+      "lemma": "Uhr",
+      "article": "die",
+      "plural": "Uhren",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "đồng hồ; giờ",
+      "en": "clock; o'clock",
+      "example": {
+        "de": "Es ist drei Uhr.",
+        "vi": "Bây giờ là ba giờ.",
+        "en": "It is three o'clock."
+      },
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "de.a1.stunde",
+      "lemma": "Stunde",
+      "article": "die",
+      "plural": "Stunden",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "giờ, tiếng đồng hồ",
+      "en": "hour",
+      "example": {
+        "de": "Der Film dauert zwei Stunden.",
+        "vi": "Bộ phim dài hai tiếng.",
+        "en": "The film lasts two hours."
+      },
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "de.a1.minute",
+      "lemma": "Minute",
+      "article": "die",
+      "plural": "Minuten",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "phút",
+      "en": "minute",
+      "example": {
+        "de": "Warte bitte eine Minute.",
+        "vi": "Làm ơn đợi một phút.",
+        "en": "Please wait a minute."
+      },
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "de.a1.morgen-noun",
+      "lemma": "Morgen",
+      "article": "der",
+      "plural": "Morgen",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "buổi sáng",
+      "en": "morning",
+      "example": {
+        "de": "Guten Morgen!",
+        "vi": "Chào buổi sáng!",
+        "en": "Good morning!"
+      },
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "de.a1.abend",
+      "lemma": "Abend",
+      "article": "der",
+      "plural": "Abende",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "buổi tối",
+      "en": "evening",
+      "example": {
+        "de": "Am Abend sehe ich fern.",
+        "vi": "Buổi tối tôi xem tivi.",
+        "en": "In the evening I watch TV."
+      },
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "de.a1.montag",
+      "lemma": "Montag",
+      "article": "der",
+      "plural": "Montage",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "thứ Hai",
+      "en": "Monday",
+      "example": {
+        "de": "Am Montag beginnt der Kurs.",
+        "vi": "Khóa học bắt đầu vào thứ Hai.",
+        "en": "The course starts on Monday."
+      },
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "de.a1.wochenende",
+      "lemma": "Wochenende",
+      "article": "das",
+      "plural": "Wochenenden",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "cuối tuần",
+      "en": "weekend",
+      "example": {
+        "de": "Schönes Wochenende!",
+        "vi": "Chúc cuối tuần vui vẻ!",
+        "en": "Have a nice weekend!"
+      },
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "de.a1.zeit",
+      "lemma": "Zeit",
+      "article": "die",
+      "plural": "Zeiten",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "thời gian",
+      "en": "time",
+      "example": {
+        "de": "Hast du heute Zeit?",
+        "vi": "Hôm nay bạn có rảnh không?",
+        "en": "Do you have time today?"
+      },
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "de.a1.stadt",
+      "lemma": "Stadt",
+      "article": "die",
+      "plural": "Städte",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "thành phố",
+      "en": "city, town",
+      "example": {
+        "de": "Hamburg ist eine große Stadt.",
+        "vi": "Hamburg là một thành phố lớn.",
+        "en": "Hamburg is a big city."
+      },
+      "tags": [
+        "city"
+      ]
+    },
+    {
+      "id": "de.a1.strasse",
+      "lemma": "Straße",
+      "article": "die",
+      "plural": "Straßen",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "con đường, phố",
+      "en": "street",
+      "example": {
+        "de": "Ich wohne in der Goethestraße.",
+        "vi": "Tôi sống ở phố Goethe.",
+        "en": "I live on Goethe Street."
+      },
+      "tags": [
+        "city"
+      ]
+    },
+    {
+      "id": "de.a1.bahnhof",
+      "lemma": "Bahnhof",
+      "article": "der",
+      "plural": "Bahnhöfe",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "nhà ga",
+      "en": "train station",
+      "example": {
+        "de": "Der Bahnhof ist nicht weit.",
+        "vi": "Nhà ga không xa.",
+        "en": "The station isn't far."
+      },
+      "tags": [
+        "city"
+      ]
+    },
+    {
+      "id": "de.a1.zug",
+      "lemma": "Zug",
+      "article": "der",
+      "plural": "Züge",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "tàu hỏa",
+      "en": "train",
+      "example": {
+        "de": "Der Zug hat Verspätung.",
+        "vi": "Tàu bị trễ.",
+        "en": "The train is delayed."
+      },
+      "tags": [
+        "city"
+      ]
+    },
+    {
+      "id": "de.a1.bus",
+      "lemma": "Bus",
+      "article": "der",
+      "plural": "Busse",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "xe buýt",
+      "en": "bus",
+      "example": {
+        "de": "Der Bus fährt um acht Uhr ab.",
+        "vi": "Xe buýt khởi hành lúc tám giờ.",
+        "en": "The bus leaves at eight o'clock."
+      },
+      "tags": [
+        "city"
+      ]
+    },
+    {
+      "id": "de.a1.auto",
+      "lemma": "Auto",
+      "article": "das",
+      "plural": "Autos",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "ô tô",
+      "en": "car",
+      "example": {
+        "de": "Mein Auto ist rot.",
+        "vi": "Xe ô tô của tôi màu đỏ.",
+        "en": "My car is red."
+      },
+      "tags": [
+        "city"
+      ]
+    },
+    {
+      "id": "de.a1.fahrrad",
+      "lemma": "Fahrrad",
+      "article": "das",
+      "plural": "Fahrräder",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "xe đạp",
+      "en": "bicycle",
+      "example": {
+        "de": "Ich fahre mit dem Fahrrad zur Arbeit.",
+        "vi": "Tôi đi làm bằng xe đạp.",
+        "en": "I cycle to work."
+      },
+      "tags": [
+        "city"
+      ]
+    },
+    {
+      "id": "de.a1.flughafen",
+      "lemma": "Flughafen",
+      "article": "der",
+      "plural": "Flughäfen",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "sân bay",
+      "en": "airport",
+      "example": {
+        "de": "Wie komme ich zum Flughafen?",
+        "vi": "Làm sao để tôi đến sân bay?",
+        "en": "How do I get to the airport?"
+      },
+      "tags": [
+        "city"
+      ]
+    },
+    {
+      "id": "de.a1.supermarkt",
+      "lemma": "Supermarkt",
+      "article": "der",
+      "plural": "Supermärkte",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "siêu thị",
+      "en": "supermarket",
+      "example": {
+        "de": "Der Supermarkt öffnet um acht.",
+        "vi": "Siêu thị mở cửa lúc tám giờ.",
+        "en": "The supermarket opens at eight."
+      },
+      "tags": [
+        "city"
+      ]
+    },
+    {
+      "id": "de.a1.apotheke",
+      "lemma": "Apotheke",
+      "article": "die",
+      "plural": "Apotheken",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "hiệu thuốc",
+      "en": "pharmacy",
+      "example": {
+        "de": "Die Apotheke ist neben der Bank.",
+        "vi": "Hiệu thuốc ở cạnh ngân hàng.",
+        "en": "The pharmacy is next to the bank."
+      },
+      "tags": [
+        "city"
+      ]
+    },
+    {
+      "id": "de.a1.fahrkarte",
+      "lemma": "Fahrkarte",
+      "article": "die",
+      "plural": "Fahrkarten",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "vé (tàu, xe)",
+      "en": "ticket",
+      "example": {
+        "de": "Ich brauche eine Fahrkarte nach Köln.",
+        "vi": "Tôi cần một vé đi Köln.",
+        "en": "I need a ticket to Cologne."
+      },
+      "tags": [
+        "city"
+      ]
+    },
+    {
+      "id": "de.a1.weg",
+      "lemma": "Weg",
+      "article": "der",
+      "plural": "Wege",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "con đường, lối đi",
+      "en": "way, path",
+      "example": {
+        "de": "Kennst du den Weg?",
+        "vi": "Bạn có biết đường không?",
+        "en": "Do you know the way?"
+      },
+      "tags": [
+        "city"
+      ]
+    },
+    {
+      "id": "de.a1.kopf",
+      "lemma": "Kopf",
+      "article": "der",
+      "plural": "Köpfe",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "cái đầu",
+      "en": "head",
+      "example": {
+        "de": "Mir tut der Kopf weh.",
+        "vi": "Tôi bị đau đầu.",
+        "en": "My head hurts."
+      },
+      "tags": [
+        "body"
+      ]
+    },
+    {
+      "id": "de.a1.hand",
+      "lemma": "Hand",
+      "article": "die",
+      "plural": "Hände",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "bàn tay",
+      "en": "hand",
+      "example": {
+        "de": "Wasch dir bitte die Hände.",
+        "vi": "Làm ơn rửa tay đi.",
+        "en": "Please wash your hands."
+      },
+      "tags": [
+        "body"
+      ]
+    },
+    {
+      "id": "de.a1.auge",
+      "lemma": "Auge",
+      "article": "das",
+      "plural": "Augen",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "mắt",
+      "en": "eye",
+      "example": {
+        "de": "Sie hat blaue Augen.",
+        "vi": "Cô ấy có đôi mắt xanh.",
+        "en": "She has blue eyes."
+      },
+      "tags": [
+        "body"
+      ]
+    },
+    {
+      "id": "de.a1.fuss",
+      "lemma": "Fuß",
+      "article": "der",
+      "plural": "Füße",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "bàn chân",
+      "en": "foot",
+      "example": {
+        "de": "Ich gehe zu Fuß.",
+        "vi": "Tôi đi bộ.",
+        "en": "I'm going on foot."
+      },
+      "tags": [
+        "body"
+      ]
+    },
+    {
+      "id": "de.a1.arzt",
+      "lemma": "Arzt",
+      "article": "der",
+      "plural": "Ärzte",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "bác sĩ (nam)",
+      "en": "doctor (male)",
+      "example": {
+        "de": "Ich muss zum Arzt gehen.",
+        "vi": "Tôi phải đi khám bác sĩ.",
+        "en": "I have to go to the doctor."
+      },
+      "tags": [
+        "body"
+      ]
+    },
+    {
+      "id": "de.a1.hose",
+      "lemma": "Hose",
+      "article": "die",
+      "plural": "Hosen",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "cái quần",
+      "en": "trousers",
+      "example": {
+        "de": "Die Hose ist zu lang.",
+        "vi": "Cái quần này dài quá.",
+        "en": "The trousers are too long."
+      },
+      "tags": [
+        "clothes"
+      ]
+    },
+    {
+      "id": "de.a1.jacke",
+      "lemma": "Jacke",
+      "article": "die",
+      "plural": "Jacken",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "áo khoác",
+      "en": "jacket",
+      "example": {
+        "de": "Nimm eine Jacke mit, es ist kalt.",
+        "vi": "Mang theo áo khoác đi, trời lạnh đấy.",
+        "en": "Take a jacket, it's cold."
+      },
+      "tags": [
+        "clothes"
+      ]
+    },
+    {
+      "id": "de.a1.schuh",
+      "lemma": "Schuh",
+      "article": "der",
+      "plural": "Schuhe",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "chiếc giày",
+      "en": "shoe",
+      "example": {
+        "de": "Die Schuhe sind neu.",
+        "vi": "Đôi giày này mới.",
+        "en": "The shoes are new."
+      },
+      "tags": [
+        "clothes"
+      ]
+    },
+    {
+      "id": "de.a1.hemd",
+      "lemma": "Hemd",
+      "article": "das",
+      "plural": "Hemden",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "áo sơ mi",
+      "en": "shirt",
+      "example": {
+        "de": "Er trägt ein weißes Hemd.",
+        "vi": "Anh ấy mặc áo sơ mi trắng.",
+        "en": "He is wearing a white shirt."
+      },
+      "tags": [
+        "clothes"
+      ]
+    },
+    {
+      "id": "de.a1.arbeit",
+      "lemma": "Arbeit",
+      "article": "die",
+      "plural": "Arbeiten",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "công việc",
+      "en": "work",
+      "example": {
+        "de": "Die Arbeit beginnt um neun.",
+        "vi": "Công việc bắt đầu lúc chín giờ.",
+        "en": "Work starts at nine."
+      },
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "id": "de.a1.schule",
+      "lemma": "Schule",
+      "article": "die",
+      "plural": "Schulen",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "trường học",
+      "en": "school",
+      "example": {
+        "de": "Die Kinder gehen in die Schule.",
+        "vi": "Bọn trẻ đi học.",
+        "en": "The children go to school."
+      },
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "id": "de.a1.buch",
+      "lemma": "Buch",
+      "article": "das",
+      "plural": "Bücher",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "quyển sách",
+      "en": "book",
+      "example": {
+        "de": "Das Buch ist sehr spannend.",
+        "vi": "Quyển sách rất hấp dẫn.",
+        "en": "The book is very exciting."
+      },
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "id": "de.a1.lehrer",
+      "lemma": "Lehrer",
+      "article": "der",
+      "plural": "Lehrer",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "thầy giáo",
+      "en": "teacher (male)",
+      "example": {
+        "de": "Der Lehrer erklärt die Grammatik.",
+        "vi": "Thầy giáo giải thích ngữ pháp.",
+        "en": "The teacher explains the grammar."
+      },
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "id": "de.a1.lehrerin",
+      "lemma": "Lehrerin",
+      "article": "die",
+      "plural": "Lehrerinnen",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "cô giáo",
+      "en": "teacher (female)",
+      "example": {
+        "de": "Unsere Lehrerin kommt aus Österreich.",
+        "vi": "Cô giáo của chúng tôi đến từ Áo.",
+        "en": "Our teacher is from Austria."
+      },
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "id": "de.a1.stift",
+      "lemma": "Stift",
+      "article": "der",
+      "plural": "Stifte",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "cây bút",
+      "en": "pen",
+      "example": {
+        "de": "Hast du einen Stift für mich?",
+        "vi": "Bạn có bút cho tôi mượn không?",
+        "en": "Have you got a pen for me?"
+      },
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "id": "de.a1.handy",
+      "lemma": "Handy",
+      "article": "das",
+      "plural": "Handys",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "điện thoại di động",
+      "en": "mobile phone",
+      "example": {
+        "de": "Mein Handy ist leer.",
+        "vi": "Điện thoại của tôi hết pin.",
+        "en": "My phone battery is dead."
+      },
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "id": "de.a1.geld",
+      "lemma": "Geld",
+      "article": "das",
+      "plural": "Gelder",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "tiền",
+      "en": "money",
+      "example": {
+        "de": "Ich habe kein Geld dabei.",
+        "vi": "Tôi không mang theo tiền.",
+        "en": "I don't have any money on me."
+      },
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "id": "de.a1.sprache",
+      "lemma": "Sprache",
+      "article": "die",
+      "plural": "Sprachen",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "ngôn ngữ",
+      "en": "language",
+      "example": {
+        "de": "Deutsch ist eine schöne Sprache.",
+        "vi": "Tiếng Đức là một ngôn ngữ đẹp.",
+        "en": "German is a beautiful language."
+      },
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "id": "de.a1.frage",
+      "lemma": "Frage",
+      "article": "die",
+      "plural": "Fragen",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "câu hỏi",
+      "en": "question",
+      "example": {
+        "de": "Ich habe eine Frage.",
+        "vi": "Tôi có một câu hỏi.",
+        "en": "I have a question."
+      },
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "id": "de.a1.uebung",
+      "lemma": "Übung",
+      "article": "die",
+      "plural": "Übungen",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "bài tập",
+      "en": "exercise",
+      "example": {
+        "de": "Die Übung ist nicht schwer.",
+        "vi": "Bài tập này không khó.",
+        "en": "The exercise is not difficult."
+      },
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "id": "de.a1.wetter",
+      "lemma": "Wetter",
+      "article": "das",
+      "plural": null,
+      "pos": "noun",
+      "level": "A1",
+      "vi": "thời tiết",
+      "en": "weather",
+      "example": {
+        "de": "Das Wetter ist heute schön.",
+        "vi": "Hôm nay thời tiết đẹp.",
+        "en": "The weather is nice today."
+      },
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "de.a1.hund",
+      "lemma": "Hund",
+      "article": "der",
+      "plural": "Hunde",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "con chó",
+      "en": "dog",
+      "example": {
+        "de": "Der Hund bellt laut.",
+        "vi": "Con chó sủa to.",
+        "en": "The dog barks loudly."
+      },
+      "tags": [
+        "animals"
+      ]
+    },
+    {
+      "id": "de.a1.katze",
+      "lemma": "Katze",
+      "article": "die",
+      "plural": "Katzen",
+      "pos": "noun",
+      "level": "A1",
+      "vi": "con mèo",
+      "en": "cat",
+      "example": {
+        "de": "Die Katze schläft auf dem Sofa.",
+        "vi": "Con mèo ngủ trên ghế sofa.",
+        "en": "The cat is sleeping on the sofa."
+      },
+      "tags": [
+        "animals"
+      ]
+    },
+    {
+      "id": "de.a1.sein",
+      "lemma": "sein",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "là, thì, ở",
+      "en": "to be",
+      "example": {
+        "de": "Ich bin Student.",
+        "vi": "Tôi là sinh viên.",
+        "en": "I am a student."
+      },
+      "tags": [
+        "verbs"
+      ],
+      "verb": {
+        "thirdPerson": "ist",
+        "preterite": "war",
+        "participle": "gewesen",
+        "auxiliary": "sein"
+      }
+    },
+    {
+      "id": "de.a1.haben",
+      "lemma": "haben",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "có",
+      "en": "to have",
+      "example": {
+        "de": "Wir haben einen Hund.",
+        "vi": "Chúng tôi có một con chó.",
+        "en": "We have a dog."
+      },
+      "tags": [
+        "verbs"
+      ],
+      "verb": {
+        "thirdPerson": "hat",
+        "preterite": "hatte",
+        "participle": "gehabt",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.a1.gehen",
+      "lemma": "gehen",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "đi (bộ)",
+      "en": "to go, to walk",
+      "example": {
+        "de": "Ich gehe nach Hause.",
+        "vi": "Tôi đi về nhà.",
+        "en": "I'm going home."
+      },
+      "tags": [
+        "verbs"
+      ],
+      "verb": {
+        "thirdPerson": "geht",
+        "preterite": "ging",
+        "participle": "gegangen",
+        "auxiliary": "sein"
+      }
+    },
+    {
+      "id": "de.a1.kommen",
+      "lemma": "kommen",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "đến",
+      "en": "to come",
+      "example": {
+        "de": "Ich komme aus Vietnam.",
+        "vi": "Tôi đến từ Việt Nam.",
+        "en": "I come from Vietnam."
+      },
+      "tags": [
+        "verbs"
+      ],
+      "verb": {
+        "thirdPerson": "kommt",
+        "preterite": "kam",
+        "participle": "gekommen",
+        "auxiliary": "sein"
+      }
+    },
+    {
+      "id": "de.a1.machen",
+      "lemma": "machen",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "làm",
+      "en": "to do, to make",
+      "example": {
+        "de": "Was machst du heute?",
+        "vi": "Hôm nay bạn làm gì?",
+        "en": "What are you doing today?"
+      },
+      "tags": [
+        "verbs"
+      ],
+      "verb": {
+        "thirdPerson": "macht",
+        "preterite": "machte",
+        "participle": "gemacht",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.a1.essen",
+      "lemma": "essen",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "ăn",
+      "en": "to eat",
+      "example": {
+        "de": "Wir essen um zwölf Uhr.",
+        "vi": "Chúng tôi ăn trưa lúc mười hai giờ.",
+        "en": "We eat at twelve o'clock."
+      },
+      "tags": [
+        "verbs",
+        "food"
+      ],
+      "verb": {
+        "thirdPerson": "isst",
+        "preterite": "aß",
+        "participle": "gegessen",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.a1.trinken",
+      "lemma": "trinken",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "uống",
+      "en": "to drink",
+      "example": {
+        "de": "Ich trinke gern Kaffee.",
+        "vi": "Tôi thích uống cà phê.",
+        "en": "I like drinking coffee."
+      },
+      "tags": [
+        "verbs",
+        "food"
+      ],
+      "verb": {
+        "thirdPerson": "trinkt",
+        "preterite": "trank",
+        "participle": "getrunken",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.a1.wohnen",
+      "lemma": "wohnen",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "sống, cư trú",
+      "en": "to live (reside)",
+      "example": {
+        "de": "Wo wohnst du?",
+        "vi": "Bạn sống ở đâu?",
+        "en": "Where do you live?"
+      },
+      "tags": [
+        "verbs",
+        "home"
+      ],
+      "verb": {
+        "thirdPerson": "wohnt",
+        "preterite": "wohnte",
+        "participle": "gewohnt",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.a1.arbeiten",
+      "lemma": "arbeiten",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "làm việc",
+      "en": "to work",
+      "example": {
+        "de": "Sie arbeitet im Krankenhaus.",
+        "vi": "Cô ấy làm việc ở bệnh viện.",
+        "en": "She works at the hospital."
+      },
+      "tags": [
+        "verbs",
+        "work"
+      ],
+      "verb": {
+        "thirdPerson": "arbeitet",
+        "preterite": "arbeitete",
+        "participle": "gearbeitet",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.a1.lernen",
+      "lemma": "lernen",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "học",
+      "en": "to learn",
+      "example": {
+        "de": "Ich lerne jeden Tag Deutsch.",
+        "vi": "Tôi học tiếng Đức mỗi ngày.",
+        "en": "I learn German every day."
+      },
+      "tags": [
+        "verbs",
+        "work"
+      ],
+      "verb": {
+        "thirdPerson": "lernt",
+        "preterite": "lernte",
+        "participle": "gelernt",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.a1.sprechen",
+      "lemma": "sprechen",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "nói",
+      "en": "to speak",
+      "example": {
+        "de": "Sprechen Sie Englisch?",
+        "vi": "Ông/bà có nói tiếng Anh không?",
+        "en": "Do you speak English?"
+      },
+      "tags": [
+        "verbs"
+      ],
+      "verb": {
+        "thirdPerson": "spricht",
+        "preterite": "sprach",
+        "participle": "gesprochen",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.a1.fahren",
+      "lemma": "fahren",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "đi (bằng xe), lái xe",
+      "en": "to drive, to go (by vehicle)",
+      "example": {
+        "de": "Morgen fahren wir nach Berlin.",
+        "vi": "Ngày mai chúng tôi đi Berlin.",
+        "en": "Tomorrow we're going to Berlin."
+      },
+      "tags": [
+        "verbs",
+        "city"
+      ],
+      "verb": {
+        "thirdPerson": "fährt",
+        "preterite": "fuhr",
+        "participle": "gefahren",
+        "auxiliary": "sein"
+      }
+    },
+    {
+      "id": "de.a1.schlafen",
+      "lemma": "schlafen",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "ngủ",
+      "en": "to sleep",
+      "example": {
+        "de": "Das Baby schläft.",
+        "vi": "Em bé đang ngủ.",
+        "en": "The baby is sleeping."
+      },
+      "tags": [
+        "verbs"
+      ],
+      "verb": {
+        "thirdPerson": "schläft",
+        "preterite": "schlief",
+        "participle": "geschlafen",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.a1.lesen",
+      "lemma": "lesen",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "đọc",
+      "en": "to read",
+      "example": {
+        "de": "Er liest ein Buch.",
+        "vi": "Anh ấy đang đọc sách.",
+        "en": "He is reading a book."
+      },
+      "tags": [
+        "verbs"
+      ],
+      "verb": {
+        "thirdPerson": "liest",
+        "preterite": "las",
+        "participle": "gelesen",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.a1.sehen",
+      "lemma": "sehen",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "nhìn, thấy",
+      "en": "to see",
+      "example": {
+        "de": "Siehst du das Haus dort?",
+        "vi": "Bạn có thấy ngôi nhà đằng kia không?",
+        "en": "Do you see the house over there?"
+      },
+      "tags": [
+        "verbs"
+      ],
+      "verb": {
+        "thirdPerson": "sieht",
+        "preterite": "sah",
+        "participle": "gesehen",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.a1.kaufen",
+      "lemma": "kaufen",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "mua",
+      "en": "to buy",
+      "example": {
+        "de": "Ich kaufe Brot und Milch.",
+        "vi": "Tôi mua bánh mì và sữa.",
+        "en": "I'm buying bread and milk."
+      },
+      "tags": [
+        "verbs"
+      ],
+      "verb": {
+        "thirdPerson": "kauft",
+        "preterite": "kaufte",
+        "participle": "gekauft",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.a1.heissen",
+      "lemma": "heißen",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "tên là",
+      "en": "to be called",
+      "example": {
+        "de": "Wie heißt du?",
+        "vi": "Bạn tên là gì?",
+        "en": "What's your name?"
+      },
+      "tags": [
+        "verbs",
+        "greetings"
+      ],
+      "verb": {
+        "thirdPerson": "heißt",
+        "preterite": "hieß",
+        "participle": "geheißen",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.a1.spielen",
+      "lemma": "spielen",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "chơi",
+      "en": "to play",
+      "example": {
+        "de": "Die Kinder spielen im Park.",
+        "vi": "Bọn trẻ chơi trong công viên.",
+        "en": "The children are playing in the park."
+      },
+      "tags": [
+        "verbs"
+      ],
+      "verb": {
+        "thirdPerson": "spielt",
+        "preterite": "spielte",
+        "participle": "gespielt",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.a1.kochen",
+      "lemma": "kochen",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "nấu ăn",
+      "en": "to cook",
+      "example": {
+        "de": "Heute koche ich Phở.",
+        "vi": "Hôm nay tôi nấu phở.",
+        "en": "Today I'm cooking pho."
+      },
+      "tags": [
+        "verbs",
+        "food"
+      ],
+      "verb": {
+        "thirdPerson": "kocht",
+        "preterite": "kochte",
+        "participle": "gekocht",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.a1.verstehen",
+      "lemma": "verstehen",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "hiểu",
+      "en": "to understand",
+      "example": {
+        "de": "Ich verstehe dich gut.",
+        "vi": "Tôi hiểu bạn rõ.",
+        "en": "I understand you well."
+      },
+      "tags": [
+        "verbs"
+      ],
+      "verb": {
+        "thirdPerson": "versteht",
+        "preterite": "verstand",
+        "participle": "verstanden",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.a1.helfen",
+      "lemma": "helfen",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "giúp đỡ",
+      "en": "to help",
+      "example": {
+        "de": "Kannst du mir helfen?",
+        "vi": "Bạn có thể giúp tôi không?",
+        "en": "Can you help me?"
+      },
+      "tags": [
+        "verbs"
+      ],
+      "verb": {
+        "thirdPerson": "hilft",
+        "preterite": "half",
+        "participle": "geholfen",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.a1.geben",
+      "lemma": "geben",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "đưa, cho",
+      "en": "to give",
+      "example": {
+        "de": "Gib mir bitte das Salz.",
+        "vi": "Làm ơn đưa tôi lọ muối.",
+        "en": "Please pass me the salt."
+      },
+      "tags": [
+        "verbs"
+      ],
+      "verb": {
+        "thirdPerson": "gibt",
+        "preterite": "gab",
+        "participle": "gegeben",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.a1.nehmen",
+      "lemma": "nehmen",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "lấy; dùng",
+      "en": "to take",
+      "example": {
+        "de": "Ich nehme den Bus.",
+        "vi": "Tôi đi xe buýt.",
+        "en": "I'm taking the bus."
+      },
+      "tags": [
+        "verbs"
+      ],
+      "verb": {
+        "thirdPerson": "nimmt",
+        "preterite": "nahm",
+        "participle": "genommen",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.a1.finden",
+      "lemma": "finden",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "tìm thấy; thấy rằng",
+      "en": "to find; to think",
+      "example": {
+        "de": "Ich finde das Buch gut.",
+        "vi": "Tôi thấy quyển sách hay.",
+        "en": "I think the book is good."
+      },
+      "tags": [
+        "verbs"
+      ],
+      "verb": {
+        "thirdPerson": "findet",
+        "preterite": "fand",
+        "participle": "gefunden",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.a1.brauchen",
+      "lemma": "brauchen",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "cần",
+      "en": "to need",
+      "example": {
+        "de": "Ich brauche Hilfe.",
+        "vi": "Tôi cần giúp đỡ.",
+        "en": "I need help."
+      },
+      "tags": [
+        "verbs"
+      ],
+      "verb": {
+        "thirdPerson": "braucht",
+        "preterite": "brauchte",
+        "participle": "gebraucht",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.a1.koennen",
+      "lemma": "können",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "có thể, biết (làm gì)",
+      "en": "can, to be able to",
+      "example": {
+        "de": "Ich kann gut schwimmen.",
+        "vi": "Tôi bơi giỏi.",
+        "en": "I can swim well."
+      },
+      "tags": [
+        "verbs"
+      ],
+      "verb": {
+        "thirdPerson": "kann",
+        "preterite": "konnte",
+        "participle": "gekonnt",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.a1.muessen",
+      "lemma": "müssen",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "phải",
+      "en": "must, to have to",
+      "example": {
+        "de": "Ich muss jetzt gehen.",
+        "vi": "Tôi phải đi bây giờ.",
+        "en": "I have to go now."
+      },
+      "tags": [
+        "verbs"
+      ],
+      "verb": {
+        "thirdPerson": "muss",
+        "preterite": "musste",
+        "participle": "gemusst",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.a1.schreiben",
+      "lemma": "schreiben",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "viết",
+      "en": "to write",
+      "example": {
+        "de": "Ich schreibe eine E-Mail.",
+        "vi": "Tôi viết một email.",
+        "en": "I'm writing an email."
+      },
+      "tags": [
+        "verbs"
+      ],
+      "verb": {
+        "thirdPerson": "schreibt",
+        "preterite": "schrieb",
+        "participle": "geschrieben",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.a1.fragen",
+      "lemma": "fragen",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "hỏi",
+      "en": "to ask",
+      "example": {
+        "de": "Darf ich etwas fragen?",
+        "vi": "Tôi hỏi một chút được không?",
+        "en": "May I ask something?"
+      },
+      "tags": [
+        "verbs"
+      ],
+      "verb": {
+        "thirdPerson": "fragt",
+        "preterite": "fragte",
+        "participle": "gefragt",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.a1.aufstehen",
+      "lemma": "aufstehen",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "thức dậy",
+      "en": "to get up",
+      "example": {
+        "de": "Ich stehe um sechs Uhr auf.",
+        "vi": "Tôi dậy lúc sáu giờ.",
+        "en": "I get up at six o'clock."
+      },
+      "tags": [
+        "verbs",
+        "time"
+      ],
+      "verb": {
+        "thirdPerson": "steht auf",
+        "preterite": "stand auf",
+        "participle": "aufgestanden",
+        "auxiliary": "sein"
+      }
+    },
+    {
+      "id": "de.a1.bleiben",
+      "lemma": "bleiben",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "ở lại",
+      "en": "to stay",
+      "example": {
+        "de": "Wir bleiben zwei Wochen in Hanoi.",
+        "vi": "Chúng tôi ở lại Hà Nội hai tuần.",
+        "en": "We're staying in Hanoi for two weeks."
+      },
+      "tags": [
+        "verbs"
+      ],
+      "verb": {
+        "thirdPerson": "bleibt",
+        "preterite": "blieb",
+        "participle": "geblieben",
+        "auxiliary": "sein"
+      }
+    },
+    {
+      "id": "de.a1.wissen",
+      "lemma": "wissen",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "biết (sự việc)",
+      "en": "to know (a fact)",
+      "example": {
+        "de": "Ich weiß es nicht.",
+        "vi": "Tôi không biết.",
+        "en": "I don't know."
+      },
+      "tags": [
+        "verbs"
+      ],
+      "verb": {
+        "thirdPerson": "weiß",
+        "preterite": "wusste",
+        "participle": "gewusst",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.a1.oeffnen",
+      "lemma": "öffnen",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "A1",
+      "vi": "mở",
+      "en": "to open",
+      "example": {
+        "de": "Kannst du das Fenster öffnen?",
+        "vi": "Bạn mở cửa sổ được không?",
+        "en": "Can you open the window?"
+      },
+      "tags": [
+        "verbs",
+        "home"
+      ],
+      "verb": {
+        "thirdPerson": "öffnet",
+        "preterite": "öffnete",
+        "participle": "geöffnet",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.a1.gross",
+      "lemma": "groß",
+      "article": null,
+      "plural": null,
+      "pos": "adjective",
+      "level": "A1",
+      "vi": "lớn, cao",
+      "en": "big, tall",
+      "example": {
+        "de": "Mein Bruder ist sehr groß.",
+        "vi": "Anh trai tôi rất cao.",
+        "en": "My brother is very tall."
+      },
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "de.a1.klein",
+      "lemma": "klein",
+      "article": null,
+      "plural": null,
+      "pos": "adjective",
+      "level": "A1",
+      "vi": "nhỏ",
+      "en": "small",
+      "example": {
+        "de": "Die Wohnung ist klein, aber gemütlich.",
+        "vi": "Căn hộ nhỏ nhưng ấm cúng.",
+        "en": "The flat is small but cosy."
+      },
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "de.a1.gut",
+      "lemma": "gut",
+      "article": null,
+      "plural": null,
+      "pos": "adjective",
+      "level": "A1",
+      "vi": "tốt, hay, ngon",
+      "en": "good",
+      "example": {
+        "de": "Das ist eine gute Idee.",
+        "vi": "Đó là một ý tưởng hay.",
+        "en": "That's a good idea."
+      },
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "de.a1.schlecht",
+      "lemma": "schlecht",
+      "article": null,
+      "plural": null,
+      "pos": "adjective",
+      "level": "A1",
+      "vi": "tệ, xấu",
+      "en": "bad",
+      "example": {
+        "de": "Das Wetter ist schlecht.",
+        "vi": "Thời tiết xấu.",
+        "en": "The weather is bad."
+      },
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "de.a1.neu",
+      "lemma": "neu",
+      "article": null,
+      "plural": null,
+      "pos": "adjective",
+      "level": "A1",
+      "vi": "mới",
+      "en": "new",
+      "example": {
+        "de": "Ich habe ein neues Handy.",
+        "vi": "Tôi có một chiếc điện thoại mới.",
+        "en": "I have a new phone."
+      },
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "de.a1.alt",
+      "lemma": "alt",
+      "article": null,
+      "plural": null,
+      "pos": "adjective",
+      "level": "A1",
+      "vi": "cũ, già",
+      "en": "old",
+      "example": {
+        "de": "Das Haus ist sehr alt.",
+        "vi": "Ngôi nhà rất cũ.",
+        "en": "The house is very old."
+      },
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "de.a1.schoen",
+      "lemma": "schön",
+      "article": null,
+      "plural": null,
+      "pos": "adjective",
+      "level": "A1",
+      "vi": "đẹp",
+      "en": "beautiful, nice",
+      "example": {
+        "de": "Was für ein schöner Tag!",
+        "vi": "Thật là một ngày đẹp trời!",
+        "en": "What a beautiful day!"
+      },
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "de.a1.teuer",
+      "lemma": "teuer",
+      "article": null,
+      "plural": null,
+      "pos": "adjective",
+      "level": "A1",
+      "vi": "đắt",
+      "en": "expensive",
+      "example": {
+        "de": "Das Auto ist zu teuer.",
+        "vi": "Chiếc xe này đắt quá.",
+        "en": "The car is too expensive."
+      },
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "de.a1.billig",
+      "lemma": "billig",
+      "article": null,
+      "plural": null,
+      "pos": "adjective",
+      "level": "A1",
+      "vi": "rẻ",
+      "en": "cheap",
+      "example": {
+        "de": "Das Obst hier ist billig.",
+        "vi": "Trái cây ở đây rẻ.",
+        "en": "The fruit here is cheap."
+      },
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "de.a1.heiss",
+      "lemma": "heiß",
+      "article": null,
+      "plural": null,
+      "pos": "adjective",
+      "level": "A1",
+      "vi": "nóng",
+      "en": "hot",
+      "example": {
+        "de": "Der Kaffee ist heiß.",
+        "vi": "Cà phê nóng.",
+        "en": "The coffee is hot."
+      },
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "de.a1.kalt",
+      "lemma": "kalt",
+      "article": null,
+      "plural": null,
+      "pos": "adjective",
+      "level": "A1",
+      "vi": "lạnh",
+      "en": "cold",
+      "example": {
+        "de": "Im Winter ist es kalt.",
+        "vi": "Mùa đông trời lạnh.",
+        "en": "It's cold in winter."
+      },
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "de.a1.muede",
+      "lemma": "müde",
+      "article": null,
+      "plural": null,
+      "pos": "adjective",
+      "level": "A1",
+      "vi": "mệt, buồn ngủ",
+      "en": "tired",
+      "example": {
+        "de": "Ich bin heute sehr müde.",
+        "vi": "Hôm nay tôi rất mệt.",
+        "en": "I'm very tired today."
+      },
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "de.a1.gluecklich",
+      "lemma": "glücklich",
+      "article": null,
+      "plural": null,
+      "pos": "adjective",
+      "level": "A1",
+      "vi": "hạnh phúc",
+      "en": "happy",
+      "example": {
+        "de": "Sie ist sehr glücklich.",
+        "vi": "Cô ấy rất hạnh phúc.",
+        "en": "She is very happy."
+      },
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "de.a1.schnell",
+      "lemma": "schnell",
+      "article": null,
+      "plural": null,
+      "pos": "adjective",
+      "level": "A1",
+      "vi": "nhanh",
+      "en": "fast",
+      "example": {
+        "de": "Der Zug ist sehr schnell.",
+        "vi": "Tàu chạy rất nhanh.",
+        "en": "The train is very fast."
+      },
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "de.a1.langsam",
+      "lemma": "langsam",
+      "article": null,
+      "plural": null,
+      "pos": "adjective",
+      "level": "A1",
+      "vi": "chậm",
+      "en": "slow",
+      "example": {
+        "de": "Bitte sprechen Sie langsam.",
+        "vi": "Xin ông/bà nói chậm thôi.",
+        "en": "Please speak slowly."
+      },
+      "tags": [
+        "adjectives"
+      ]
+    },
+    {
+      "id": "de.a1.rot",
+      "lemma": "rot",
+      "article": null,
+      "plural": null,
+      "pos": "adjective",
+      "level": "A1",
+      "vi": "đỏ",
+      "en": "red",
+      "example": {
+        "de": "Die Tomate ist rot.",
+        "vi": "Quả cà chua màu đỏ.",
+        "en": "The tomato is red."
+      },
+      "tags": [
+        "adjectives",
+        "colors"
+      ]
+    },
+    {
+      "id": "de.a1.gruen",
+      "lemma": "grün",
+      "article": null,
+      "plural": null,
+      "pos": "adjective",
+      "level": "A1",
+      "vi": "xanh lá",
+      "en": "green",
+      "example": {
+        "de": "Die Ampel ist grün.",
+        "vi": "Đèn giao thông đang xanh.",
+        "en": "The traffic light is green."
+      },
+      "tags": [
+        "adjectives",
+        "colors"
+      ]
+    },
+    {
+      "id": "de.a1.suess",
+      "lemma": "süß",
+      "article": null,
+      "plural": null,
+      "pos": "adjective",
+      "level": "A1",
+      "vi": "ngọt; dễ thương",
+      "en": "sweet; cute",
+      "example": {
+        "de": "Die Katze ist süß.",
+        "vi": "Con mèo thật dễ thương.",
+        "en": "The cat is cute."
+      },
+      "tags": [
+        "adjectives"
+      ]
+    }
+  ]
+}

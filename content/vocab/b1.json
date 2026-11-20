@@ -1,0 +1,205 @@
+{
+  "version": 1,
+  "level": "B1",
+  "words": [
+    {
+      "id": "de.b1.umwelt",
+      "lemma": "Umwelt",
+      "article": "die",
+      "plural": null,
+      "pos": "noun",
+      "level": "B1",
+      "vi": "môi trường",
+      "en": "environment",
+      "example": {
+        "de": "Wir müssen die Umwelt schützen.",
+        "vi": "Chúng ta phải bảo vệ môi trường.",
+        "en": "We must protect the environment."
+      },
+      "tags": [
+        "society"
+      ]
+    },
+    {
+      "id": "de.b1.gesellschaft",
+      "lemma": "Gesellschaft",
+      "article": "die",
+      "plural": "Gesellschaften",
+      "pos": "noun",
+      "level": "B1",
+      "vi": "xã hội; công ty",
+      "en": "society; company",
+      "example": {
+        "de": "Die Gesellschaft verändert sich schnell.",
+        "vi": "Xã hội đang thay đổi nhanh chóng.",
+        "en": "Society is changing quickly."
+      },
+      "tags": [
+        "society"
+      ]
+    },
+    {
+      "id": "de.b1.vorteil",
+      "lemma": "Vorteil",
+      "article": "der",
+      "plural": "Vorteile",
+      "pos": "noun",
+      "level": "B1",
+      "vi": "ưu điểm, lợi thế",
+      "en": "advantage",
+      "example": {
+        "de": "Das hat viele Vorteile.",
+        "vi": "Điều đó có nhiều ưu điểm.",
+        "en": "That has many advantages."
+      },
+      "tags": [
+        "society"
+      ]
+    },
+    {
+      "id": "de.b1.bewerbung",
+      "lemma": "Bewerbung",
+      "article": "die",
+      "plural": "Bewerbungen",
+      "pos": "noun",
+      "level": "B1",
+      "vi": "hồ sơ xin việc",
+      "en": "application",
+      "example": {
+        "de": "Ich schicke meine Bewerbung per E-Mail.",
+        "vi": "Tôi gửi hồ sơ xin việc qua email.",
+        "en": "I'm sending my application by email."
+      },
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "id": "de.b1.gehalt",
+      "lemma": "Gehalt",
+      "article": "das",
+      "plural": "Gehälter",
+      "pos": "noun",
+      "level": "B1",
+      "vi": "lương",
+      "en": "salary",
+      "example": {
+        "de": "Das Gehalt kommt am Monatsende.",
+        "vi": "Lương được trả vào cuối tháng.",
+        "en": "The salary comes at the end of the month."
+      },
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "id": "de.b1.entscheiden",
+      "lemma": "entscheiden",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "B1",
+      "vi": "quyết định",
+      "en": "to decide",
+      "example": {
+        "de": "Du musst dich bald entscheiden.",
+        "vi": "Bạn phải sớm quyết định.",
+        "en": "You have to decide soon."
+      },
+      "tags": [
+        "verbs"
+      ],
+      "verb": {
+        "thirdPerson": "entscheidet",
+        "preterite": "entschied",
+        "participle": "entschieden",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.b1.vorschlagen",
+      "lemma": "vorschlagen",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "B1",
+      "vi": "đề xuất, gợi ý",
+      "en": "to suggest",
+      "example": {
+        "de": "Ich schlage vor, dass wir morgen anfangen.",
+        "vi": "Tôi đề xuất chúng ta bắt đầu vào ngày mai.",
+        "en": "I suggest that we start tomorrow."
+      },
+      "tags": [
+        "verbs"
+      ],
+      "verb": {
+        "thirdPerson": "schlägt vor",
+        "preterite": "schlug vor",
+        "participle": "vorgeschlagen",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.b1.verbessern",
+      "lemma": "verbessern",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "B1",
+      "vi": "cải thiện",
+      "en": "to improve",
+      "example": {
+        "de": "Ich möchte mein Deutsch verbessern.",
+        "vi": "Tôi muốn cải thiện tiếng Đức của mình.",
+        "en": "I want to improve my German."
+      },
+      "tags": [
+        "verbs"
+      ],
+      "verb": {
+        "thirdPerson": "verbessert",
+        "preterite": "verbesserte",
+        "participle": "verbessert",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.b1.zuverlaessig",
+      "lemma": "zuverlässig",
+      "article": null,
+      "plural": null,
+      "pos": "adjective",
+      "level": "B1",
+      "vi": "đáng tin cậy",
+      "en": "reliable",
+      "example": {
+        "de": "Mein Kollege ist sehr zuverlässig.",
+        "vi": "Đồng nghiệp của tôi rất đáng tin cậy.",
+        "en": "My colleague is very reliable."
+      },
+      "tags": [
+        "adjectives",
+        "work"
+      ]
+    },
+    {
+      "id": "de.b1.trotzdem",
+      "lemma": "trotzdem",
+      "article": null,
+      "plural": null,
+      "pos": "adverb",
+      "level": "B1",
+      "vi": "dù vậy, vẫn",
+      "en": "nevertheless, anyway",
+      "example": {
+        "de": "Es regnet, trotzdem gehen wir spazieren.",
+        "vi": "Trời mưa, dù vậy chúng tôi vẫn đi dạo.",
+        "en": "It's raining, but we're going for a walk anyway."
+      },
+      "tags": [
+        "function"
+      ]
+    }
+  ]
+}

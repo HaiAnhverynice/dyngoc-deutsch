@@ -1,0 +1,206 @@
+{
+  "version": 1,
+  "level": "B2",
+  "words": [
+    {
+      "id": "de.b2.voraussetzung",
+      "lemma": "Voraussetzung",
+      "article": "die",
+      "plural": "Voraussetzungen",
+      "pos": "noun",
+      "level": "B2",
+      "vi": "điều kiện tiên quyết",
+      "en": "prerequisite",
+      "example": {
+        "de": "Gute Deutschkenntnisse sind eine Voraussetzung für die Stelle.",
+        "vi": "Tiếng Đức tốt là điều kiện tiên quyết cho vị trí này.",
+        "en": "Good German is a prerequisite for the job."
+      },
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "id": "de.b2.auswirkung",
+      "lemma": "Auswirkung",
+      "article": "die",
+      "plural": "Auswirkungen",
+      "pos": "noun",
+      "level": "B2",
+      "vi": "tác động, ảnh hưởng",
+      "en": "effect, impact",
+      "example": {
+        "de": "Der Klimawandel hat große Auswirkungen auf die Landwirtschaft.",
+        "vi": "Biến đổi khí hậu có tác động lớn đến nông nghiệp.",
+        "en": "Climate change has a big impact on agriculture."
+      },
+      "tags": [
+        "society"
+      ]
+    },
+    {
+      "id": "de.b2.zusammenhang",
+      "lemma": "Zusammenhang",
+      "article": "der",
+      "plural": "Zusammenhänge",
+      "pos": "noun",
+      "level": "B2",
+      "vi": "mối liên hệ; ngữ cảnh",
+      "en": "connection; context",
+      "example": {
+        "de": "Ich sehe keinen Zusammenhang zwischen den beiden Ereignissen.",
+        "vi": "Tôi không thấy mối liên hệ nào giữa hai sự kiện.",
+        "en": "I see no connection between the two events."
+      },
+      "tags": [
+        "society"
+      ]
+    },
+    {
+      "id": "de.b2.verantwortung",
+      "lemma": "Verantwortung",
+      "article": "die",
+      "plural": "Verantwortungen",
+      "pos": "noun",
+      "level": "B2",
+      "vi": "trách nhiệm",
+      "en": "responsibility",
+      "example": {
+        "de": "Sie übernimmt die Verantwortung für das Projekt.",
+        "vi": "Cô ấy nhận trách nhiệm cho dự án.",
+        "en": "She is taking responsibility for the project."
+      },
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "id": "de.b2.gleichgewicht",
+      "lemma": "Gleichgewicht",
+      "article": "das",
+      "plural": "Gleichgewichte",
+      "pos": "noun",
+      "level": "B2",
+      "vi": "sự cân bằng",
+      "en": "balance",
+      "example": {
+        "de": "Ein Gleichgewicht zwischen Arbeit und Freizeit ist wichtig.",
+        "vi": "Cân bằng giữa công việc và thời gian rảnh rất quan trọng.",
+        "en": "A balance between work and leisure is important."
+      },
+      "tags": [
+        "society"
+      ]
+    },
+    {
+      "id": "de.b2.beeinflussen",
+      "lemma": "beeinflussen",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "B2",
+      "vi": "ảnh hưởng",
+      "en": "to influence",
+      "example": {
+        "de": "Werbung beeinflusst unser Kaufverhalten.",
+        "vi": "Quảng cáo ảnh hưởng đến thói quen mua sắm của chúng ta.",
+        "en": "Advertising influences our buying behaviour."
+      },
+      "tags": [
+        "verbs"
+      ],
+      "verb": {
+        "thirdPerson": "beeinflusst",
+        "preterite": "beeinflusste",
+        "participle": "beeinflusst",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.b2.beruecksichtigen",
+      "lemma": "berücksichtigen",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "B2",
+      "vi": "xem xét, tính đến",
+      "en": "to take into account",
+      "example": {
+        "de": "Wir müssen alle Meinungen berücksichtigen.",
+        "vi": "Chúng ta phải xem xét mọi ý kiến.",
+        "en": "We must take all opinions into account."
+      },
+      "tags": [
+        "verbs"
+      ],
+      "verb": {
+        "thirdPerson": "berücksichtigt",
+        "preterite": "berücksichtigte",
+        "participle": "berücksichtigt",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.b2.durchsetzen",
+      "lemma": "durchsetzen",
+      "article": null,
+      "plural": null,
+      "pos": "verb",
+      "level": "B2",
+      "vi": "thực thi; giành được",
+      "en": "to push through, to enforce",
+      "example": {
+        "de": "Die Regierung will das neue Gesetz durchsetzen.",
+        "vi": "Chính phủ muốn thông qua luật mới.",
+        "en": "The government wants to push through the new law."
+      },
+      "tags": [
+        "verbs",
+        "society"
+      ],
+      "verb": {
+        "thirdPerson": "setzt durch",
+        "preterite": "setzte durch",
+        "participle": "durchgesetzt",
+        "auxiliary": "haben"
+      }
+    },
+    {
+      "id": "de.b2.nachhaltig",
+      "lemma": "nachhaltig",
+      "article": null,
+      "plural": null,
+      "pos": "adjective",
+      "level": "B2",
+      "vi": "bền vững",
+      "en": "sustainable",
+      "example": {
+        "de": "Wir brauchen eine nachhaltige Energiepolitik.",
+        "vi": "Chúng ta cần một chính sách năng lượng bền vững.",
+        "en": "We need a sustainable energy policy."
+      },
+      "tags": [
+        "adjectives",
+        "society"
+      ]
+    },
+    {
+      "id": "de.b2.dennoch",
+      "lemma": "dennoch",
+      "article": null,
+      "plural": null,
+      "pos": "adverb",
+      "level": "B2",
+      "vi": "tuy vậy, tuy nhiên",
+      "en": "nevertheless, yet",
+      "example": {
+        "de": "Die Aufgabe war schwierig, dennoch hat er sie gelöst.",
+        "vi": "Nhiệm vụ khó, tuy vậy anh ấy đã giải quyết được.",
+        "en": "The task was difficult, yet he solved it."
+      },
+      "tags": [
+        "function"
+      ]
+    }
+  ]
+}
