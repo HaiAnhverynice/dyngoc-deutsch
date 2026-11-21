@@ -8,7 +8,7 @@
 - **Offline hoàn toàn:** toàn bộ từ vựng và tiến độ học nằm trên máy.
 - **Nền tảng:** Expo SDK 58 · React Native 0.88 · TypeScript (strict) · expo-router.
 
-> **Trạng thái:** Giai đoạn 1 (MVP), Giai đoạn 2 (quiz, streak, XP, biểu đồ tuần) và Giai đoạn 3 (ngữ pháp, bảng chia động từ) đã xong. Xem [Lộ trình](#12-lộ-trình).
+> **Trạng thái:** cả 5 giai đoạn đã xong: từ vựng + SRS, quiz + streak/XP, ngữ pháp + bảng chia động từ, luyện phát âm (ghi âm tự so sánh), đọc hiểu + hội thoại. Xem [Lộ trình](#12-lộ-trình).
 
 ---
 
@@ -40,6 +40,8 @@
 | **Streak, XP, biểu đồ** | Chuỗi ngày học liên tiếp, điểm XP cho mỗi lượt ôn/câu quiz, biểu đồ XP 7 ngày trên màn hình chính.                                                                                                                                     |
 | **Ngữ pháp**            | 11 bài A1 (giống, số nhiều, chia động từ, sein/haben, đổi nguyên âm, trật tự từ, phủ định, bốn cách, động từ tách, động từ khuyết thiếu, Perfekt), có bảng, ví dụ đọc mẫu và bài tập.                                                  |
 | **Bảng chia động từ**   | Präsens, Präteritum, Perfekt, Futur I, Imperativ cho mọi động từ (kể cả từ tự import). Dạng bất quy tắc in đậm, chạm để nghe.                                                                                                          |
+| **Luyện phát âm**       | Nghe giọng mẫu, ghi âm giọng mình, bấm So sánh để nghe mẫu rồi nghe giọng mình liền nhau. Tự đánh giá (không chấm điểm tự động). Có ở màn Phát âm, trang chi tiết từ và từng câu hội thoại.                                            |
+| **Đọc & hội thoại**     | 10 bài A1–B2 (5 hội thoại, 5 bài đọc): nghe cả bài, hiện/ẩn bản dịch, nhập vai (ẩn lời một nhân vật), từ vựng trong bài, câu hỏi đọc hiểu.                                                                                             |
 | **Phát âm mẫu**         | Nút 🔊 đọc từ và câu ví dụ bằng giọng Đức (TTS `de-DE`).                                                                                                                                                                               |
 | **Màu theo giống**      | der = xanh dương, die = hồng, das = xanh lá. Luôn kèm nhãn chữ, không chỉ dựa vào màu.                                                                                                                                                 |
 | **Tìm kiếm**            | Tìm bằng tiếng Đức, Việt hoặc Anh, gõ có dấu hay không dấu đều được (`strasse` → Straße, `ngoi nha` → Haus). Lọc theo cấp độ và chủ đề.                                                                                                |
@@ -359,6 +361,31 @@ Từ màn hình chính bấm **Ngữ pháp**.
   - Mỗi câu trả lời được cộng XP (như quiz) và tính vào streak.
   - Bài được đánh dấu **Đã xong ✓** khi mọi bài tập đã từng được trả lời đúng ít nhất một lần.
 
+### Luyện phát âm
+
+Từ màn hình chính bấm **Phát âm** (hoặc dùng thẻ "Luyện phát âm" ở trang chi tiết từ, hay chạm vào một câu trong hội thoại).
+
+| Nút         | Tác dụng                                                                              |
+| ----------- | ------------------------------------------------------------------------------------- |
+| 🔊 Nghe mẫu | Giọng đọc tiếng Đức của máy                                                           |
+| 🎤 Ghi âm   | Bấm để ghi, bấm lần nữa để dừng (tự dừng sau 15 giây). Lần đầu máy sẽ hỏi quyền micro |
+| ▶️ Của tôi  | Nghe lại giọng bạn                                                                    |
+| 🔁 So sánh  | Phát giọng mẫu, rồi phát ngay giọng bạn: dễ nghe ra chỗ khác nhau nhất                |
+
+- Màn **Phát âm**: 10 từ mỗi lượt (ưu tiên từ đang học), chọn luyện **Từ** hoặc **Câu ví dụ**. Sau khi ghi âm, tự đánh giá **Giống / Gần giống / Chưa giống** để nhận XP (10 / 7 / 2) và tính streak.
+- **Không có chấm điểm phát âm tự động**: làm offline và miễn phí thì không khả thi. Bạn tự nghe và tự đánh giá.
+- **Bản ghi không được lưu**: chỉ nằm tạm trong bộ nhớ khi đang luyện, không ghi vào sao lưu, không gửi đi đâu.
+- Tắt chế độ im lặng của iPhone để nghe được giọng mẫu.
+
+### Đọc & hội thoại
+
+Từ màn hình chính bấm **Đọc & hội thoại**. Bài thuộc cấp độ bạn đang học được xếp lên đầu.
+
+- **Nghe cả bài:** máy đọc lần lượt từng câu, câu đang đọc được tô nền. Mỗi nhân vật có cao độ giọng khác nhau cho dễ phân biệt.
+- **Hiện bản dịch:** bật để xem bản dịch dưới mọi câu. Hoặc chạm vào từng câu để xem bản dịch của câu đó và **luyện phát âm câu đó**.
+- **Nhập vai** (chỉ với hội thoại): chọn một nhân vật để ẩn lời của họ. Bạn đọc bản dịch, tự nói câu tiếng Đức, rồi chạm vào câu để xem đáp án và ghi âm so sánh.
+- **Từ vựng trong bài** và **câu hỏi đọc hiểu** (hỏi bằng tiếng Đức, có dịch). Mỗi câu trả lời được cộng XP và tính streak. Bài hiện **Đã xong ✓** khi mọi câu hỏi đã từng được trả lời đúng.
+
 ### Từ vựng
 
 Tìm theo tiếng Đức, Việt hoặc Anh, lọc theo cấp và chủ đề. Chấm xanh nghĩa là từ đang học. Bấm vào một từ để xem chi tiết, rồi bấm **Thêm vào học** để từ đó xuất hiện ở lượt từ mới kế tiếp, kể cả khi không thuộc cấp đang học.
@@ -482,6 +509,7 @@ Runtime chỉ dùng **module chính thức của Expo** (đều có sẵn trong 
 | `expo-router` (+ `react-native-screens`, `react-native-safe-area-context`, `expo-linking`, `expo-constants`) | Điều hướng theo file, deep link từ thông báo, safe area                                  |
 | `expo-sqlite`                                                                                                | Lưu tiến độ cục bộ                                                                       |
 | `expo-notifications`                                                                                         | Thông báo cục bộ lên lịch trước                                                          |
+| `expo-audio`                                                                                                 | Ghi âm và phát lại để luyện phát âm (Giai đoạn 4)                                        |
 | `expo-speech`                                                                                                | TTS `de-DE`                                                                              |
 | `expo-file-system` + `expo-sharing`                                                                          | Xuất file sao lưu qua share sheet                                                        |
 | `expo-document-picker`                                                                                       | Chọn file để import hoặc khôi phục                                                       |
@@ -502,6 +530,9 @@ app/                    # màn hình (expo-router)
   grammar/index.tsx     # Danh sách bài ngữ pháp
   grammar/[id].tsx      # Bài học + bài tập
   verbs.tsx             # Danh sách động từ
+  speak.tsx             # Luyện phát âm
+  reading/index.tsx     # Danh sách bài đọc & hội thoại
+  reading/[id].tsx      # Bài đọc / hội thoại + câu hỏi
   browse.tsx            # Từ vựng
   word/[id].tsx         # Chi tiết từ
   settings.tsx          # Cài đặt + dữ liệu
@@ -513,6 +544,7 @@ src/
   backup/               # định dạng + kiểm tra sao lưu, đọc/ghi file
   grammar/              # chia động từ (hàm thuần), kiểu + validate nội dung ngữ pháp, tiến độ bài (+ test)
   quiz/                 # tạo câu hỏi + chấm điểm (hàm thuần, RNG có seed) (+ test)
+  reading/              # kiểu + validate nội dung đọc, tiến độ (+ test)
   progress/             # XP, streak, thống kê 7 ngày (hàm thuần) (+ test)
   i18n/                 # vi.ts, en.ts, createT()
   tts/                  # bọc expo-speech
@@ -521,6 +553,7 @@ src/
 content/
   vocab/                # a1.json … b2.json
   grammar/              # a1.json: bài ngữ pháp
+  reading/              # reading.json: bài đọc & hội thoại A1–B2
   examples/             # file import mẫu
 public/                 # file tĩnh của bản web: sw.js (offline + push), manifest.json, icon
 scripts/
@@ -545,6 +578,8 @@ File `*.web.ts` là bản thay thế dành riêng cho web (Metro tự chọn the
 - **Streak/XP** (`src/progress/`) tính từ `review_logs` + `quiz_logs` theo ngày học (bắt đầu 4:00 sáng giờ địa phương, đúng cả lúc đổi giờ mùa hè).
 - **Chia động từ** (`src/grammar/conjugate.ts`) là hàm thuần: từ nguyên mẫu + 4 dạng chính sinh ra 5 thì. Xử lý đuôi đều, đổi nguyên âm (lấy từ ngôi 3), chèn -e- (arbeitest, öffnet), gốc -s/-ß/-z (heißt), -eln/-ern, động từ kiểu khuyết thiếu (kann, weiß), động từ tách (steht auf), và bảng riêng cho sein/haben/werden/tun. Có test cho từng quy tắc và cho mọi động từ có sẵn.
 - **Nội dung ngữ pháp** nằm trong `content/grammar/a1.json` (tách khỏi code, có `validateGrammarFile` + test kiểm tra cấu trúc, đáp án, chỗ trống). Kết quả bài tập ghi vào `quiz_logs` với `type = "grammar"` và `word_id = "grammar:<bài>:<câu>"`, nên không cần bảng mới và sao lưu tự bao gồm.
+- **Ghi âm** dùng `expo-audio` (module chính thức của Expo, có sẵn trong Expo Go; trên web dùng MediaRecorder của trình duyệt). Bản ghi chỉ là file tạm, không lưu vào DB.
+- **Nội dung đọc & hội thoại** nằm trong `content/reading/reading.json`, có `validateReadingFile` + test. Kết quả câu hỏi ghi vào `quiz_logs` với `type = "reading"`; tự đánh giá phát âm ghi với `type = "speaking"`.
 - **Biểu đồ tuần** vẽ bằng `View` thường, không thêm thư viện biểu đồ.
 - **Lưu trữ:** mọi truy cập đi qua interface `Repository`, có bản SQLite (iOS) và bản bộ nhớ (Jest, web).
 - **Schema DB v2:** `words` (khóa ổn định), `cards` (trạng thái SRS, duy nhất theo `(word_id, kind)`), `review_logs`, `settings`, `content_meta`; migration v2 thêm `quiz_logs` (`word_id`, `type`, `result`, `answered_at`, `duration_ms`). Bản ghi người dùng có `id` (UUID), `updated_at`, `deleted`, `user_id` để sẵn sàng đồng bộ sau này. Migration có phiên bản qua `PRAGMA user_version`.
@@ -564,7 +599,8 @@ File `*.web.ts` là bản thay thế dành riêng cho web (Metro tự chọn the
 - Chạm vào thông báo khi Expo Go **đã bị tắt hẳn** có thể chỉ mở màn hình chính của Expo Go, chưa vào đúng từ. Khi Expo Go còn chạy nền thì mở đúng từ.
 - **TTS không phát tiếng khi iPhone bật chế độ im lặng.** Muốn giọng Đức hay hơn: Cài đặt → Trợ năng → Nội dung được đọc → Giọng nói → Tiếng Đức, rồi tải giọng nâng cao.
 - **Gỡ Expo Go là mất dữ liệu.** Hãy dùng Xuất sao lưu.
-- Không có chấm điểm phát âm tự động (không khả thi miễn phí trong Expo Go). Ghi âm và nghe lại để tự so sánh sẽ có ở Giai đoạn 4.
+- Không có chấm điểm phát âm tự động (không khả thi miễn phí, offline). Thay vào đó: ghi âm, nghe lại, so sánh với giọng mẫu và tự đánh giá.
+- Giọng mẫu là giọng máy (TTS) của iPhone, không phải người bản xứ thật: nghe tự nhiên ở mức khá nhưng ngữ điệu có thể hơi máy.
 
 **Web**
 
@@ -572,6 +608,7 @@ File `*.web.ts` là bản thay thế dành riêng cho web (Metro tự chọn the
 - Không có thông báo lên lịch kiểu iOS. Bản GitHub Pages dùng **Web Push qua GitHub Actions**: **trễ 5–30 phút**, có thể bỏ lượt, giờ gửi đặt trong file workflow, lịch tự tắt sau 60 ngày repo không có commit (xem [mục 7](#7-bản-web-cho-iphone-github-pages--thông-báo)).
 - Trên iPhone, thông báo web chỉ hoạt động khi app được **thêm vào Màn hình chính** và mở từ icon (iOS 16.4+).
 - Xuất sao lưu sẽ **tải file về** thay vì mở share sheet.
+- Ghi âm trên web cần quyền micro của trình duyệt (iPhone: lần đầu Safari sẽ hỏi). Trên iPhone, app mở từ Màn hình chính có thể hỏi lại quyền micro sau mỗi lần mở lại app (giới hạn của iOS với web app).
 - TTS dùng giọng của trình duyệt. Trên Linux, nếu không có tiếng, hãy cài `speech-dispatcher` và `espeak-ng`.
 
 **Khác**
@@ -589,8 +626,8 @@ File `*.web.ts` là bản thay thế dành riêng cho web (Metro tự chọn the
 - [x] **Giai đoạn 1:** từ vựng có giống, flashcard SRS, SQLite, thông báo, sáng/tối, song ngữ, sao lưu, import
 - [x] **Giai đoạn 2:** quiz (trắc nghiệm, điền từ, sắp xếp câu, chọn der/die/das, nghe rồi chọn), streak, XP, biểu đồ tuần
 - [x] **Giai đoạn 3:** ngữ pháp, bảng chia động từ, bốn cách (Nominativ/Akkusativ/Dativ/Genitiv)
-- [ ] **Giai đoạn 4:** ghi âm và phát lại để tự so sánh phát âm
-- [ ] **Giai đoạn 5:** hội thoại và đọc hiểu theo cấp độ
+- [x] **Giai đoạn 4:** ghi âm và phát lại để tự so sánh phát âm
+- [x] **Giai đoạn 5:** hội thoại và đọc hiểu theo cấp độ
 
 ---
 
@@ -640,3 +677,18 @@ File `*.web.ts` là bản thay thế dành riêng cho web (Metro tự chọn the
 - [ ] Bảng chia động từ → tìm `fahr` → `fahren`: Präsens in đậm `fährst`, `fährt`; Imperativ `fahr(e)!`; chạm một dòng nghe được.
 - [ ] `können`: Imperativ báo "không có thể mệnh lệnh"; `aufstehen`: `stehe auf`, `bin aufgestanden`.
 - [ ] Đổi ngôn ngữ sang English / Cả hai: bài học hiện tiếng Anh / cả hai.
+
+**Giai đoạn 4: phát âm**
+
+- [ ] Hôm nay → **Phát âm** → 🎤 Ghi âm: iOS hỏi quyền micro → Cho phép. Nói, bấm lại để dừng.
+- [ ] ▶️ Của tôi phát lại giọng bạn **to qua loa** (không phải loa thoại nhỏ). 🔁 So sánh: giọng mẫu rồi giọng bạn.
+- [ ] Nút Giống / Gần giống / Chưa giống chỉ bấm được sau khi đã ghi âm; bấm xong sang từ kế tiếp; hết 10 từ hiện tổng XP.
+- [ ] Trang chi tiết một từ: thẻ "Luyện phát âm" với Từ / Câu ví dụ.
+- [ ] Ghi âm hơn 15 giây: tự dừng.
+
+**Giai đoạn 5: đọc & hội thoại**
+
+- [ ] Hôm nay → **Đọc & hội thoại**: 10 bài, cấp đang học ở đầu.
+- [ ] "Trong quán cà phê" → **Nghe cả bài**: đọc lần lượt, câu đang đọc được tô nền, hai nhân vật giọng khác nhau; **Dừng** dừng ngay.
+- [ ] Nhập vai → chọn "Minh": lời của Minh thành "••• đến lượt bạn" kèm bản dịch; chạm vào thì hiện câu Đức và bảng ghi âm.
+- [ ] Trả lời 3 câu hỏi: có ✓/✗ và giải thích; quay lại danh sách thấy tiến độ cập nhật.

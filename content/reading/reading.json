@@ -1,0 +1,1223 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "a1.cafe",
+      "level": "A1",
+      "kind": "dialogue",
+      "title": {
+        "vi": "Trong quán cà phê",
+        "en": "At the café"
+      },
+      "intro": {
+        "vi": "Minh gọi đồ uống và bánh, rồi thanh toán.",
+        "en": "Minh orders a drink and a cake, then pays."
+      },
+      "lines": [
+        {
+          "speaker": "Kellnerin",
+          "de": "Guten Tag! Was möchten Sie trinken?",
+          "vi": "Xin chào! Anh muốn uống gì ạ?",
+          "en": "Hello! What would you like to drink?"
+        },
+        {
+          "speaker": "Minh",
+          "de": "Einen Kaffee mit Milch, bitte.",
+          "vi": "Cho tôi một cà phê sữa.",
+          "en": "A coffee with milk, please."
+        },
+        {
+          "speaker": "Kellnerin",
+          "de": "Gern. Möchten Sie auch etwas essen?",
+          "vi": "Vâng. Anh có muốn ăn gì không?",
+          "en": "Sure. Would you like something to eat too?"
+        },
+        {
+          "speaker": "Minh",
+          "de": "Ja, ein Stück Apfelkuchen, bitte.",
+          "vi": "Có, cho tôi một miếng bánh táo.",
+          "en": "Yes, a piece of apple cake, please."
+        },
+        {
+          "speaker": "Kellnerin",
+          "de": "Hier, bitte. Ein Kaffee und ein Apfelkuchen.",
+          "vi": "Của anh đây. Một cà phê và một bánh táo.",
+          "en": "Here you are. A coffee and an apple cake."
+        },
+        {
+          "speaker": "Minh",
+          "de": "Danke! Ich möchte bitte zahlen.",
+          "vi": "Cảm ơn! Cho tôi thanh toán.",
+          "en": "Thanks! I'd like to pay, please."
+        },
+        {
+          "speaker": "Kellnerin",
+          "de": "Das macht sieben Euro fünfzig.",
+          "vi": "Tổng cộng bảy euro năm mươi.",
+          "en": "That's seven euros fifty."
+        },
+        {
+          "speaker": "Minh",
+          "de": "Hier sind acht Euro. Stimmt so.",
+          "vi": "Đây là tám euro. Khỏi thối lại.",
+          "en": "Here's eight euros. Keep the change."
+        }
+      ],
+      "glossary": [
+        {
+          "de": "zahlen",
+          "vi": "trả tiền",
+          "en": "to pay"
+        },
+        {
+          "de": "das Stück",
+          "vi": "miếng, phần",
+          "en": "piece"
+        },
+        {
+          "de": "Stimmt so.",
+          "vi": "Khỏi thối lại.",
+          "en": "Keep the change."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "de": "Was trinkt Minh?",
+          "vi": "Minh uống gì?",
+          "en": "What does Minh drink?",
+          "choices": ["Tee", "Kaffee mit Milch", "Wasser"],
+          "answer": 1,
+          "explain": {
+            "vi": "Minh nói: „Einen Kaffee mit Milch, bitte.“",
+            "en": "Minh says: „Einen Kaffee mit Milch, bitte.“"
+          }
+        },
+        {
+          "id": "q2",
+          "de": "Was isst Minh?",
+          "vi": "Minh ăn gì?",
+          "en": "What does Minh eat?",
+          "choices": ["Apfelkuchen", "Brot", "nichts"],
+          "answer": 0,
+          "explain": {
+            "vi": "Anh ấy gọi „ein Stück Apfelkuchen“.",
+            "en": "He orders „ein Stück Apfelkuchen“."
+          }
+        },
+        {
+          "id": "q3",
+          "de": "Wie viel kostet alles?",
+          "vi": "Tất cả giá bao nhiêu?",
+          "en": "How much is everything?",
+          "choices": ["8,00 €", "7,50 €", "5,70 €"],
+          "answer": 1,
+          "explain": {
+            "vi": "„Das macht sieben Euro fünfzig.“ Minh trả 8 € và cho 50 cent tiền boa.",
+            "en": "„Das macht sieben Euro fünfzig.“ Minh pays €8 and tips 50 cents."
+          }
+        }
+      ]
+    },
+    {
+      "id": "a1.kennenlernen",
+      "level": "A1",
+      "kind": "dialogue",
+      "title": {
+        "vi": "Làm quen ở lớp tiếng Đức",
+        "en": "Meeting at the German course"
+      },
+      "intro": {
+        "vi": "Ngày đầu đi học, Anna và Minh làm quen với nhau.",
+        "en": "On the first day of the course, Anna and Minh get to know each other."
+      },
+      "lines": [
+        {
+          "speaker": "Anna",
+          "de": "Hallo! Ich bin Anna. Wie heißt du?",
+          "vi": "Chào bạn! Mình là Anna. Bạn tên gì?",
+          "en": "Hi! I'm Anna. What's your name?"
+        },
+        {
+          "speaker": "Minh",
+          "de": "Hallo Anna, ich heiße Minh.",
+          "vi": "Chào Anna, mình tên là Minh.",
+          "en": "Hi Anna, my name is Minh."
+        },
+        {
+          "speaker": "Anna",
+          "de": "Woher kommst du, Minh?",
+          "vi": "Bạn đến từ đâu vậy Minh?",
+          "en": "Where are you from, Minh?"
+        },
+        {
+          "speaker": "Minh",
+          "de": "Ich komme aus Vietnam, aus Hanoi. Und du?",
+          "vi": "Mình đến từ Việt Nam, từ Hà Nội. Còn bạn?",
+          "en": "I'm from Vietnam, from Hanoi. And you?"
+        },
+        {
+          "speaker": "Anna",
+          "de": "Ich komme aus Polen. Ich wohne jetzt in Leipzig.",
+          "vi": "Mình đến từ Ba Lan. Bây giờ mình sống ở Leipzig.",
+          "en": "I'm from Poland. I live in Leipzig now."
+        },
+        {
+          "speaker": "Minh",
+          "de": "Ich wohne auch in Leipzig! Was machst du hier?",
+          "vi": "Mình cũng sống ở Leipzig! Bạn làm gì ở đây?",
+          "en": "I live in Leipzig too! What do you do here?"
+        },
+        {
+          "speaker": "Anna",
+          "de": "Ich bin Krankenschwester. Und du?",
+          "vi": "Mình là y tá. Còn bạn?",
+          "en": "I'm a nurse. And you?"
+        },
+        {
+          "speaker": "Minh",
+          "de": "Ich studiere Informatik.",
+          "vi": "Mình học ngành tin học.",
+          "en": "I study computer science."
+        }
+      ],
+      "glossary": [
+        {
+          "de": "woher",
+          "vi": "từ đâu",
+          "en": "where from"
+        },
+        {
+          "de": "die Krankenschwester",
+          "vi": "nữ y tá",
+          "en": "nurse"
+        },
+        {
+          "de": "studieren",
+          "vi": "học đại học",
+          "en": "to study (at university)"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "de": "Woher kommt Minh?",
+          "vi": "Minh đến từ đâu?",
+          "en": "Where is Minh from?",
+          "choices": ["aus Polen", "aus Vietnam", "aus Leipzig"],
+          "answer": 1,
+          "explain": {
+            "vi": "„Ich komme aus Vietnam, aus Hanoi.“",
+            "en": "„Ich komme aus Vietnam, aus Hanoi.“"
+          }
+        },
+        {
+          "id": "q2",
+          "de": "Wo wohnt Anna?",
+          "vi": "Anna sống ở đâu?",
+          "en": "Where does Anna live?",
+          "choices": ["in Leipzig", "in Hanoi", "in Polen"],
+          "answer": 0,
+          "explain": {
+            "vi": "Anna đến từ Ba Lan nhưng bây giờ sống ở Leipzig.",
+            "en": "Anna is from Poland but now lives in Leipzig."
+          }
+        },
+        {
+          "id": "q3",
+          "de": "Was ist Anna von Beruf?",
+          "vi": "Anna làm nghề gì?",
+          "en": "What is Anna's job?",
+          "choices": ["Studentin", "Lehrerin", "Krankenschwester"],
+          "answer": 2,
+          "explain": {
+            "vi": "„Ich bin Krankenschwester.“ Người học đại học là Minh.",
+            "en": "„Ich bin Krankenschwester.“ Minh is the student."
+          }
+        }
+      ]
+    },
+    {
+      "id": "a1.familie",
+      "level": "A1",
+      "kind": "text",
+      "title": {
+        "vi": "Gia đình tôi",
+        "en": "My family"
+      },
+      "intro": {
+        "vi": "Linh viết về gia đình mình.",
+        "en": "Linh writes about her family."
+      },
+      "lines": [
+        {
+          "de": "Ich heiße Linh und ich bin 24 Jahre alt.",
+          "vi": "Tôi tên là Linh và tôi 24 tuổi.",
+          "en": "My name is Linh and I am 24 years old."
+        },
+        {
+          "de": "Meine Familie wohnt in Đà Nẵng.",
+          "vi": "Gia đình tôi sống ở Đà Nẵng.",
+          "en": "My family lives in Da Nang."
+        },
+        {
+          "de": "Mein Vater ist Ingenieur und meine Mutter ist Lehrerin.",
+          "vi": "Bố tôi là kỹ sư và mẹ tôi là giáo viên.",
+          "en": "My father is an engineer and my mother is a teacher."
+        },
+        {
+          "de": "Ich habe einen Bruder und eine Schwester.",
+          "vi": "Tôi có một anh trai và một em gái.",
+          "en": "I have a brother and a sister."
+        },
+        {
+          "de": "Mein Bruder heißt Nam. Er ist 28 und hat schon zwei Kinder.",
+          "vi": "Anh trai tôi tên là Nam. Anh ấy 28 tuổi và đã có hai con.",
+          "en": "My brother is called Nam. He is 28 and already has two children."
+        },
+        {
+          "de": "Meine Schwester ist erst 16. Sie geht noch zur Schule.",
+          "vi": "Em gái tôi mới 16 tuổi. Em ấy vẫn còn đi học.",
+          "en": "My sister is only 16. She still goes to school."
+        },
+        {
+          "de": "Ich wohne jetzt in München und lerne Deutsch.",
+          "vi": "Bây giờ tôi sống ở München và học tiếng Đức.",
+          "en": "I now live in Munich and am learning German."
+        },
+        {
+          "de": "Ich vermisse meine Familie sehr, aber wir telefonieren jeden Sonntag.",
+          "vi": "Tôi rất nhớ gia đình, nhưng chủ nhật nào chúng tôi cũng gọi điện cho nhau.",
+          "en": "I miss my family a lot, but we talk on the phone every Sunday."
+        }
+      ],
+      "glossary": [
+        {
+          "de": "schon",
+          "vi": "đã",
+          "en": "already"
+        },
+        {
+          "de": "erst",
+          "vi": "mới (chỉ)",
+          "en": "only (just)"
+        },
+        {
+          "de": "vermissen",
+          "vi": "nhớ (ai đó)",
+          "en": "to miss (someone)"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "de": "Was ist Linhs Mutter von Beruf?",
+          "vi": "Mẹ của Linh làm nghề gì?",
+          "en": "What is Linh's mother's job?",
+          "choices": ["Ingenieurin", "Lehrerin", "Ärztin"],
+          "answer": 1,
+          "explain": {
+            "vi": "„… meine Mutter ist Lehrerin.“ Bố mới là kỹ sư.",
+            "en": "„… meine Mutter ist Lehrerin.“ The father is the engineer."
+          }
+        },
+        {
+          "id": "q2",
+          "de": "Wie alt ist Linhs Schwester?",
+          "vi": "Em gái của Linh bao nhiêu tuổi?",
+          "en": "How old is Linh's sister?",
+          "choices": ["16", "24", "28"],
+          "answer": 0,
+          "explain": {
+            "vi": "„Meine Schwester ist erst 16.“",
+            "en": "„Meine Schwester ist erst 16.“"
+          }
+        },
+        {
+          "id": "q3",
+          "de": "Wann telefoniert Linh mit ihrer Familie?",
+          "vi": "Linh gọi điện cho gia đình khi nào?",
+          "en": "When does Linh call her family?",
+          "choices": ["jeden Tag", "am Samstag", "jeden Sonntag"],
+          "answer": 2,
+          "explain": {
+            "vi": "„… wir telefonieren jeden Sonntag.“",
+            "en": "„… wir telefonieren jeden Sonntag.“"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a1.tagesablauf",
+      "level": "A1",
+      "kind": "text",
+      "title": {
+        "vi": "Một ngày của tôi",
+        "en": "My day"
+      },
+      "intro": {
+        "vi": "Tuấn kể về một ngày làm việc bình thường.",
+        "en": "Tuan describes a normal working day."
+      },
+      "lines": [
+        {
+          "de": "Ich stehe jeden Tag um halb sieben auf.",
+          "vi": "Ngày nào tôi cũng dậy lúc sáu rưỡi.",
+          "en": "I get up at half past six every day."
+        },
+        {
+          "de": "Zuerst dusche ich, dann frühstücke ich.",
+          "vi": "Đầu tiên tôi tắm, sau đó tôi ăn sáng.",
+          "en": "First I shower, then I have breakfast."
+        },
+        {
+          "de": "Um halb acht fahre ich mit der U-Bahn zur Arbeit.",
+          "vi": "Lúc bảy rưỡi tôi đi tàu điện ngầm đến chỗ làm.",
+          "en": "At half past seven I take the underground to work."
+        },
+        {
+          "de": "Ich arbeite in einem Hotel an der Rezeption.",
+          "vi": "Tôi làm việc ở quầy lễ tân của một khách sạn.",
+          "en": "I work at the reception of a hotel."
+        },
+        {
+          "de": "Mittags esse ich mit meinen Kollegen in der Kantine.",
+          "vi": "Buổi trưa tôi ăn cùng đồng nghiệp ở căng tin.",
+          "en": "At lunchtime I eat with my colleagues in the canteen."
+        },
+        {
+          "de": "Um fünf Uhr habe ich Feierabend.",
+          "vi": "Năm giờ thì tôi tan làm.",
+          "en": "At five o'clock I finish work."
+        },
+        {
+          "de": "Abends koche ich oder ich treffe Freunde.",
+          "vi": "Buổi tối tôi nấu ăn hoặc gặp bạn bè.",
+          "en": "In the evening I cook or meet friends."
+        },
+        {
+          "de": "Um elf gehe ich ins Bett.",
+          "vi": "Mười một giờ tôi đi ngủ.",
+          "en": "At eleven I go to bed."
+        }
+      ],
+      "glossary": [
+        {
+          "de": "halb sieben",
+          "vi": "sáu rưỡi (6:30)",
+          "en": "half past six (6:30)"
+        },
+        {
+          "de": "der Feierabend",
+          "vi": "giờ tan làm",
+          "en": "end of the working day"
+        },
+        {
+          "de": "die Kantine",
+          "vi": "căng tin",
+          "en": "canteen"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "de": "Wann steht Tuấn auf?",
+          "vi": "Tuấn dậy lúc mấy giờ?",
+          "en": "When does Tuan get up?",
+          "choices": ["um 6:30", "um 7:30", "um 7:00"],
+          "answer": 0,
+          "explain": {
+            "vi": "„halb sieben“ là 6:30, không phải 7:30. Tiếng Đức nói „nửa (giờ) tới bảy“.",
+            "en": "„halb sieben“ means 6:30 („half to seven“), not 7:30."
+          }
+        },
+        {
+          "id": "q2",
+          "de": "Wo arbeitet Tuấn?",
+          "vi": "Tuấn làm việc ở đâu?",
+          "en": "Where does Tuan work?",
+          "choices": ["in einer Kantine", "in einem Hotel", "bei der U-Bahn"],
+          "answer": 1,
+          "explain": {
+            "vi": "„Ich arbeite in einem Hotel an der Rezeption.“",
+            "en": "„Ich arbeite in einem Hotel an der Rezeption.“"
+          }
+        },
+        {
+          "id": "q3",
+          "de": "Was macht Tuấn um fünf Uhr?",
+          "vi": "Tuấn làm gì lúc năm giờ?",
+          "en": "What does Tuan do at five o'clock?",
+          "choices": ["Er frühstückt.", "Er hat Feierabend.", "Er geht ins Bett."],
+          "answer": 1,
+          "explain": {
+            "vi": "„Um fünf Uhr habe ich Feierabend“ = tan làm.",
+            "en": "„Um fünf Uhr habe ich Feierabend“ = he finishes work."
+          }
+        }
+      ]
+    },
+    {
+      "id": "a2.arzt",
+      "level": "A2",
+      "kind": "dialogue",
+      "title": {
+        "vi": "Ở phòng khám",
+        "en": "At the doctor's"
+      },
+      "intro": {
+        "vi": "Hoa bị ốm và đi khám bác sĩ.",
+        "en": "Hoa is ill and sees a doctor."
+      },
+      "lines": [
+        {
+          "speaker": "Ärztin",
+          "de": "Guten Morgen, Frau Nguyen. Was fehlt Ihnen denn?",
+          "vi": "Chào chị Nguyễn. Chị thấy không khỏe ở đâu?",
+          "en": "Good morning, Ms Nguyen. What seems to be the problem?"
+        },
+        {
+          "speaker": "Hoa",
+          "de": "Ich habe seit drei Tagen Halsschmerzen und Fieber.",
+          "vi": "Tôi bị đau họng và sốt ba ngày nay rồi.",
+          "en": "I've had a sore throat and a fever for three days."
+        },
+        {
+          "speaker": "Ärztin",
+          "de": "Haben Sie auch Husten?",
+          "vi": "Chị có bị ho không?",
+          "en": "Do you also have a cough?"
+        },
+        {
+          "speaker": "Hoa",
+          "de": "Ja, ein bisschen. Und ich bin sehr müde.",
+          "vi": "Có, hơi ho. Và tôi rất mệt.",
+          "en": "Yes, a little. And I'm very tired."
+        },
+        {
+          "speaker": "Ärztin",
+          "de": "Ich schaue mal in Ihren Hals. … Das ist eine Erkältung, keine Grippe.",
+          "vi": "Để tôi xem họng chị. … Chị bị cảm lạnh thôi, không phải cúm.",
+          "en": "Let me look at your throat. … It's a cold, not the flu."
+        },
+        {
+          "speaker": "Ärztin",
+          "de": "Sie müssen viel trinken und sich ausruhen. Ich schreibe Sie bis Freitag krank.",
+          "vi": "Chị phải uống nhiều nước và nghỉ ngơi. Tôi cho chị nghỉ ốm đến thứ Sáu.",
+          "en": "You need to drink a lot and rest. I'll sign you off sick until Friday."
+        },
+        {
+          "speaker": "Hoa",
+          "de": "Brauche ich Medikamente?",
+          "vi": "Tôi có cần uống thuốc không?",
+          "en": "Do I need medicine?"
+        },
+        {
+          "speaker": "Ärztin",
+          "de": "Ich gebe Ihnen ein Rezept für Tabletten gegen die Halsschmerzen. Gute Besserung!",
+          "vi": "Tôi kê đơn thuốc viên trị đau họng cho chị. Chúc chị mau khỏe!",
+          "en": "I'll give you a prescription for tablets for the sore throat. Get well soon!"
+        }
+      ],
+      "glossary": [
+        {
+          "de": "Was fehlt Ihnen?",
+          "vi": "Anh/chị bị làm sao?",
+          "en": "What's wrong with you?"
+        },
+        {
+          "de": "die Erkältung",
+          "vi": "cảm lạnh",
+          "en": "cold"
+        },
+        {
+          "de": "krankschreiben",
+          "vi": "cho nghỉ ốm (viết giấy)",
+          "en": "to sign off sick"
+        },
+        {
+          "de": "das Rezept",
+          "vi": "đơn thuốc",
+          "en": "prescription"
+        },
+        {
+          "de": "Gute Besserung!",
+          "vi": "Chúc mau khỏe!",
+          "en": "Get well soon!"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "de": "Seit wann ist Hoa krank?",
+          "vi": "Hoa bị ốm từ bao giờ?",
+          "en": "How long has Hoa been ill?",
+          "choices": ["seit gestern", "seit drei Tagen", "seit einer Woche"],
+          "answer": 1,
+          "explain": {
+            "vi": "„Ich habe seit drei Tagen Halsschmerzen und Fieber.“",
+            "en": "„… seit drei Tagen …“"
+          }
+        },
+        {
+          "id": "q2",
+          "de": "Was hat Hoa?",
+          "vi": "Hoa bị bệnh gì?",
+          "en": "What does Hoa have?",
+          "choices": ["eine Grippe", "eine Erkältung", "Bauchschmerzen"],
+          "answer": 1,
+          "explain": {
+            "vi": "Bác sĩ nói: „Das ist eine Erkältung, keine Grippe.“",
+            "en": "The doctor says: „Das ist eine Erkältung, keine Grippe.“"
+          }
+        },
+        {
+          "id": "q3",
+          "de": "Bis wann muss Hoa nicht arbeiten?",
+          "vi": "Hoa được nghỉ làm đến khi nào?",
+          "en": "Until when doesn't Hoa have to work?",
+          "choices": ["bis Montag", "bis Mittwoch", "bis Freitag"],
+          "answer": 2,
+          "explain": {
+            "vi": "„Ich schreibe Sie bis Freitag krank.“",
+            "en": "„Ich schreibe Sie bis Freitag krank.“"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a2.wohnung",
+      "level": "A2",
+      "kind": "text",
+      "title": {
+        "vi": "Tìm nhà mới",
+        "en": "Looking for a new flat"
+      },
+      "intro": {
+        "vi": "Email của Đức gửi bạn về căn hộ mới.",
+        "en": "Duc's email to a friend about his new flat."
+      },
+      "lines": [
+        {
+          "de": "Liebe Sarah,",
+          "vi": "Sarah thân mến,",
+          "en": "Dear Sarah,"
+        },
+        {
+          "de": "endlich habe ich eine neue Wohnung gefunden!",
+          "vi": "cuối cùng mình đã tìm được căn hộ mới!",
+          "en": "I've finally found a new flat!"
+        },
+        {
+          "de": "Ich habe fast zwei Monate gesucht, denn in Frankfurt sind Wohnungen sehr teuer.",
+          "vi": "Mình đã tìm gần hai tháng, vì ở Frankfurt nhà rất đắt.",
+          "en": "I searched for almost two months, because flats in Frankfurt are very expensive."
+        },
+        {
+          "de": "Die Wohnung hat zwei Zimmer, eine kleine Küche und einen Balkon.",
+          "vi": "Căn hộ có hai phòng, một bếp nhỏ và một ban công.",
+          "en": "The flat has two rooms, a small kitchen and a balcony."
+        },
+        {
+          "de": "Sie liegt im dritten Stock, aber leider gibt es keinen Aufzug.",
+          "vi": "Nó ở tầng ba, nhưng tiếc là không có thang máy.",
+          "en": "It's on the third floor, but unfortunately there's no lift."
+        },
+        {
+          "de": "Die Miete kostet 850 Euro warm, also mit Heizung und Wasser.",
+          "vi": "Tiền thuê là 850 euro „warm“, tức là đã gồm sưởi và nước.",
+          "en": "The rent is 850 euros „warm“, i.e. including heating and water."
+        },
+        {
+          "de": "Zur Arbeit brauche ich mit dem Fahrrad nur fünfzehn Minuten.",
+          "vi": "Đi xe đạp đến chỗ làm chỉ mất mười lăm phút.",
+          "en": "It only takes me fifteen minutes to cycle to work."
+        },
+        {
+          "de": "Am 1. Mai ziehe ich um. Hast du Zeit und kannst du mir helfen?",
+          "vi": "Mùng 1 tháng Năm mình chuyển nhà. Bạn có rảnh giúp mình không?",
+          "en": "I'm moving on 1 May. Do you have time to help me?"
+        },
+        {
+          "de": "Viele Grüße, Đức",
+          "vi": "Thân, Đức",
+          "en": "Best wishes, Duc"
+        }
+      ],
+      "glossary": [
+        {
+          "de": "endlich",
+          "vi": "cuối cùng (sau thời gian dài)",
+          "en": "finally"
+        },
+        {
+          "de": "der Aufzug",
+          "vi": "thang máy",
+          "en": "lift, elevator"
+        },
+        {
+          "de": "die Warmmiete",
+          "vi": "tiền thuê gồm sưởi, nước…",
+          "en": "rent incl. heating/utilities"
+        },
+        {
+          "de": "umziehen",
+          "vi": "chuyển nhà",
+          "en": "to move house"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "de": "Warum hat Đức so lange gesucht?",
+          "vi": "Tại sao Đức tìm nhà lâu vậy?",
+          "en": "Why did Duc search for so long?",
+          "choices": [
+            "Die Wohnungen sind teuer.",
+            "Er hatte keine Zeit.",
+            "Er wollte einen Garten."
+          ],
+          "answer": 0,
+          "explain": {
+            "vi": "„… denn in Frankfurt sind Wohnungen sehr teuer.“ „denn“ nêu lý do.",
+            "en": "„… denn in Frankfurt sind Wohnungen sehr teuer.“ „denn“ gives the reason."
+          }
+        },
+        {
+          "id": "q2",
+          "de": "Was hat die Wohnung NICHT?",
+          "vi": "Căn hộ KHÔNG có gì?",
+          "en": "What does the flat NOT have?",
+          "choices": ["einen Balkon", "eine Küche", "einen Aufzug"],
+          "answer": 2,
+          "explain": {
+            "vi": "„… leider gibt es keinen Aufzug.“",
+            "en": "„… leider gibt es keinen Aufzug.“"
+          }
+        },
+        {
+          "id": "q3",
+          "de": "Was bedeutet „850 Euro warm“?",
+          "vi": "„850 Euro warm“ nghĩa là gì?",
+          "en": "What does „850 Euro warm“ mean?",
+          "choices": ["ohne Heizung", "mit Heizung und Wasser", "nur im Winter"],
+          "answer": 1,
+          "explain": {
+            "vi": "Văn bản giải thích: „warm, also mit Heizung und Wasser“.",
+            "en": "The text explains: „warm, also mit Heizung und Wasser“."
+          }
+        }
+      ]
+    },
+    {
+      "id": "b1.bewerbung",
+      "level": "B1",
+      "kind": "dialogue",
+      "title": {
+        "vi": "Phỏng vấn xin việc",
+        "en": "Job interview"
+      },
+      "intro": {
+        "vi": "Mai phỏng vấn vị trí điều dưỡng viên ở một bệnh viện.",
+        "en": "Mai is interviewed for a nursing position at a hospital."
+      },
+      "lines": [
+        {
+          "speaker": "Herr Weber",
+          "de": "Frau Tran, erzählen Sie uns bitte etwas über sich.",
+          "vi": "Chị Trần, chị giới thiệu một chút về bản thân nhé.",
+          "en": "Ms Tran, please tell us a little about yourself."
+        },
+        {
+          "speaker": "Mai",
+          "de": "Gern. Ich habe in Vietnam eine Ausbildung zur Pflegefachkraft gemacht und dort vier Jahre in einem Krankenhaus gearbeitet.",
+          "vi": "Vâng. Tôi đã học nghề điều dưỡng ở Việt Nam và làm việc bốn năm tại một bệnh viện ở đó.",
+          "en": "Of course. I trained as a nurse in Vietnam and worked in a hospital there for four years."
+        },
+        {
+          "speaker": "Herr Weber",
+          "de": "Warum möchten Sie in Deutschland arbeiten?",
+          "vi": "Tại sao chị muốn làm việc ở Đức?",
+          "en": "Why do you want to work in Germany?"
+        },
+        {
+          "speaker": "Mai",
+          "de": "Ich möchte mich beruflich weiterentwickeln. Außerdem lebt meine Schwester schon seit Jahren hier.",
+          "vi": "Tôi muốn phát triển nghề nghiệp. Ngoài ra, chị gái tôi đã sống ở đây nhiều năm rồi.",
+          "en": "I want to develop professionally. Besides, my sister has lived here for years."
+        },
+        {
+          "speaker": "Herr Weber",
+          "de": "Bei uns arbeiten Sie im Schichtdienst, auch am Wochenende. Ist das ein Problem für Sie?",
+          "vi": "Ở chỗ chúng tôi, chị sẽ làm theo ca, cả cuối tuần. Điều đó có phải là vấn đề với chị không?",
+          "en": "Here you'd work shifts, including weekends. Is that a problem for you?"
+        },
+        {
+          "speaker": "Mai",
+          "de": "Nein, das kenne ich schon aus meiner früheren Stelle.",
+          "vi": "Không, tôi đã quen với việc đó từ chỗ làm trước.",
+          "en": "No, I'm used to that from my previous job."
+        },
+        {
+          "speaker": "Herr Weber",
+          "de": "Ihre Anerkennung ist noch nicht abgeschlossen, richtig?",
+          "vi": "Hồ sơ công nhận bằng của chị vẫn chưa xong, đúng không?",
+          "en": "Your qualification recognition isn't complete yet, right?"
+        },
+        {
+          "speaker": "Mai",
+          "de": "Richtig. Mir fehlt noch die Kenntnisprüfung. Ich habe sie im März.",
+          "vi": "Đúng vậy. Tôi còn thiếu kỳ thi kiểm tra kiến thức. Tôi sẽ thi vào tháng Ba.",
+          "en": "Right. I still need to pass the knowledge test. I'm taking it in March."
+        },
+        {
+          "speaker": "Herr Weber",
+          "de": "Gut. Bis dahin könnten Sie als Pflegehelferin bei uns anfangen.",
+          "vi": "Tốt. Trước đó chị có thể bắt đầu ở đây với vị trí trợ lý điều dưỡng.",
+          "en": "Good. Until then you could start with us as a nursing assistant."
+        }
+      ],
+      "glossary": [
+        {
+          "de": "die Ausbildung",
+          "vi": "học nghề, đào tạo nghề",
+          "en": "vocational training"
+        },
+        {
+          "de": "der Schichtdienst",
+          "vi": "làm theo ca",
+          "en": "shift work"
+        },
+        {
+          "de": "die Anerkennung",
+          "vi": "sự công nhận (bằng cấp)",
+          "en": "recognition (of qualifications)"
+        },
+        {
+          "de": "die Kenntnisprüfung",
+          "vi": "kỳ thi kiểm tra kiến thức",
+          "en": "knowledge test"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "de": "Wie lange hat Mai in Vietnam als Pflegekraft gearbeitet?",
+          "vi": "Mai đã làm điều dưỡng ở Việt Nam bao lâu?",
+          "en": "How long did Mai work as a nurse in Vietnam?",
+          "choices": ["zwei Jahre", "vier Jahre", "seit Jahren"],
+          "answer": 1,
+          "explain": {
+            "vi": "„… dort vier Jahre in einem Krankenhaus gearbeitet.“",
+            "en": "„… dort vier Jahre in einem Krankenhaus gearbeitet.“"
+          }
+        },
+        {
+          "id": "q2",
+          "de": "Warum ist Schichtdienst für Mai kein Problem?",
+          "vi": "Tại sao làm ca không phải vấn đề với Mai?",
+          "en": "Why is shift work not a problem for Mai?",
+          "choices": [
+            "Sie hat keine Familie.",
+            "Sie kennt ihn schon von früher.",
+            "Ihre Schwester hilft ihr."
+          ],
+          "answer": 1,
+          "explain": {
+            "vi": "„… das kenne ich schon aus meiner früheren Stelle.“",
+            "en": "„… das kenne ich schon aus meiner früheren Stelle.“"
+          }
+        },
+        {
+          "id": "q3",
+          "de": "Was schlägt Herr Weber vor?",
+          "vi": "Ông Weber đề xuất điều gì?",
+          "en": "What does Mr Weber suggest?",
+          "choices": [
+            "Sie soll im März anfangen.",
+            "Sie kann zuerst als Pflegehelferin arbeiten.",
+            "Sie soll noch eine Ausbildung machen."
+          ],
+          "answer": 1,
+          "explain": {
+            "vi": "„Bis dahin könnten Sie als Pflegehelferin bei uns anfangen.“ „könnten“ (Konjunktiv II) dùng để đề xuất lịch sự.",
+            "en": "„Bis dahin könnten Sie als Pflegehelferin …“ — „könnten“ (Konjunktiv II) makes a polite suggestion."
+          }
+        }
+      ]
+    },
+    {
+      "id": "b1.muelltrennung",
+      "level": "B1",
+      "kind": "text",
+      "title": {
+        "vi": "Phân loại rác ở Đức",
+        "en": "Waste separation in Germany"
+      },
+      "intro": {
+        "vi": "Một bài viết ngắn cho người mới đến Đức.",
+        "en": "A short article for newcomers to Germany."
+      },
+      "lines": [
+        {
+          "de": "Wer neu nach Deutschland kommt, wundert sich oft über die vielen Mülltonnen.",
+          "vi": "Người mới đến Đức thường ngạc nhiên vì có quá nhiều thùng rác.",
+          "en": "Newcomers to Germany are often surprised by the many bins."
+        },
+        {
+          "de": "In den meisten Städten gibt es mindestens vier Tonnen: für Papier, für Verpackungen, für Bioabfall und für Restmüll.",
+          "vi": "Ở hầu hết các thành phố có ít nhất bốn thùng: cho giấy, cho bao bì, cho rác hữu cơ và cho rác còn lại.",
+          "en": "Most cities have at least four bins: for paper, for packaging, for organic waste and for residual waste."
+        },
+        {
+          "de": "Joghurtbecher und Plastikflaschen ohne Pfand gehören in die gelbe Tonne oder den gelben Sack.",
+          "vi": "Hộp sữa chua và chai nhựa không có tiền cọc thì bỏ vào thùng vàng hoặc túi vàng.",
+          "en": "Yoghurt pots and plastic bottles without a deposit go in the yellow bin or yellow bag."
+        },
+        {
+          "de": "Für viele Flaschen und Dosen bezahlt man beim Kauf ein Pfand, meistens 25 Cent.",
+          "vi": "Với nhiều loại chai và lon, khi mua bạn phải trả tiền cọc, thường là 25 cent.",
+          "en": "For many bottles and cans you pay a deposit when you buy them, usually 25 cents."
+        },
+        {
+          "de": "Bringt man sie in den Supermarkt zurück, bekommt man das Geld wieder.",
+          "vi": "Nếu mang chúng trả lại siêu thị, bạn sẽ nhận lại tiền.",
+          "en": "If you take them back to the supermarket, you get the money back."
+        },
+        {
+          "de": "Glas wird nicht zu Hause gesammelt, sondern in Containern auf der Straße, getrennt nach Farben.",
+          "vi": "Thủy tinh không được thu gom tại nhà mà bỏ vào các thùng lớn ngoài đường, phân theo màu.",
+          "en": "Glass is not collected at home but in street containers, separated by colour."
+        },
+        {
+          "de": "Weil die Container laut sind, darf man sie sonntags und abends nicht benutzen.",
+          "vi": "Vì các thùng này gây ồn, không được dùng vào chủ nhật và buổi tối.",
+          "en": "Because the containers are noisy, you may not use them on Sundays or in the evening."
+        },
+        {
+          "de": "Wer falsch trennt, riskiert Ärger mit den Nachbarn oder sogar höhere Müllgebühren für das ganze Haus.",
+          "vi": "Ai phân loại sai có thể bị hàng xóm phàn nàn, thậm chí cả tòa nhà phải trả phí rác cao hơn.",
+          "en": "Anyone who separates wrongly risks trouble with the neighbours or even higher waste fees for the whole building."
+        }
+      ],
+      "glossary": [
+        {
+          "de": "die Mülltonne",
+          "vi": "thùng rác",
+          "en": "bin"
+        },
+        {
+          "de": "das Pfand",
+          "vi": "tiền đặt cọc (chai, lon)",
+          "en": "deposit"
+        },
+        {
+          "de": "der Restmüll",
+          "vi": "rác còn lại (không tái chế)",
+          "en": "residual waste"
+        },
+        {
+          "de": "die Gebühr",
+          "vi": "lệ phí",
+          "en": "fee"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "de": "Wohin gehört ein Joghurtbecher?",
+          "vi": "Hộp sữa chua bỏ vào đâu?",
+          "en": "Where does a yoghurt pot go?",
+          "choices": ["in den Restmüll", "in die gelbe Tonne", "in den Glascontainer"],
+          "answer": 1,
+          "explain": {
+            "vi": "Bao bì như hộp sữa chua bỏ vào thùng hoặc túi màu vàng.",
+            "en": "Packaging such as yoghurt pots goes in the yellow bin or bag."
+          }
+        },
+        {
+          "id": "q2",
+          "de": "Was passiert, wenn man Pfandflaschen zurückbringt?",
+          "vi": "Điều gì xảy ra khi bạn trả lại chai có tiền cọc?",
+          "en": "What happens when you return deposit bottles?",
+          "choices": [
+            "Man bekommt das Pfand zurück.",
+            "Man muss eine Gebühr bezahlen.",
+            "Man bekommt eine neue Flasche."
+          ],
+          "answer": 0,
+          "explain": {
+            "vi": "„… bekommt man das Geld wieder.“",
+            "en": "„… bekommt man das Geld wieder.“"
+          }
+        },
+        {
+          "id": "q3",
+          "de": "Warum darf man Glascontainer sonntags nicht benutzen?",
+          "vi": "Tại sao chủ nhật không được dùng thùng thủy tinh?",
+          "en": "Why may you not use glass containers on Sundays?",
+          "choices": ["Sie sind dann voll.", "Sie sind laut.", "Sie werden geleert."],
+          "answer": 1,
+          "explain": {
+            "vi": "„Weil die Container laut sind …“ — ở Đức chủ nhật là ngày nghỉ, cần giữ yên tĩnh.",
+            "en": "„Weil die Container laut sind …“ — Sunday is a quiet day in Germany."
+          }
+        }
+      ]
+    },
+    {
+      "id": "b2.homeoffice",
+      "level": "B2",
+      "kind": "text",
+      "title": {
+        "vi": "Làm việc tại nhà: lợi và hại",
+        "en": "Working from home: pros and cons"
+      },
+      "intro": {
+        "vi": "Một bài bình luận về làm việc từ xa.",
+        "en": "An opinion piece on remote work."
+      },
+      "lines": [
+        {
+          "de": "Seit der Pandemie ist das Homeoffice für Millionen Beschäftigte zum Alltag geworden.",
+          "vi": "Từ sau đại dịch, làm việc tại nhà đã trở thành chuyện thường ngày với hàng triệu người lao động.",
+          "en": "Since the pandemic, working from home has become everyday life for millions of employees."
+        },
+        {
+          "de": "Befürworter verweisen darauf, dass der tägliche Arbeitsweg entfällt, wodurch Zeit gespart und die Umwelt entlastet wird.",
+          "vi": "Những người ủng hộ chỉ ra rằng không còn phải đi làm hằng ngày, nhờ đó tiết kiệm thời gian và giảm gánh nặng cho môi trường.",
+          "en": "Supporters point out that the daily commute disappears, saving time and easing the burden on the environment."
+        },
+        {
+          "de": "Zudem lassen sich Beruf und Familie leichter miteinander vereinbaren.",
+          "vi": "Ngoài ra, công việc và gia đình cũng dễ cân bằng hơn.",
+          "en": "In addition, work and family are easier to reconcile."
+        },
+        {
+          "de": "Kritiker hingegen warnen vor sozialer Isolation und einer zunehmenden Vermischung von Arbeit und Freizeit.",
+          "vi": "Ngược lại, những người phản đối cảnh báo về sự cô lập xã hội và ranh giới ngày càng mờ giữa công việc và thời gian rảnh.",
+          "en": "Critics, on the other hand, warn of social isolation and an increasing blurring of work and leisure."
+        },
+        {
+          "de": "Wer abends noch schnell E-Mails beantwortet, schaltet nie richtig ab.",
+          "vi": "Ai buổi tối vẫn còn tranh thủ trả lời email thì không bao giờ thực sự được nghỉ ngơi.",
+          "en": "Anyone who quickly answers emails in the evening never really switches off."
+        },
+        {
+          "de": "Auch für Unternehmen ist die Bilanz gemischt: Zwar sinken die Bürokosten, doch spontaner Austausch und Teamgeist leiden.",
+          "vi": "Với doanh nghiệp, kết quả cũng lẫn lộn: chi phí văn phòng giảm, nhưng việc trao đổi tự phát và tinh thần đồng đội bị ảnh hưởng.",
+          "en": "For companies, too, the balance is mixed: office costs fall, but spontaneous exchange and team spirit suffer."
+        },
+        {
+          "de": "Viele Firmen setzen deshalb inzwischen auf hybride Modelle mit zwei bis drei Bürotagen pro Woche.",
+          "vi": "Vì vậy, nhiều công ty hiện chuyển sang mô hình kết hợp, với hai đến ba ngày lên văn phòng mỗi tuần.",
+          "en": "Many firms have therefore switched to hybrid models with two to three office days a week."
+        },
+        {
+          "de": "Ob sich dieser Kompromiss langfristig bewährt, bleibt abzuwarten.",
+          "vi": "Liệu sự dung hòa này có hiệu quả về lâu dài hay không thì vẫn còn phải chờ xem.",
+          "en": "Whether this compromise will prove itself in the long term remains to be seen."
+        }
+      ],
+      "glossary": [
+        {
+          "de": "der Arbeitsweg",
+          "vi": "quãng đường đi làm",
+          "en": "commute"
+        },
+        {
+          "de": "vereinbaren",
+          "vi": "dung hòa, sắp xếp cho hợp",
+          "en": "to reconcile"
+        },
+        {
+          "de": "abschalten",
+          "vi": "thư giãn, ngắt khỏi công việc",
+          "en": "to switch off, unwind"
+        },
+        {
+          "de": "sich bewähren",
+          "vi": "chứng tỏ hiệu quả",
+          "en": "to prove oneself / its worth"
+        },
+        {
+          "de": "zwar … doch",
+          "vi": "tuy … nhưng",
+          "en": "admittedly … but"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "de": "Welchen Vorteil nennen die Befürworter?",
+          "vi": "Những người ủng hộ nêu ra lợi ích nào?",
+          "en": "Which advantage do supporters mention?",
+          "choices": ["höhere Gehälter", "kein täglicher Arbeitsweg", "mehr Teamgeist"],
+          "answer": 1,
+          "explain": {
+            "vi": "„… dass der tägliche Arbeitsweg entfällt …“ Tinh thần đồng đội lại là điểm bị ảnh hưởng.",
+            "en": "„… dass der tägliche Arbeitsweg entfällt …“ Team spirit is actually said to suffer."
+          }
+        },
+        {
+          "id": "q2",
+          "de": "Was bedeutet „nie richtig abschalten“ im Text?",
+          "vi": "Trong bài, „nie richtig abschalten“ nghĩa là gì?",
+          "en": "What does „nie richtig abschalten“ mean in the text?",
+          "choices": [
+            "den Computer nie ausmachen",
+            "sich nie wirklich erholen",
+            "nie pünktlich anfangen"
+          ],
+          "answer": 1,
+          "explain": {
+            "vi": "„abschalten“ ở đây là nghĩa bóng: thư giãn, không nghĩ đến công việc.",
+            "en": "Here „abschalten“ is figurative: to relax and stop thinking about work."
+          }
+        },
+        {
+          "id": "q3",
+          "de": "Wie reagieren viele Firmen?",
+          "vi": "Nhiều công ty phản ứng thế nào?",
+          "en": "How do many firms respond?",
+          "choices": [
+            "Sie verbieten das Homeoffice.",
+            "Sie führen hybride Modelle ein.",
+            "Sie schließen ihre Büros."
+          ],
+          "answer": 1,
+          "explain": {
+            "vi": "„… setzen deshalb inzwischen auf hybride Modelle …“",
+            "en": "„… setzen deshalb inzwischen auf hybride Modelle …“"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b2.innenstadt",
+      "level": "B2",
+      "kind": "dialogue",
+      "title": {
+        "vi": "Tranh luận: trung tâm thành phố không ô tô",
+        "en": "Debate: a car-free city centre"
+      },
+      "intro": {
+        "vi": "Hai người hàng xóm tranh luận về kế hoạch cấm ô tô ở trung tâm thành phố.",
+        "en": "Two neighbours debate a plan to ban cars from the city centre."
+      },
+      "lines": [
+        {
+          "speaker": "Jonas",
+          "de": "Hast du gelesen? Die Stadt will die Innenstadt ab nächstem Jahr für Autos sperren.",
+          "vi": "Cậu đọc tin chưa? Thành phố muốn cấm ô tô vào trung tâm từ năm sau.",
+          "en": "Have you read it? The city wants to close the centre to cars from next year."
+        },
+        {
+          "speaker": "Petra",
+          "de": "Endlich! Die Luft wäre sauberer, und man könnte sich in Ruhe draußen hinsetzen.",
+          "vi": "Cuối cùng cũng có! Không khí sẽ sạch hơn, và người ta có thể thong thả ngồi ngoài trời.",
+          "en": "Finally! The air would be cleaner and you could sit outside in peace."
+        },
+        {
+          "speaker": "Jonas",
+          "de": "Das mag sein, aber denk mal an die Geschäfte. Wenn die Kunden nicht mehr mit dem Auto kommen, verlieren sie Umsatz.",
+          "vi": "Có thể, nhưng cậu nghĩ đến các cửa hàng xem. Nếu khách không đến bằng ô tô nữa thì họ sẽ mất doanh thu.",
+          "en": "That may be, but think of the shops. If customers can't come by car any more, they'll lose sales."
+        },
+        {
+          "speaker": "Petra",
+          "de": "Studien aus anderen Städten zeigen eher das Gegenteil: Fußgänger bleiben länger und geben mehr aus.",
+          "vi": "Các nghiên cứu ở những thành phố khác lại cho thấy điều ngược lại: người đi bộ ở lâu hơn và chi tiêu nhiều hơn.",
+          "en": "Studies from other cities rather show the opposite: pedestrians stay longer and spend more."
+        },
+        {
+          "speaker": "Jonas",
+          "de": "Und was ist mit älteren Menschen, die schlecht zu Fuß sind?",
+          "vi": "Thế còn người già, những người đi lại khó khăn thì sao?",
+          "en": "And what about older people who can't walk well?"
+        },
+        {
+          "speaker": "Petra",
+          "de": "Da hast du recht, dafür braucht es Lösungen, zum Beispiel bessere Busverbindungen und Ausnahmen für Anwohner.",
+          "vi": "Cậu nói đúng, cần có giải pháp cho chuyện đó, ví dụ tuyến xe buýt tốt hơn và ngoại lệ cho cư dân.",
+          "en": "You're right, that needs solutions, for example better bus links and exceptions for residents."
+        },
+        {
+          "speaker": "Jonas",
+          "de": "Wenn das ernsthaft geplant wird, wäre ich vielleicht sogar dafür.",
+          "vi": "Nếu việc đó được lên kế hoạch nghiêm túc thì có lẽ mình còn ủng hộ nữa.",
+          "en": "If that's seriously planned, I might even be in favour."
+        }
+      ],
+      "glossary": [
+        {
+          "de": "sperren",
+          "vi": "cấm (lưu thông), đóng",
+          "en": "to close off"
+        },
+        {
+          "de": "der Umsatz",
+          "vi": "doanh thu",
+          "en": "turnover, sales"
+        },
+        {
+          "de": "schlecht zu Fuß sein",
+          "vi": "đi lại khó khăn",
+          "en": "to have difficulty walking"
+        },
+        {
+          "de": "der Anwohner",
+          "vi": "cư dân (sống gần đó)",
+          "en": "resident"
+        },
+        {
+          "de": "dafür sein",
+          "vi": "ủng hộ",
+          "en": "to be in favour"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "de": "Welche Sorge hat Jonas zuerst?",
+          "vi": "Mối lo đầu tiên của Jonas là gì?",
+          "en": "What is Jonas's first concern?",
+          "choices": ["die Luftqualität", "die Umsätze der Geschäfte", "die Parkgebühren"],
+          "answer": 1,
+          "explain": {
+            "vi": "„… denk mal an die Geschäfte … verlieren sie Umsatz.“",
+            "en": "„… denk mal an die Geschäfte … verlieren sie Umsatz.“"
+          }
+        },
+        {
+          "id": "q2",
+          "de": "Wie widerspricht Petra?",
+          "vi": "Petra phản bác thế nào?",
+          "en": "How does Petra counter him?",
+          "choices": [
+            "mit Studien aus anderen Städten",
+            "mit ihrer eigenen Erfahrung als Verkäuferin",
+            "mit einer Umfrage unter Anwohnern"
+          ],
+          "answer": 0,
+          "explain": {
+            "vi": "„Studien aus anderen Städten zeigen eher das Gegenteil …“",
+            "en": "„Studien aus anderen Städten zeigen eher das Gegenteil …“"
+          }
+        },
+        {
+          "id": "q3",
+          "de": "Wie ist Jonas' Meinung am Ende?",
+          "vi": "Cuối cùng Jonas nghĩ sao?",
+          "en": "What is Jonas's opinion at the end?",
+          "choices": ["strikt dagegen", "unter Bedingungen eher dafür", "ihm ist es egal"],
+          "answer": 1,
+          "explain": {
+            "vi": "„Wenn das ernsthaft geplant wird, wäre ich vielleicht sogar dafür.“ Ủng hộ có điều kiện.",
+            "en": "„Wenn das ernsthaft geplant wird, wäre ich vielleicht sogar dafür.“ Conditional support."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, type ReactNode } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { exerciseKey } from '@/grammar/progress';
 import { GAP, type Bilingual, type Exercise, type Lesson, type LessonBlock } from '@/grammar/types';
@@ -195,44 +195,37 @@ export function Exercises({
   );
 }
 
-function ExerciseCard({
-  n,
-  e,
+/** Multiple-choice card with per-choice ✓/✗ feedback and an explanation (grammar and reading). */
+export function ChoiceCard({
+  prompt,
+  choices,
+  answer,
   chosen,
   onChoose,
+  explain,
   lang,
   t,
 }: {
-  n: number;
-  e: Exercise;
+  /** Rendered above the choices; receives the answered state to fill gaps. */
+  prompt: (answered: boolean, right: boolean) => ReactNode;
+  choices: string[];
+  answer: number;
   chosen: number | undefined;
   onChoose: (i: number) => void;
+  explain: Bilingual;
   lang: UiLanguage;
   t: TFunction;
 }) {
   const { c } = useTheme();
   const answered = chosen !== undefined;
-  const right = chosen === e.answer;
-  const [before, after] = e.de.split(GAP) as [string, string];
+  const right = chosen === answer;
   const result: QuizResult = right ? 'correct' : 'wrong';
   return (
     <Card style={styles.gapMd}>
-      <Text style={[styles.sentence, { color: c.text }]}>
-        <Text style={{ color: c.textMuted }}>{n}. </Text>
-        {before}
-        <Text
-          style={{
-            fontWeight: '700',
-            color: !answered ? c.textMuted : right ? c.success : c.danger,
-          }}
-        >
-          {answered ? e.choices[chosen] : '_____'}
-        </Text>
-        {after}
-      </Text>
+      {prompt(answered, right)}
       <View style={styles.choices}>
-        {e.choices.map((choice, i) => {
-          const isAnswer = i === e.answer;
+        {choices.map((choice, i) => {
+          const isAnswer = i === answer;
           const isChosen = i === chosen;
           const border =
             answered && isAnswer ? c.success : answered && isChosen ? c.danger : c.border;
@@ -267,10 +260,55 @@ function ExerciseCard({
           <T variant="heading" style={{ color: right ? c.success : c.danger }}>
             {t(`quiz.${result}`, { xp: XP_QUIZ[result] })}
           </T>
-          <BiText b={e.explain} lang={lang} />
+          <BiText b={explain} lang={lang} />
         </View>
       )}
     </Card>
+  );
+}
+
+function ExerciseCard({
+  n,
+  e,
+  chosen,
+  onChoose,
+  lang,
+  t,
+}: {
+  n: number;
+  e: Exercise;
+  chosen: number | undefined;
+  onChoose: (i: number) => void;
+  lang: UiLanguage;
+  t: TFunction;
+}) {
+  const { c } = useTheme();
+  const [before, after] = e.de.split(GAP) as [string, string];
+  return (
+    <ChoiceCard
+      choices={e.choices}
+      answer={e.answer}
+      chosen={chosen}
+      onChoose={onChoose}
+      explain={e.explain}
+      lang={lang}
+      t={t}
+      prompt={(answered, right) => (
+        <Text style={[styles.sentence, { color: c.text }]}>
+          <Text style={{ color: c.textMuted }}>{n}. </Text>
+          {before}
+          <Text
+            style={{
+              fontWeight: '700',
+              color: !answered ? c.textMuted : right ? c.success : c.danger,
+            }}
+          >
+            {answered ? e.choices[chosen!] : '_____'}
+          </Text>
+          {after}
+        </Text>
+      )}
+    />
   );
 }
 

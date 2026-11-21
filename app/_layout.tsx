@@ -48,6 +48,9 @@ function Navigator() {
         <Stack.Screen name="quiz" options={{ title: t('quiz.title') }} />
         <Stack.Screen name="grammar/index" options={{ title: t('grammar.title') }} />
         <Stack.Screen name="grammar/[id]" options={{ title: '' }} />
+        <Stack.Screen name="reading/index" options={{ title: t('reading.title') }} />
+        <Stack.Screen name="reading/[id]" options={{ title: '' }} />
+        <Stack.Screen name="speak" options={{ title: t('speak.title') }} />
         <Stack.Screen name="verbs" options={{ title: t('verbs.title') }} />
         <Stack.Screen name="browse" options={{ title: t('browse.title') }} />
         <Stack.Screen name="word/[id]" options={{ title: '' }} />

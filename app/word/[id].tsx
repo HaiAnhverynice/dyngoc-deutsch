@@ -6,7 +6,8 @@ import { localeFor } from '@/i18n';
 import { useApp } from '@/state/AppContext';
 import { addToStudy } from '@/state/study';
 import { ConjugationTable } from '@/ui/components/ConjugationTable';
-import { Button, Card, Screen, T } from '@/ui/components/primitives';
+import { Button, Card, Screen, Segmented, T } from '@/ui/components/primitives';
+import { PronunciationPanel } from '@/ui/components/PronunciationPanel';
 import {
   ExampleBlock,
   Meanings,
@@ -102,6 +103,8 @@ export default function WordScreen() {
         </Card>
       )}
 
+      <PracticeCard word={word} />
+
       {word.verb && (
         <Card style={styles.block}>
           <T variant="small">{t('conj.title')}</T>
@@ -123,6 +126,26 @@ export default function WordScreen() {
         <Button label={t('word.addToStudy')} onPress={() => void add()} />
       )}
     </Screen>
+  );
+}
+
+function PracticeCard({ word }: { word: Word }) {
+  const { t } = useApp();
+  const [target, setTarget] = useState<'word' | 'sentence'>('word');
+  const text = target === 'word' ? spokenForm(word) : word.example.de;
+  return (
+    <Card style={styles.block}>
+      <T variant="small">{t('word.practice')}</T>
+      <Segmented
+        value={target}
+        onChange={setTarget}
+        options={[
+          { value: 'word', label: t('speak.word') },
+          { value: 'sentence', label: t('speak.sentence') },
+        ]}
+      />
+      <PronunciationPanel key={text} text={text} t={t} />
+    </Card>
   );
 }
 

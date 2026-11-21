@@ -24,6 +24,16 @@
       "bundler": "metro",
       "output": "single"
     },
-    "plugins": ["expo-router", "expo-sqlite", "expo-notifications"]
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-notifications",
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Ứng dụng dùng micro để bạn ghi âm và tự so sánh phát âm với giọng mẫu. Bản ghi chỉ nằm trên máy."
+        }
+      ]
+    ]
   }
 }

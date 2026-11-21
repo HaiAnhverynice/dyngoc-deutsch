@@ -21,8 +21,12 @@ export type Question =
   | { type: 'spelling'; wordId: string; cloze: string | null }
   | { type: 'order'; wordId: string; tokens: string[]; solution: string[]; punctuation: string };
 
-/** Grammar exercises are logged too (for XP/streak); their wordId is `grammar:<lesson>:<exercise>`. */
-export const LOG_TYPES = [...QUIZ_TYPES, 'grammar'] as const;
+/**
+ * Grammar exercises, reading questions and pronunciation self-checks are logged here
+ * too (for XP/streak). Their wordId is `grammar:<lesson>:<exercise>`,
+ * `reading:<item>:<question>` or the practised word id.
+ */
+export const LOG_TYPES = [...QUIZ_TYPES, 'grammar', 'reading', 'speaking'] as const;
 export type QuizLogType = (typeof LOG_TYPES)[number];
 
 export interface QuizLog extends SyncFields {

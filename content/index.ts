@@ -1,4 +1,5 @@
 import type { GrammarFile } from '@/grammar/types';
+import type { ReadingFile } from '@/reading/types';
 import type { ContentFile } from '@/vocab/types';
 
 // Bundled by Metro. Bump `version` inside a file to re-seed it on devices (progress is kept).
@@ -10,3 +11,5 @@ export const CONTENT_FILES = [
 ] as ContentFile[];
 
 export const GRAMMAR_FILES = [require('./grammar/a1.json')] as GrammarFile[];
+
+export const READING_FILE = require('./reading/reading.json') as ReadingFile;

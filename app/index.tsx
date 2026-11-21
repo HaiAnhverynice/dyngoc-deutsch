@@ -118,6 +118,20 @@ export default function HomeScreen() {
           style={styles.flex}
         />
       </View>
+      <View style={styles.links}>
+        <Button
+          kind="secondary"
+          label={t('home.reading')}
+          onPress={() => router.push('/reading')}
+          style={styles.flex}
+        />
+        <Button
+          kind="secondary"
+          label={t('home.speak')}
+          onPress={() => router.push('/speak')}
+          style={styles.flex}
+        />
+      </View>
       <Button
         kind="secondary"
         label={t('home.settings')}
