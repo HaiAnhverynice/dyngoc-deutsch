@@ -155,13 +155,13 @@ npm run tunnel          # = npx expo start --tunnel ngrok
 
 ### Thông báo lỗi thường gặp
 
-| Thông báo                                                            | Nguyên nhân                                                             |
-| -------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| `Could not connect to development server` / `Unable to resolve host` | Vấn đề mạng, làm lại Bước 1–3                                           |
-| `Project is incompatible with this version of Expo Go`               | Cập nhật Expo Go                                                        |
-| `ConfigError: Cannot determine the project's Expo SDK version`       | Chạy lệnh sai thư mục, hoặc chưa `npm install`                          |
-| `nvm: command not found`                                             | Chưa mở lại terminal sau khi cài nvm                                    |
-| Quét QR mà không có gì xảy ra                                        | Xem mục "Link chạy nhưng QR không quét được" bên dưới                   |
+| Thông báo                                                            | Nguyên nhân                                           |
+| -------------------------------------------------------------------- | ----------------------------------------------------- |
+| `Could not connect to development server` / `Unable to resolve host` | Vấn đề mạng, làm lại Bước 1–3                         |
+| `Project is incompatible with this version of Expo Go`               | Cập nhật Expo Go                                      |
+| `ConfigError: Cannot determine the project's Expo SDK version`       | Chạy lệnh sai thư mục, hoặc chưa `npm install`        |
+| `nvm: command not found`                                             | Chưa mở lại terminal sau khi cài nvm                  |
+| Quét QR mà không có gì xảy ra                                        | Xem mục "Link chạy nhưng QR không quét được" bên dưới |
 
 #### Link `exp://…` chạy nhưng QR không quét được
 
