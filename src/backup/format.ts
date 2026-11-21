@@ -1,10 +1,12 @@
 import type { Card, ReviewLog, UserDataSnapshot } from '@/db/types';
+import { QUIZ_TYPES, type QuizLog } from '@/quiz/types';
 import { RATINGS } from '@/srs/types';
 import { validateWord } from '@/vocab/validate';
 import type { Word } from '@/vocab/types';
 
 export const BACKUP_FORMAT = 'dyngoc-backup';
-export const BACKUP_FORMAT_VERSION = 1;
+/** v2 added `quizLogs`; v1 files are still accepted (as having none). */
+export const BACKUP_FORMAT_VERSION = 2;
 
 export interface BackupFile extends UserDataSnapshot {
   format: typeof BACKUP_FORMAT;
@@ -73,6 +75,18 @@ function isLog(v: unknown): v is ReviewLog {
   );
 }
 
+function isQuizLog(v: unknown): v is QuizLog {
+  if (!isObj(v)) return false;
+  return (
+    syncOk(v) &&
+    str(v, 'wordId') &&
+    (QUIZ_TYPES as readonly string[]).includes(v.type as string) &&
+    ['correct', 'close', 'wrong'].includes(v.result as string) &&
+    num(v, 'answeredAt') &&
+    numOrNull(v, 'durationMs')
+  );
+}
+
 function isImportedWord(v: unknown): v is Word {
   return (
     isObj(v) &&
@@ -102,9 +116,11 @@ export function parseBackup(text: string): ParseResult {
   if (!isObj(raw.settings) || !Object.values(raw.settings).every((v) => typeof v === 'string')) {
     return { ok: false, reason: 'settings' };
   }
+  if (raw.formatVersion === 1 && raw.quizLogs === undefined) raw.quizLogs = [];
   const lists = [
     ['cards', isCard],
     ['reviewLogs', isLog],
+    ['quizLogs', isQuizLog],
     ['importedWords', isImportedWord],
   ] as const;
   for (const [key, check] of lists) {

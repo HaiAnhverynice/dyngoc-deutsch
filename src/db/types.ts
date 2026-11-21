@@ -1,3 +1,4 @@
+import type { QuizLog } from '@/quiz/types';
 import type { CardPhase, Rating, SrsState } from '@/srs/types';
 import type { Word } from '@/vocab/types';
 
@@ -43,6 +44,7 @@ export interface UserDataSnapshot {
   settings: Record<string, string>;
   cards: Card[];
   reviewLogs: ReviewLog[];
+  quizLogs: QuizLog[];
   /** Only user-imported words; builtin words come from bundled content. */
   importedWords: Word[];
 }

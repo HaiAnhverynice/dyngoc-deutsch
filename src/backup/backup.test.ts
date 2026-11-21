@@ -1,5 +1,6 @@
 import { createMemoryRepository } from '@/db/memoryRepository';
 import type { Card, ReviewLog } from '@/db/types';
+import type { QuizLog } from '@/quiz/types';
 import { importCsv } from '@/vocab/import';
 import { BACKUP_FORMAT, backupFileName, createBackup, parseBackup } from './format';
 
@@ -38,6 +39,17 @@ const log: ReviewLog = {
   deleted: false,
   userId: null,
 };
+const quizLog: QuizLog = {
+  id: '6f1c1f1e-0000-4000-8000-000000000003',
+  wordId: card.wordId,
+  type: 'article',
+  result: 'close',
+  answeredAt: NOW - 500,
+  durationMs: 3000,
+  updatedAt: NOW,
+  deleted: false,
+  userId: null,
+};
 const header =
   'lemma,article,plural,pos,level,vi,en,example_de,example_vi,example_en,tags\nVogel,der,Vögel,noun,A1,chim,bird,Der Vogel singt.,Con chim hót.,The bird sings.,animals';
 
@@ -47,6 +59,7 @@ describe('backup', () => {
     const imported = importCsv(header, [], NOW).added;
     await src.upsertWords(imported);
     await src.saveReview(card, log);
+    await src.saveQuizLog(quizLog);
     await src.setSettings({ uiLang: '"en"' }, NOW);
 
     const json = JSON.stringify(createBackup(await src.exportUserData(), NOW, 1));
@@ -60,13 +73,14 @@ describe('backup', () => {
 
     expect(await dst.listCards()).toEqual([card]);
     expect(await dst.listReviewLogs()).toEqual([log]);
+    expect(await dst.listQuizLogs()).toEqual([quizLog]);
     expect(await dst.getSettings()).toEqual({ uiLang: '"en"' });
     expect((await dst.listWords()).map((w) => w.lemma)).toEqual(['Vogel']);
   });
 
   it('rejects invalid files with a reason', () => {
     const ok = createBackup(
-      { settings: {}, cards: [card], reviewLogs: [log], importedWords: [] },
+      { settings: {}, cards: [card], reviewLogs: [log], quizLogs: [quizLog], importedWords: [] },
       NOW,
       1,
     );
@@ -79,10 +93,23 @@ describe('backup', () => {
     expect(reason({ ...ok, formatVersion: 99 })).toBe('formatVersion 99');
     expect(reason({ ...ok, cards: [{ ...card, phase: 'weird' }] })).toBe('cards[0]');
     expect(reason({ ...ok, reviewLogs: [{ ...log, rating: 'meh' }] })).toBe('reviewLogs[0]');
+    expect(reason({ ...ok, quizLogs: [{ ...quizLog, result: 'meh' }] })).toBe('quizLogs[0]');
     expect(reason({ ...ok, settings: { a: 1 } })).toBe('settings');
     expect(reason({ ...ok, importedWords: [{ lemma: 'x' }] })).toBe('importedWords[0]');
     expect(reason(ok)).toBeNull();
     expect(ok.format).toBe(BACKUP_FORMAT);
+  });
+
+  it('accepts phase-1 (v1) backups without quiz logs', () => {
+    const { quizLogs: _omit, ...v1 } = createBackup(
+      { settings: {}, cards: [card], reviewLogs: [log], quizLogs: [], importedWords: [] },
+      NOW,
+      1,
+    );
+    const r = parseBackup(JSON.stringify({ ...v1, formatVersion: 1 }));
+    expect(r.ok && r.backup.quizLogs).toEqual([]);
+    // v2 must include them.
+    expect(parseBackup(JSON.stringify(v1)).ok).toBe(false);
   });
 
   it('names files by local time', () => {

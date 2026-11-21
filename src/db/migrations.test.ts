@@ -12,8 +12,8 @@ describe('migrations', () => {
   });
 
   it('gives every user table the sync columns', () => {
-    const sql = MIGRATIONS[0]!.sql;
-    for (const table of ['words', 'cards', 'review_logs']) {
+    const sql = MIGRATIONS.map((m) => m.sql).join('\n');
+    for (const table of ['words', 'cards', 'review_logs', 'quiz_logs']) {
       const body = sql.split(`CREATE TABLE ${table} (`)[1]!.split(');')[0]!;
       expect(body).toMatch(/updated_at INTEGER NOT NULL/);
       expect(body).toMatch(/deleted INTEGER NOT NULL DEFAULT 0/);

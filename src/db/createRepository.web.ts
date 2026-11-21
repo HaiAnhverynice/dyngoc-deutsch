@@ -34,7 +34,10 @@ export async function createRepository(): Promise<Repository> {
 function readStorage(): UserDataSnapshot | null {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    return raw ? (JSON.parse(raw) as UserDataSnapshot) : null;
+    if (!raw) return null;
+    const data = JSON.parse(raw) as UserDataSnapshot;
+    // Saved before quiz logs existed (phase 1).
+    return { ...data, quizLogs: data.quizLogs ?? [] };
   } catch {
     return null;
   }

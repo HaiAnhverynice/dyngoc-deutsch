@@ -1,4 +1,5 @@
 import type { SQLiteDatabase } from 'expo-sqlite';
+import type { QuizLog, QuizResult, QuizType } from '@/quiz/types';
 import type { CardPhase, Rating } from '@/srs/types';
 import type { Article, Level, PartOfSpeech, VerbForms, Word, WordSource } from '@/vocab/types';
 import { pendingMigrations } from './migrations';
@@ -61,6 +62,18 @@ interface LogRow {
   user_id: string | null;
 }
 
+interface QuizLogRow {
+  id: string;
+  word_id: string;
+  type: string;
+  result: string;
+  answered_at: number;
+  duration_ms: number | null;
+  updated_at: number;
+  deleted: number;
+  user_id: string | null;
+}
+
 // Rows are written only by this module, so enum columns are trusted on read.
 const toWord = (r: WordRow): Word => ({
   id: r.id,
@@ -110,6 +123,18 @@ const toLog = (r: LogRow): ReviewLog => ({
   nextIntervalDays: r.next_interval_days,
   ease: r.ease,
   reviewedAt: r.reviewed_at,
+  durationMs: r.duration_ms,
+  updatedAt: r.updated_at,
+  deleted: r.deleted === 1,
+  userId: r.user_id,
+});
+
+const toQuizLog = (r: QuizLogRow): QuizLog => ({
+  id: r.id,
+  wordId: r.word_id,
+  type: r.type as QuizType,
+  result: r.result as QuizResult,
+  answeredAt: r.answered_at,
   durationMs: r.duration_ms,
   updatedAt: r.updated_at,
   deleted: r.deleted === 1,
@@ -181,6 +206,22 @@ const logParams = (l: ReviewLog) => [
   l.nextIntervalDays,
   l.ease,
   l.reviewedAt,
+  l.durationMs,
+  l.updatedAt,
+  l.deleted ? 1 : 0,
+  l.userId,
+];
+
+const QUIZ_LOG_INSERT = `INSERT OR REPLACE INTO quiz_logs
+  (id, word_id, type, result, answered_at, duration_ms, updated_at, deleted, user_id)
+  VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`;
+
+const quizLogParams = (l: QuizLog) => [
+  l.id,
+  l.wordId,
+  l.type,
+  l.result,
+  l.answeredAt,
   l.durationMs,
   l.updatedAt,
   l.deleted ? 1 : 0,
@@ -264,6 +305,17 @@ export function createSqliteRepository(db: SQLiteDatabase): Repository {
       return rows.map(toLog);
     },
 
+    async saveQuizLog(log) {
+      await db.runAsync(QUIZ_LOG_INSERT, quizLogParams(log));
+    },
+    async listQuizLogs(sinceMs) {
+      const rows = await db.getAllAsync<QuizLogRow>(
+        'SELECT * FROM quiz_logs WHERE deleted = 0 AND answered_at >= ? ORDER BY answered_at',
+        sinceMs ?? 0,
+      );
+      return rows.map(toQuizLog);
+    },
+
     async getSettings() {
       const rows = await db.getAllAsync<{ key: string; value: string }>(
         'SELECT key, value FROM settings',
@@ -297,27 +349,30 @@ export function createSqliteRepository(db: SQLiteDatabase): Repository {
     },
 
     async exportUserData() {
-      const [settingRows, cardRows, logRows, wordRows] = await Promise.all([
+      const [settingRows, cardRows, logRows, quizRows, wordRows] = await Promise.all([
         db.getAllAsync<{ key: string; value: string }>('SELECT key, value FROM settings'),
         db.getAllAsync<CardRow>('SELECT * FROM cards'),
         db.getAllAsync<LogRow>('SELECT * FROM review_logs ORDER BY reviewed_at'),
+        db.getAllAsync<QuizLogRow>('SELECT * FROM quiz_logs ORDER BY answered_at'),
         db.getAllAsync<WordRow>("SELECT * FROM words WHERE source = 'import'"),
       ]);
       return {
         settings: Object.fromEntries(settingRows.map((r) => [r.key, r.value])),
         cards: cardRows.map(toCard),
         reviewLogs: logRows.map(toLog),
+        quizLogs: quizRows.map(toQuizLog),
         importedWords: wordRows.map(toWord),
       };
     },
     async replaceUserData(data) {
       await db.withTransactionAsync(async () => {
         await db.execAsync(
-          "DELETE FROM cards; DELETE FROM review_logs; DELETE FROM settings; DELETE FROM words WHERE source = 'import';",
+          "DELETE FROM cards; DELETE FROM review_logs; DELETE FROM quiz_logs; DELETE FROM settings; DELETE FROM words WHERE source = 'import';",
         );
         await runMany(db, WORD_UPSERT, data.importedWords, wordParams);
         await runMany(db, CARD_UPSERT, data.cards, cardParams);
         await runMany(db, LOG_INSERT, data.reviewLogs, logParams);
+        await runMany(db, QUIZ_LOG_INSERT, data.quizLogs, quizLogParams);
         await runMany(
           db,
           'INSERT OR REPLACE INTO settings (key, value, updated_at) VALUES (?, ?, ?)',

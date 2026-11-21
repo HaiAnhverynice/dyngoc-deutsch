@@ -1,3 +1,4 @@
+import type { QuizLog } from '@/quiz/types';
 import type { Word } from '@/vocab/types';
 import type { Card, ContentMeta, ReviewLog, UserDataSnapshot } from './types';
 
@@ -20,6 +21,9 @@ export interface Repository {
   saveReview(card: Card, log: ReviewLog): Promise<void>;
   listReviewLogs(sinceMs?: number): Promise<ReviewLog[]>;
 
+  saveQuizLog(log: QuizLog): Promise<void>;
+  listQuizLogs(sinceMs?: number): Promise<QuizLog[]>;
+
   getSettings(): Promise<Record<string, string>>;
   setSettings(values: Record<string, string>, now: number): Promise<void>;
 
@@ -28,6 +32,6 @@ export interface Repository {
 
   /** Includes soft-deleted rows so a future sync can propagate deletions. */
   exportUserData(): Promise<UserDataSnapshot>;
-  /** Replaces cards, logs, settings and imported words. Builtin words are untouched. */
+  /** Replaces cards, review/quiz logs, settings and imported words. Builtin words are untouched. */
   replaceUserData(data: UserDataSnapshot): Promise<void>;
 }

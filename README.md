@@ -6,7 +6,7 @@
 - **Offline hoàn toàn:** toàn bộ từ vựng và tiến độ học nằm trên máy.
 - **Nền tảng:** Expo SDK 58 · React Native 0.88 · TypeScript (strict) · expo-router.
 
-> **Trạng thái:** Giai đoạn 1 (MVP) đã xong. Xem [Lộ trình](#11-lộ-trình).
+> **Trạng thái:** Giai đoạn 1 (MVP) và Giai đoạn 2 (quiz, streak, XP, biểu đồ tuần) đã xong. Xem [Lộ trình](#11-lộ-trình).
 
 ---
 
@@ -29,17 +29,19 @@
 
 ## 1. Tính năng
 
-|                       |                                                                                                                                                                                                                                        |
-| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Từ vựng**           | 173 từ A1 (danh từ, động từ, tính từ, từ chức năng, chia theo chủ đề) và 10 từ mẫu cho mỗi cấp A2/B1/B2. Mỗi từ có giống (der/die/das), số nhiều, nghĩa tiếng Việt và tiếng Anh, câu ví dụ kèm bản dịch, và dạng chia đối với động từ. |
-| **Flashcard SRS**     | Thuật toán lặp lại ngắt quãng kiểu SM-2 (tự viết). Bốn mức Again/Hard/Good/Easy, có hiện trước khoảng ôn kế tiếp dưới mỗi nút.                                                                                                         |
-| **Phát âm mẫu**       | Nút 🔊 đọc từ và câu ví dụ bằng giọng Đức (TTS `de-DE`).                                                                                                                                                                               |
-| **Màu theo giống**    | der = xanh dương, die = hồng, das = xanh lá. Luôn kèm nhãn chữ, không chỉ dựa vào màu.                                                                                                                                                 |
-| **Tìm kiếm**          | Tìm bằng tiếng Đức, Việt hoặc Anh, gõ có dấu hay không dấu đều được (`strasse` → Straße, `ngoi nha` → Haus). Lọc theo cấp độ và chủ đề.                                                                                                |
-| **Thông báo từ vựng** | Nhắc từ theo chu kỳ giờ hoặc vào các mốc giờ cố định trong ngày, có giờ yên tĩnh. Chạm vào thông báo để mở đúng từ đó.                                                                                                                 |
-| **Giao diện**         | Sáng/tối/theo hệ thống. Ngôn ngữ giao diện tiếng Việt, tiếng Anh hoặc cả hai.                                                                                                                                                          |
-| **Sao lưu**           | Xuất/nhập toàn bộ tiến độ và cài đặt ra file JSON để chuyển máy.                                                                                                                                                                       |
-| **Import**            | Thêm từ của riêng bạn từ file CSV hoặc JSON.                                                                                                                                                                                           |
+|                         |                                                                                                                                                                                                                                        |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Từ vựng**             | 173 từ A1 (danh từ, động từ, tính từ, từ chức năng, chia theo chủ đề) và 10 từ mẫu cho mỗi cấp A2/B1/B2. Mỗi từ có giống (der/die/das), số nhiều, nghĩa tiếng Việt và tiếng Anh, câu ví dụ kèm bản dịch, và dạng chia đối với động từ. |
+| **Flashcard SRS**       | Thuật toán lặp lại ngắt quãng kiểu SM-2 (tự viết). Bốn mức Again/Hard/Good/Easy, có hiện trước khoảng ôn kế tiếp dưới mỗi nút.                                                                                                         |
+| **Quiz luyện tập**      | 5 dạng: chọn nghĩa, chọn der/die/das, điền từ, sắp xếp câu, nghe rồi chọn. Ưu tiên từ đang học. Không làm thay đổi lịch ôn thẻ.                                                                                                        |
+| **Streak, XP, biểu đồ** | Chuỗi ngày học liên tiếp, điểm XP cho mỗi lượt ôn/câu quiz, biểu đồ XP 7 ngày trên màn hình chính.                                                                                                                                     |
+| **Phát âm mẫu**         | Nút 🔊 đọc từ và câu ví dụ bằng giọng Đức (TTS `de-DE`).                                                                                                                                                                               |
+| **Màu theo giống**      | der = xanh dương, die = hồng, das = xanh lá. Luôn kèm nhãn chữ, không chỉ dựa vào màu.                                                                                                                                                 |
+| **Tìm kiếm**            | Tìm bằng tiếng Đức, Việt hoặc Anh, gõ có dấu hay không dấu đều được (`strasse` → Straße, `ngoi nha` → Haus). Lọc theo cấp độ và chủ đề.                                                                                                |
+| **Thông báo từ vựng**   | Nhắc từ theo chu kỳ giờ hoặc vào các mốc giờ cố định trong ngày, có giờ yên tĩnh. Chạm vào thông báo để mở đúng từ đó.                                                                                                                 |
+| **Giao diện**           | Sáng/tối/theo hệ thống. Ngôn ngữ giao diện tiếng Việt, tiếng Anh hoặc cả hai.                                                                                                                                                          |
+| **Sao lưu**             | Xuất/nhập toàn bộ tiến độ và cài đặt ra file JSON để chuyển máy.                                                                                                                                                                       |
+| **Import**              | Thêm từ của riêng bạn từ file CSV hoặc JSON.                                                                                                                                                                                           |
 
 ---
 
@@ -181,7 +183,25 @@ Trên web, tiến độ lưu trong trình duyệt (localStorage). Web không có
 
 ### Màn hình "Hôm nay"
 
-Hiện số **thẻ đến hạn** và số **từ mới hôm nay**. Bấm **Bắt đầu ôn** để vào phiên ôn. Phía dưới có lối vào **Từ vựng** và **Cài đặt**.
+Hiện số **thẻ đến hạn** và số **từ mới hôm nay**. Bấm **Bắt đầu ôn** để vào phiên ôn, hoặc **Luyện tập (quiz)** để làm quiz.
+
+Thẻ tiến độ bên dưới gồm:
+
+- 🔥 **Streak:** số ngày học liên tiếp. Ngày nào có ít nhất 1 lượt ôn hoặc 1 câu quiz thì tính là đã học. Chưa học hôm nay thì streak của hôm qua vẫn giữ tới hết ngày (4 giờ sáng hôm sau).
+- **XP hôm nay** và **biểu đồ XP 7 ngày** (cột đậm là hôm nay), kèm kỷ lục streak và tổng XP.
+
+| Hành động        | XP  |
+| ---------------- | --- |
+| Ôn thẻ: Lại      | 2   |
+| Ôn thẻ: Khó      | 4   |
+| Ôn thẻ: Tốt / Dễ | 5   |
+| Quiz: đúng       | 10  |
+| Quiz: gần đúng   | 7   |
+| Quiz: sai        | 2   |
+
+XP được tính lại từ lịch sử mỗi lần mở, không lưu riêng, nên sao lưu/khôi phục giữ nguyên streak và XP.
+
+Phía dưới có lối vào **Từ vựng** và **Cài đặt**.
 
 ### Ôn tập
 
@@ -197,6 +217,30 @@ Hiện số **thẻ đến hạn** và số **từ mới hôm nay**. Bấm **B�
 | **Dễ (Easy)**   | Quá dễ                 | 4 ngày                      |
 
 Thẻ đến hạn luôn được ôn trước thẻ mới. Số từ mới mỗi ngày chỉnh trong Cài đặt. Một "ngày học" bắt đầu lúc **4 giờ sáng**, nên ôn lúc 1 giờ sáng vẫn tính cho hôm trước.
+
+### Luyện tập (quiz)
+
+1. Chọn **dạng câu hỏi** (một hoặc nhiều) và **số câu** (10 / 20 / 30). App nhớ lựa chọn cho lần sau.
+2. Bấm **Bắt đầu**. Các dạng được trộn xen kẽ, mỗi từ chỉ hỏi một lần trong một bài.
+
+| Dạng                 | Cách làm                                                                                                             |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| **Chọn nghĩa**       | Xem từ tiếng Đức, chọn 1 trong 4 nghĩa.                                                                              |
+| **Chọn der/die/das** | Xem danh từ (không tô màu để khỏi lộ đáp án), chọn mạo từ.                                                           |
+| **Điền từ**          | Xem nghĩa (và câu ví dụ có chỗ trống nếu có), gõ từ tiếng Đức. Có hàng phím ä ö ü ß và gợi ý chữ cái đầu + số ký tự. |
+| **Sắp xếp câu**      | Xem bản dịch, chạm các từ theo đúng thứ tự. Chạm vào từ đã xếp để bỏ ra.                                             |
+| **Nghe rồi chọn**    | App tự đọc từ (bấm 🔊 để nghe lại), chọn 1 trong 4 cách viết. Nhớ tắt chế độ im lặng.                                |
+
+Chấm điểm phần **Điền từ**:
+
+- Gõ có hoặc không có mạo từ đều được (`Tisch` hay `der Tisch`). Gõ **sai mạo từ** (`die Tisch`) thì tính là sai.
+- Sai **chữ hoa/thường, umlaut hoặc ß** (`tisch`, `Strasse`, `Backer`, `Baecker`) thì tính là **gần đúng**: vẫn qua, nhưng app hiện cách viết chuẩn.
+
+Hết bài, app hiện số câu đúng, XP nhận được và danh sách **Cần xem lại** (bấm để mở chi tiết từ).
+
+Quiz ưu tiên từ **đang học** (đã ôn ít nhất một lần), sau đó tới từ thuộc **cấp độ đang chọn**. Quiz **chỉ để luyện tập**: kết quả được cộng XP và tính streak nhưng **không làm thay đổi lịch ôn** của thẻ SRS.
+
+Trên máy tính: phím **1–4** chọn đáp án, **Enter** sang câu tiếp.
 
 ### Từ vựng
 
@@ -302,7 +346,7 @@ npm start            # expo start
 npm run start:lan    # expo start, ép IP LAN vào QR
 npm run tunnel       # expo start --tunnel ngrok
 npm run web          # bản web
-npm test             # Jest: SRS, hàng đợi, lập lịch thông báo, import, seed, backup
+npm test             # Jest: SRS, hàng đợi, thông báo, import, seed, backup, quiz, streak/XP
 npm run typecheck    # tsc --noEmit
 npm run lint         # ESLint (eslint-config-expo)
 npm run format       # Prettier (ghi file)
@@ -335,6 +379,7 @@ app/                    # màn hình (expo-router)
   _layout.tsx           # provider, Stack, xử lý chạm thông báo
   index.tsx             # Hôm nay
   review.tsx            # Ôn tập
+  quiz.tsx              # Luyện tập (quiz)
   browse.tsx            # Từ vựng
   word/[id].tsx         # Chi tiết từ
   settings.tsx          # Cài đặt + dữ liệu
@@ -344,9 +389,11 @@ src/
   vocab/                # kiểu dữ liệu, validate, CSV parser, import, tìm/lọc, seed
   notifications/        # planner.ts (hàm thuần) + adapter.ts (expo-notifications)
   backup/               # định dạng + kiểm tra sao lưu, đọc/ghi file
+  quiz/                 # tạo câu hỏi + chấm điểm (hàm thuần, RNG có seed) (+ test)
+  progress/             # XP, streak, thống kê 7 ngày (hàm thuần) (+ test)
   i18n/                 # vi.ts, en.ts, createT()
   tts/                  # bọc expo-speech
-  state/                # settings, logic học, AppContext
+  state/                # settings, logic học, quiz session, AppContext, hook
   ui/                   # theme tokens, component dùng chung
 content/
   vocab/                # a1.json … b2.json
@@ -362,13 +409,15 @@ File `*.web.ts` là bản thay thế dành riêng cho web (Metro tự chọn the
   - Learning steps 1 phút → 10 phút; relearning 10 phút; tốt nghiệp sau 1 ngày, Easy được 4 ngày.
   - Hệ số dễ (ease) khởi đầu 2.5, giới hạn trong khoảng [1.3, 3.5]. Ôn trễ hạn được cộng thêm khoảng (kiểu Anki).
 - **Lập lịch thông báo** (`src/notifications/planner.ts`) cũng là hàm thuần: nhận cài đặt, danh sách từ và thời điểm, trả về danh sách thông báo. Phần gọi `expo-notifications` nằm riêng ở `adapter.ts`.
+- **Quiz** (`src/quiz/build.ts`) là hàm thuần: nhận danh sách từ, dạng câu hỏi, số câu và một hàm random (`seededRng` khi test), trả về danh sách câu hỏi. Phương án nhiễu ưu tiên cùng từ loại và cùng cấp, không trùng nghĩa Việt/Anh hay cách viết với nhau. Chấm điểm (`gradeSpelling`, `gradeOrder`, `gradeChoice`) cũng thuần.
+- **Streak/XP** (`src/progress/`) tính từ `review_logs` + `quiz_logs` theo ngày học (bắt đầu 4:00 sáng giờ địa phương, đúng cả lúc đổi giờ mùa hè).
+- **Biểu đồ tuần** vẽ bằng `View` thường, không thêm thư viện biểu đồ.
 - **Lưu trữ:** mọi truy cập đi qua interface `Repository`, có bản SQLite (iOS) và bản bộ nhớ (Jest, web).
-- **Schema DB v1:** `words` (khóa ổn định), `cards` (trạng thái SRS, duy nhất theo `(word_id, kind)`), `review_logs`, `settings`, `content_meta`. Bản ghi người dùng có `id` (UUID), `updated_at`, `deleted`, `user_id` để sẵn sàng đồng bộ sau này. Migration có phiên bản qua `PRAGMA user_version`.
+- **Schema DB v2:** `words` (khóa ổn định), `cards` (trạng thái SRS, duy nhất theo `(word_id, kind)`), `review_logs`, `settings`, `content_meta`; migration v2 thêm `quiz_logs` (`word_id`, `type`, `result`, `answered_at`, `duration_ms`). Bản ghi người dùng có `id` (UUID), `updated_at`, `deleted`, `user_id` để sẵn sàng đồng bộ sau này. Migration có phiên bản qua `PRAGMA user_version`.
 - **Sẵn chỗ cho các giai đoạn sau:**
   - `cards.kind` cho phép thêm loại thẻ mới (der/die/das, điền từ…).
-  - `review_logs` đủ dữ liệu để tính streak, XP, biểu đồ tuần.
   - Bảng mới (ngữ pháp, hội thoại, ghi âm) sẽ được thêm bằng migration.
-- **Định dạng sao lưu:** `{ format: "dyngoc-backup", formatVersion: 1, exportedAt, schemaVersion, settings, cards, reviewLogs, importedWords }`.
+- **Định dạng sao lưu:** `{ format: "dyngoc-backup", formatVersion: 2, exportedAt, schemaVersion, settings, cards, reviewLogs, quizLogs, importedWords }`. File v1 (Giai đoạn 1, chưa có `quizLogs`) vẫn khôi phục được.
 
 ---
 
@@ -392,13 +441,17 @@ File `*.web.ts` là bản thay thế dành riêng cho web (Metro tự chọn the
 **Khác**
 
 - SRS chưa có "fuzz" (ngẫu nhiên hóa khoảng ôn), nhằm giữ kết quả xác định.
+- Quiz không ảnh hưởng lịch ôn SRS (cố ý, để tránh làm sai thuật toán SM-2).
+- **Điền từ** chỉ hiện câu ví dụ có chỗ trống khi từ xuất hiện nguyên dạng trong câu. Động từ đã chia (`fahren` → `fährt`) hoặc danh từ số nhiều thì chỉ hiện nghĩa và gợi ý.
+- **Sắp xếp câu** chỉ dùng câu ví dụ có 3–10 từ; từ đầu câu viết hoa nên là một gợi ý nhỏ.
+- **Nghe rồi chọn** cần TTS hoạt động (tắt chế độ im lặng trên iPhone).
 
 ---
 
 ## 11. Lộ trình
 
 - [x] **Giai đoạn 1:** từ vựng có giống, flashcard SRS, SQLite, thông báo, sáng/tối, song ngữ, sao lưu, import
-- [ ] **Giai đoạn 2:** quiz (trắc nghiệm, điền từ, sắp xếp câu, chọn der/die/das, nghe rồi chọn), streak, XP, biểu đồ tuần
+- [x] **Giai đoạn 2:** quiz (trắc nghiệm, điền từ, sắp xếp câu, chọn der/die/das, nghe rồi chọn), streak, XP, biểu đồ tuần
 - [ ] **Giai đoạn 3:** ngữ pháp, bảng chia động từ, bốn cách (Nominativ/Akkusativ/Dativ/Genitiv)
 - [ ] **Giai đoạn 4:** ghi âm và phát lại để tự so sánh phát âm
 - [ ] **Giai đoạn 5:** hội thoại và đọc hiểu theo cấp độ
@@ -422,3 +475,13 @@ File `*.web.ts` là bản thay thế dành riêng cho web (Metro tự chọn the
 - [ ] Từ chối quyền thông báo trong Cài đặt iOS: app hiện cảnh báo đỏ kèm nút mở Cài đặt.
 - [ ] **Sao lưu rồi khôi phục:** xuất, ôn thêm vài thẻ, khôi phục, app hỏi xác nhận, tiến độ trở về lúc xuất.
 - [ ] Import `content/examples/import-example.csv`: báo "Đã thêm 5 từ". Import lại lần nữa thì báo "trùng 5".
+- [ ] **Quiz:** làm một bài 10 câu với đủ 5 dạng. Kiểm tra:
+  - Đáp án đúng viền xanh ✓, đáp án chọn sai viền đỏ ✗.
+  - Câu **der/die/das** không tô màu từ trước khi trả lời.
+  - **Điền từ:** hàng phím ä ö ü ß gõ được; gõ `strasse` cho Straße báo "Gần đúng"; Enter trên bàn phím iOS = Kiểm tra.
+  - **Sắp xếp câu:** chạm từ đã xếp để bỏ ra; Kiểm tra chỉ bật khi đã xếp hết.
+  - **Nghe rồi chọn:** tự đọc khi mở câu, 🔊 đọc lại.
+  - Màn kết quả: số câu đúng, XP, danh sách cần xem lại mở được chi tiết từ.
+- [ ] **Streak/XP:** sau khi ôn hoặc làm quiz, "Hôm nay" hiện 🔥 1 ngày liên tiếp, XP hôm nay > 0, cột hôm nay trên biểu đồ có giá trị.
+- [ ] **Nâng cấp từ Giai đoạn 1:** cài bản mới lên máy đã có tiến độ cũ: tiến độ vẫn còn, streak tính cả lượt ôn cũ.
+- [ ] Khôi phục một file sao lưu cũ (v1) vẫn thành công.

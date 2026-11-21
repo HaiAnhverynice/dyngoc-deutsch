@@ -45,6 +45,7 @@ function Navigator() {
       >
         <Stack.Screen name="index" options={{ title: t('home.title') }} />
         <Stack.Screen name="review" options={{ title: t('review.title') }} />
+        <Stack.Screen name="quiz" options={{ title: t('quiz.title') }} />
         <Stack.Screen name="browse" options={{ title: t('browse.title') }} />
         <Stack.Screen name="word/[id]" options={{ title: '' }} />
         <Stack.Screen name="settings" options={{ title: t('settings.title') }} />

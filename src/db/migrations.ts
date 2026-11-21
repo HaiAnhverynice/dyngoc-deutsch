@@ -81,6 +81,20 @@ CREATE TABLE content_meta (
 );
 `,
   },
+  {
+    version: 2,
+    sql: `
+CREATE TABLE quiz_logs (
+  id TEXT PRIMARY KEY NOT NULL,
+  word_id TEXT NOT NULL,
+  type TEXT NOT NULL,
+  result TEXT NOT NULL,
+  answered_at INTEGER NOT NULL,
+  duration_ms INTEGER,${SYNC_COLUMNS}
+);
+CREATE INDEX idx_quiz_answered ON quiz_logs(answered_at);
+`,
+  },
 ];
 
 export const SCHEMA_VERSION = MIGRATIONS[MIGRATIONS.length - 1]!.version;

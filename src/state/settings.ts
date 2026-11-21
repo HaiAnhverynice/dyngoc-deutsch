@@ -1,5 +1,6 @@
 import type { UiLanguage } from '@/i18n';
 import { DEFAULT_NOTIFICATION_SETTINGS, type NotificationSettings } from '@/notifications/types';
+import { QUIZ_TYPES, type QuizType } from '@/quiz/types';
 import { LEVELS, type Level } from '@/vocab/types';
 
 export type ThemePreference = 'system' | 'light' | 'dark';
@@ -10,7 +11,15 @@ export interface AppSettings {
   levels: Level[];
   newPerDay: number;
   notifications: NotificationSettings;
+  quiz: QuizSettings;
 }
+
+export interface QuizSettings {
+  types: QuizType[];
+  length: number;
+}
+
+export const QUIZ_LENGTHS = [10, 20, 30] as const;
 
 export const DEFAULT_SETTINGS: AppSettings = {
   uiLang: 'vi',
@@ -18,6 +27,7 @@ export const DEFAULT_SETTINGS: AppSettings = {
   levels: ['A1'],
   newPerDay: 10,
   notifications: DEFAULT_NOTIFICATION_SETTINGS,
+  quiz: { types: [...QUIZ_TYPES], length: 10 },
 };
 
 export const NEW_PER_DAY_MAX = 100;
@@ -55,6 +65,21 @@ function sanitizeNotifications(v: unknown): NotificationSettings {
   };
 }
 
+function sanitizeQuiz(v: unknown): QuizSettings {
+  const d = DEFAULT_SETTINGS.quiz;
+  if (typeof v !== 'object' || v === null) return d;
+  const o = v as Partial<Record<keyof QuizSettings, unknown>>;
+  const types = Array.isArray(o.types)
+    ? QUIZ_TYPES.filter((t) => (o.types as unknown[]).includes(t))
+    : [];
+  return {
+    types: types.length > 0 ? types : d.types,
+    length: (QUIZ_LENGTHS as readonly unknown[]).includes(o.length)
+      ? (o.length as number)
+      : d.length,
+  };
+}
+
 /** Settings are stored as one JSON value per top-level key; unknown or bad values fall back. */
 export function parseSettings(raw: Record<string, string>): AppSettings {
   const d = DEFAULT_SETTINGS;
@@ -74,6 +99,7 @@ export function parseSettings(raw: Record<string, string>): AppSettings {
         ? Math.round(newPerDay)
         : d.newPerDay,
     notifications: sanitizeNotifications(parseJson(raw.notifications)),
+    quiz: sanitizeQuiz(parseJson(raw.quiz)),
   };
 }
 
@@ -84,5 +110,6 @@ export function serializeSettings(s: AppSettings): Record<string, string> {
     levels: JSON.stringify(s.levels),
     newPerDay: JSON.stringify(s.newPerDay),
     notifications: JSON.stringify(s.notifications),
+    quiz: JSON.stringify(s.quiz),
   };
 }
