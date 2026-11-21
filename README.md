@@ -161,7 +161,17 @@ npm run tunnel          # = npx expo start --tunnel ngrok
 | `Project is incompatible with this version of Expo Go`               | Cập nhật Expo Go                                                        |
 | `ConfigError: Cannot determine the project's Expo SDK version`       | Chạy lệnh sai thư mục, hoặc chưa `npm install`                          |
 | `nvm: command not found`                                             | Chưa mở lại terminal sau khi cài nvm                                    |
-| Quét QR mà không có gì xảy ra                                        | Dùng Camera thay vì máy quét khác, hoặc nhập URL thủ công trong Expo Go |
+| Quét QR mà không có gì xảy ra                                        | Xem mục "Link chạy nhưng QR không quét được" bên dưới                   |
+
+#### Link `exp://…` chạy nhưng QR không quét được
+
+Nghĩa là mạng đã ổn, chỉ có bước quét QR bị lỗi. Nguyên nhân thường gặp:
+
+- **Quét trong Expo Go:** bản Expo Go cho iOS không có máy quét QR. Phải mở app **Camera** của iPhone, hướng vào QR, rồi bấm vào dòng **"Mở trong Expo Go"** hiện ở mép dưới khung hình. Ứng dụng quét QR khác thường không mở được link `exp://`.
+- **QR trong terminal bị méo:** do giãn dòng, font hoặc màu của terminal. Thử phóng to cửa sổ terminal (`Ctrl` + `+`), đổi sang theme nền tối/sáng khác, hoặc chụp màn hình QR rồi phóng to.
+- **QR mở trên máy khác:** QR luôn chứa đúng địa chỉ in ngay bên dưới (`Metro waiting on exp://192.168.1.8:8081`). Nếu địa chỉ đó đúng thì nhập tay cũng được, không cần QR.
+
+**Cách nhanh nhất:** nhập link một lần trong Expo Go (**Enter URL manually**). Sau đó dự án nằm trong mục **Recently opened** của Expo Go, lần sau chỉ cần bấm vào đó, miễn là IP của máy tính không đổi.
 
 ---
 
