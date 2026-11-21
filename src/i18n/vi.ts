@@ -201,6 +201,33 @@ export const vi = {
   'push.queue': 'Đã chuẩn bị {n} từ cho các thông báo tới (ưu tiên từ đang học và đến hạn).',
   'push.badgeHint':
     'Icon app trên Màn hình chính hiện số thẻ cần học hôm nay (cập nhật mỗi lần mở app).',
+  'home.grammar': 'Ngữ pháp',
+  'grammar.title': 'Ngữ pháp',
+  'grammar.verbs': 'Bảng chia động từ',
+  'grammar.verbsHint': '{n} động từ · Präsens, Präteritum, Perfekt, Futur I, Imperativ',
+  'grammar.progress': '{done}/{n} bài tập',
+  'grammar.complete': 'Đã xong ✓',
+  'grammar.exercises': 'Bài tập',
+  'grammar.exerciseHint':
+    'Chọn từ đúng cho chỗ trống. Mỗi câu đúng được cộng XP và tính vào streak.',
+  'grammar.score': '{ok}/{n} câu đúng',
+  'grammar.retry': 'Làm lại bài tập',
+  'grammar.notFound': 'Không tìm thấy bài này.',
+  'grammar.tip': 'Mẹo',
+  'verbs.title': 'Bảng chia động từ',
+  'verbs.search': 'Tìm động từ (Đức, Việt, Anh)…',
+  'verbs.empty': 'Không tìm thấy động từ nào.',
+  'conj.title': 'Bảng chia động từ',
+  'conj.present': 'Präsens (hiện tại)',
+  'conj.preterite': 'Präteritum (quá khứ, văn viết)',
+  'conj.perfect': 'Perfekt (quá khứ, văn nói)',
+  'conj.future': 'Futur I (tương lai)',
+  'conj.imperative': 'Imperativ (mệnh lệnh)',
+  'conj.irregularHint': 'Chữ đậm = dạng bất quy tắc. Chạm vào một dòng để nghe.',
+  'conj.tapHint': 'Chạm vào một dòng để nghe.',
+  'conj.imperativeHint': '(e) = có thể thêm -e: “mach!” hoặc “mache!”.',
+  'conj.noImperative': 'Động từ khuyết thiếu không có thể mệnh lệnh.',
+  'conj.generated': 'Bảng được tạo tự động từ các dạng chính của động từ.',
 } as const;
 
 export type TranslationKey = keyof typeof vi;

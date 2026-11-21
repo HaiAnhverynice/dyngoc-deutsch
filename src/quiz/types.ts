@@ -21,9 +21,13 @@ export type Question =
   | { type: 'spelling'; wordId: string; cloze: string | null }
   | { type: 'order'; wordId: string; tokens: string[]; solution: string[]; punctuation: string };
 
+/** Grammar exercises are logged too (for XP/streak); their wordId is `grammar:<lesson>:<exercise>`. */
+export const LOG_TYPES = [...QUIZ_TYPES, 'grammar'] as const;
+export type QuizLogType = (typeof LOG_TYPES)[number];
+
 export interface QuizLog extends SyncFields {
   wordId: string;
-  type: QuizType;
+  type: QuizLogType;
   result: QuizResult;
   answeredAt: number;
   durationMs: number | null;

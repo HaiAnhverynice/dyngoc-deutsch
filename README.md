@@ -8,7 +8,7 @@
 - **Offline hoàn toàn:** toàn bộ từ vựng và tiến độ học nằm trên máy.
 - **Nền tảng:** Expo SDK 58 · React Native 0.88 · TypeScript (strict) · expo-router.
 
-> **Trạng thái:** Giai đoạn 1 (MVP) và Giai đoạn 2 (quiz, streak, XP, biểu đồ tuần) đã xong. Xem [Lộ trình](#12-lộ-trình).
+> **Trạng thái:** Giai đoạn 1 (MVP), Giai đoạn 2 (quiz, streak, XP, biểu đồ tuần) và Giai đoạn 3 (ngữ pháp, bảng chia động từ) đã xong. Xem [Lộ trình](#12-lộ-trình).
 
 ---
 
@@ -38,6 +38,8 @@
 | **Flashcard SRS**       | Thuật toán lặp lại ngắt quãng kiểu SM-2 (tự viết). Bốn mức Again/Hard/Good/Easy, có hiện trước khoảng ôn kế tiếp dưới mỗi nút.                                                                                                         |
 | **Quiz luyện tập**      | 5 dạng: chọn nghĩa, chọn der/die/das, điền từ, sắp xếp câu, nghe rồi chọn. Ưu tiên từ đang học. Không làm thay đổi lịch ôn thẻ.                                                                                                        |
 | **Streak, XP, biểu đồ** | Chuỗi ngày học liên tiếp, điểm XP cho mỗi lượt ôn/câu quiz, biểu đồ XP 7 ngày trên màn hình chính.                                                                                                                                     |
+| **Ngữ pháp**            | 11 bài A1 (giống, số nhiều, chia động từ, sein/haben, đổi nguyên âm, trật tự từ, phủ định, bốn cách, động từ tách, động từ khuyết thiếu, Perfekt), có bảng, ví dụ đọc mẫu và bài tập.                                                  |
+| **Bảng chia động từ**   | Präsens, Präteritum, Perfekt, Futur I, Imperativ cho mọi động từ (kể cả từ tự import). Dạng bất quy tắc in đậm, chạm để nghe.                                                                                                          |
 | **Phát âm mẫu**         | Nút 🔊 đọc từ và câu ví dụ bằng giọng Đức (TTS `de-DE`).                                                                                                                                                                               |
 | **Màu theo giống**      | der = xanh dương, die = hồng, das = xanh lá. Luôn kèm nhãn chữ, không chỉ dựa vào màu.                                                                                                                                                 |
 | **Tìm kiếm**            | Tìm bằng tiếng Đức, Việt hoặc Anh, gõ có dấu hay không dấu đều được (`strasse` → Straße, `ngoi nha` → Haus). Lọc theo cấp độ và chủ đề.                                                                                                |
@@ -343,6 +345,20 @@ Quiz ưu tiên từ **đang học** (đã ôn ít nhất một lần), sau đó 
 
 Trên máy tính: phím **1–4** chọn đáp án, **Enter** sang câu tiếp.
 
+### Ngữ pháp
+
+Từ màn hình chính bấm **Ngữ pháp**.
+
+- **Bảng chia động từ:** danh sách mọi động từ, tìm bằng tiếng Đức/Việt/Anh. Bấm vào một động từ để mở trang chi tiết có bảng chia (cũng hiện ở trang chi tiết của từng động từ trong Từ vựng).
+  - Chọn thì: **Präsens, Präteritum, Perfekt, Futur I, Imperativ**.
+  - Ở Präsens, các dạng **bất quy tắc được in đậm** (ví dụ `sprichst`, `spricht`).
+  - **Chạm vào một dòng để nghe** (ví dụ "du sprichst").
+  - Imperativ: `(e)` nghĩa là có thể thêm -e (`mach!` hoặc `mache!`). Động từ khuyết thiếu không có Imperativ.
+  - Bảng được **tạo tự động** từ 4 dạng chính lưu cùng mỗi động từ (ngôi 3 số ít, Präteritum, Partizip II, trợ động từ), nên từ bạn tự import cũng có bảng. Hãy nhập đúng 4 dạng này khi import động từ.
+- **Bài học A1** (11 bài): mỗi bài gồm giải thích (Việt/Anh theo cài đặt ngôn ngữ), bảng, mẹo, ví dụ có nút 🔊, và **4 bài tập điền chỗ trống** có giải thích sau mỗi câu.
+  - Mỗi câu trả lời được cộng XP (như quiz) và tính vào streak.
+  - Bài được đánh dấu **Đã xong ✓** khi mọi bài tập đã từng được trả lời đúng ít nhất một lần.
+
 ### Từ vựng
 
 Tìm theo tiếng Đức, Việt hoặc Anh, lọc theo cấp và chủ đề. Chấm xanh nghĩa là từ đang học. Bấm vào một từ để xem chi tiết, rồi bấm **Thêm vào học** để từ đó xuất hiện ở lượt từ mới kế tiếp, kể cả khi không thuộc cấp đang học.
@@ -483,6 +499,9 @@ app/                    # màn hình (expo-router)
   index.tsx             # Hôm nay
   review.tsx            # Ôn tập
   quiz.tsx              # Luyện tập (quiz)
+  grammar/index.tsx     # Danh sách bài ngữ pháp
+  grammar/[id].tsx      # Bài học + bài tập
+  verbs.tsx             # Danh sách động từ
   browse.tsx            # Từ vựng
   word/[id].tsx         # Chi tiết từ
   settings.tsx          # Cài đặt + dữ liệu
@@ -492,6 +511,7 @@ src/
   vocab/                # kiểu dữ liệu, validate, CSV parser, import, tìm/lọc, seed
   notifications/        # planner.ts (hàm thuần) + adapter.ts (expo-notifications)
   backup/               # định dạng + kiểm tra sao lưu, đọc/ghi file
+  grammar/              # chia động từ (hàm thuần), kiểu + validate nội dung ngữ pháp, tiến độ bài (+ test)
   quiz/                 # tạo câu hỏi + chấm điểm (hàm thuần, RNG có seed) (+ test)
   progress/             # XP, streak, thống kê 7 ngày (hàm thuần) (+ test)
   i18n/                 # vi.ts, en.ts, createT()
@@ -500,6 +520,7 @@ src/
   ui/                   # theme tokens, component dùng chung
 content/
   vocab/                # a1.json … b2.json
+  grammar/              # a1.json: bài ngữ pháp
   examples/             # file import mẫu
 public/                 # file tĩnh của bản web: sw.js (offline + push), manifest.json, icon
 scripts/
@@ -522,6 +543,8 @@ File `*.web.ts` là bản thay thế dành riêng cho web (Metro tự chọn the
 - **Lập lịch thông báo** (`src/notifications/planner.ts`) cũng là hàm thuần: nhận cài đặt, danh sách từ và thời điểm, trả về danh sách thông báo. Phần gọi `expo-notifications` nằm riêng ở `adapter.ts`.
 - **Quiz** (`src/quiz/build.ts`) là hàm thuần: nhận danh sách từ, dạng câu hỏi, số câu và một hàm random (`seededRng` khi test), trả về danh sách câu hỏi. Phương án nhiễu ưu tiên cùng từ loại và cùng cấp, không trùng nghĩa Việt/Anh hay cách viết với nhau. Chấm điểm (`gradeSpelling`, `gradeOrder`, `gradeChoice`) cũng thuần.
 - **Streak/XP** (`src/progress/`) tính từ `review_logs` + `quiz_logs` theo ngày học (bắt đầu 4:00 sáng giờ địa phương, đúng cả lúc đổi giờ mùa hè).
+- **Chia động từ** (`src/grammar/conjugate.ts`) là hàm thuần: từ nguyên mẫu + 4 dạng chính sinh ra 5 thì. Xử lý đuôi đều, đổi nguyên âm (lấy từ ngôi 3), chèn -e- (arbeitest, öffnet), gốc -s/-ß/-z (heißt), -eln/-ern, động từ kiểu khuyết thiếu (kann, weiß), động từ tách (steht auf), và bảng riêng cho sein/haben/werden/tun. Có test cho từng quy tắc và cho mọi động từ có sẵn.
+- **Nội dung ngữ pháp** nằm trong `content/grammar/a1.json` (tách khỏi code, có `validateGrammarFile` + test kiểm tra cấu trúc, đáp án, chỗ trống). Kết quả bài tập ghi vào `quiz_logs` với `type = "grammar"` và `word_id = "grammar:<bài>:<câu>"`, nên không cần bảng mới và sao lưu tự bao gồm.
 - **Biểu đồ tuần** vẽ bằng `View` thường, không thêm thư viện biểu đồ.
 - **Lưu trữ:** mọi truy cập đi qua interface `Repository`, có bản SQLite (iOS) và bản bộ nhớ (Jest, web).
 - **Schema DB v2:** `words` (khóa ổn định), `cards` (trạng thái SRS, duy nhất theo `(word_id, kind)`), `review_logs`, `settings`, `content_meta`; migration v2 thêm `quiz_logs` (`word_id`, `type`, `result`, `answered_at`, `duration_ms`). Bản ghi người dùng có `id` (UUID), `updated_at`, `deleted`, `user_id` để sẵn sàng đồng bộ sau này. Migration có phiên bản qua `PRAGMA user_version`.
@@ -565,7 +588,7 @@ File `*.web.ts` là bản thay thế dành riêng cho web (Metro tự chọn the
 
 - [x] **Giai đoạn 1:** từ vựng có giống, flashcard SRS, SQLite, thông báo, sáng/tối, song ngữ, sao lưu, import
 - [x] **Giai đoạn 2:** quiz (trắc nghiệm, điền từ, sắp xếp câu, chọn der/die/das, nghe rồi chọn), streak, XP, biểu đồ tuần
-- [ ] **Giai đoạn 3:** ngữ pháp, bảng chia động từ, bốn cách (Nominativ/Akkusativ/Dativ/Genitiv)
+- [x] **Giai đoạn 3:** ngữ pháp, bảng chia động từ, bốn cách (Nominativ/Akkusativ/Dativ/Genitiv)
 - [ ] **Giai đoạn 4:** ghi âm và phát lại để tự so sánh phát âm
 - [ ] **Giai đoạn 5:** hội thoại và đọc hiểu theo cấp độ
 
@@ -608,3 +631,12 @@ File `*.web.ts` là bản thay thế dành riêng cho web (Metro tự chọn the
 - [ ] Sao chép mã, thêm vào `PUSH_SUBSCRIPTIONS`, chạy **Actions → Vocab push → Run workflow**: trong khoảng 1 phút nhận thông báo dạng `der Tisch · bàn` khi app đang đóng.
 - [ ] Chạm vào thông báo: mở đúng từ đó.
 - [ ] Sau khi ôn vài thẻ, icon app hiện số thẻ còn lại hôm nay.
+
+**Giai đoạn 3: ngữ pháp**
+
+- [ ] Hôm nay → **Ngữ pháp**: thấy thẻ "Bảng chia động từ" và 11 bài A1, mỗi bài hiện "0/4 bài tập".
+- [ ] Mở bài "Bốn cách": bảng cuộn ngang được trên iPhone, ví dụ có 🔊 đọc tiếng Đức.
+- [ ] Làm 4 bài tập: đáp án đúng viền xanh ✓, sai viền đỏ ✗, có giải thích. Quay lại danh sách thấy số bài tập đúng cập nhật; làm đúng hết thì "Đã xong ✓".
+- [ ] Bảng chia động từ → tìm `fahr` → `fahren`: Präsens in đậm `fährst`, `fährt`; Imperativ `fahr(e)!`; chạm một dòng nghe được.
+- [ ] `können`: Imperativ báo "không có thể mệnh lệnh"; `aufstehen`: `stehe auf`, `bin aufgestanden`.
+- [ ] Đổi ngôn ngữ sang English / Cả hai: bài học hiện tiếng Anh / cả hai.

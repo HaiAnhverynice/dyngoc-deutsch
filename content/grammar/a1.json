@@ -1,0 +1,1168 @@
+{
+  "version": 1,
+  "level": "A1",
+  "lessons": [
+    {
+      "id": "a1.gender",
+      "level": "A1",
+      "title": {
+        "vi": "Giống của danh từ và mạo từ",
+        "en": "Noun gender and articles"
+      },
+      "summary": {
+        "vi": "der, die, das; ein, eine; kein, keine",
+        "en": "der, die, das; ein, eine; kein, keine"
+      },
+      "blocks": [
+        {
+          "type": "text",
+          "vi": "Mỗi danh từ tiếng Đức có một giống: giống đực (maskulin), giống cái (feminin) hoặc giống trung (neutrum). Tiếng Việt không có giống ngữ pháp, nên hãy luôn học danh từ kèm mạo từ: không học “Tisch” mà học “der Tisch”. Danh từ luôn viết hoa chữ cái đầu.",
+          "en": "Every German noun has a gender: masculine, feminine or neuter. Always learn a noun together with its article: not “Tisch” but “der Tisch”. Nouns are always capitalised."
+        },
+        {
+          "type": "table",
+          "head": ["", "maskulin", "feminin", "neutrum", "Plural"],
+          "rows": [
+            ["bestimmt (xác định)", "der", "die", "das", "die"],
+            ["unbestimmt (không xác định)", "ein", "eine", "ein", "–"],
+            ["Phủ định", "kein", "keine", "kein", "keine"]
+          ],
+          "caption": {
+            "vi": "Mạo từ ở Nominativ (chủ ngữ)",
+            "en": "Articles in the nominative (subject)"
+          }
+        },
+        {
+          "type": "text",
+          "vi": "“der/die/das” giống “cái … đó” (đã biết, xác định). “ein/eine” giống “một …” (chưa xác định). Số nhiều không có mạo từ không xác định.",
+          "en": "“der/die/das” is like “the” (specific). “ein/eine” is like “a/an”. There is no indefinite article in the plural."
+        },
+        {
+          "type": "table",
+          "head": ["Đuôi / nhóm", "Giống", "Ví dụ"],
+          "rows": [
+            [
+              "-ung, -heit, -keit, -schaft, -ion, -tät",
+              "die",
+              "die Wohnung, die Freiheit, die Information"
+            ],
+            ["-chen, -lein (từ chỉ cái nhỏ)", "das", "das Mädchen, das Brötchen"],
+            ["-ment, -um", "das", "das Dokument, das Museum"],
+            ["-er (người làm nghề), -ist, -ismus", "der", "der Lehrer, der Tourist"],
+            ["Ngày, tháng, mùa, hướng", "der", "der Montag, der Mai, der Winter"]
+          ],
+          "caption": {
+            "vi": "Mẹo đoán giống (không tuyệt đối)",
+            "en": "Gender hints (not absolute)"
+          }
+        },
+        {
+          "type": "tip",
+          "vi": "Màu trong app: der = xanh dương, die = hồng, das = xanh lá. Giống tự nhiên không phải lúc nào cũng trùng giống ngữ pháp: das Mädchen (cô gái) là giống trung vì đuôi -chen.",
+          "en": "In the app: der = blue, die = pink, das = green. Grammatical gender does not always match natural gender: das Mädchen (the girl) is neuter because of -chen."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "de": "Das ist ein Tisch. Der Tisch ist neu.",
+              "vi": "Đây là một cái bàn. Cái bàn (đó) mới.",
+              "en": "This is a table. The table is new."
+            },
+            {
+              "de": "Das ist eine Lampe. Die Lampe ist teuer.",
+              "vi": "Đây là một cái đèn. Cái đèn đắt.",
+              "en": "This is a lamp. The lamp is expensive."
+            },
+            {
+              "de": "Das ist kein Auto, das ist ein Bus.",
+              "vi": "Đây không phải ô tô, đây là xe buýt.",
+              "en": "This isn't a car, it's a bus."
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "q1",
+          "de": "___ Wohnung ist groß.",
+          "choices": ["Der", "Die", "Das"],
+          "answer": 1,
+          "explain": {
+            "vi": "Đuôi -ung luôn là giống cái: die Wohnung.",
+            "en": "Nouns ending in -ung are feminine: die Wohnung."
+          }
+        },
+        {
+          "id": "q2",
+          "de": "___ Mädchen spielt im Park.",
+          "choices": ["Der", "Die", "Das"],
+          "answer": 2,
+          "explain": {
+            "vi": "Đuôi -chen luôn là giống trung, kể cả khi chỉ người: das Mädchen.",
+            "en": "Nouns ending in -chen are neuter, even for people: das Mädchen."
+          }
+        },
+        {
+          "id": "q3",
+          "de": "Das ist ___ Lehrer.",
+          "choices": ["ein", "eine"],
+          "answer": 0,
+          "explain": {
+            "vi": "der Lehrer là giống đực → mạo từ không xác định là ein.",
+            "en": "der Lehrer is masculine → indefinite article ein."
+          }
+        },
+        {
+          "id": "q4",
+          "de": "Ich habe ___ Zeit.",
+          "choices": ["kein", "keine"],
+          "answer": 1,
+          "explain": {
+            "vi": "die Zeit là giống cái → phủ định là keine.",
+            "en": "die Zeit is feminine → negative article keine."
+          }
+        }
+      ]
+    },
+    {
+      "id": "a1.plural",
+      "level": "A1",
+      "title": {
+        "vi": "Số nhiều của danh từ",
+        "en": "Plural of nouns"
+      },
+      "summary": {
+        "vi": "Năm cách tạo số nhiều; mạo từ số nhiều luôn là die",
+        "en": "Five plural patterns; the plural article is always die"
+      },
+      "blocks": [
+        {
+          "type": "text",
+          "vi": "Ở số nhiều, mạo từ xác định luôn là “die”, bất kể giống. Đuôi số nhiều thì phải học thuộc cùng từ, giống như mạo từ. Trong app, dòng “Số nhiều” cho biết dạng đúng của từng danh từ.",
+          "en": "In the plural the definite article is always “die”, whatever the gender. The plural ending has to be learned with each noun, like the article. In the app, the “Plural” line shows each noun's form."
+        },
+        {
+          "type": "table",
+          "head": ["Đuôi", "Hay gặp ở", "Ví dụ"],
+          "rows": [
+            [
+              "-e (đôi khi thêm umlaut)",
+              "nhiều danh từ der/das",
+              "der Tisch → die Tische, der Stuhl → die Stühle"
+            ],
+            [
+              "-er (+ umlaut nếu được)",
+              "danh từ das ngắn",
+              "das Kind → die Kinder, das Haus → die Häuser"
+            ],
+            ["-n / -en", "hầu hết danh từ die", "die Lampe → die Lampen, die Frau → die Frauen"],
+            [
+              "-s",
+              "từ mượn, từ tận cùng nguyên âm",
+              "das Auto → die Autos, das Hotel → die Hotels"
+            ],
+            [
+              "không đổi (đôi khi umlaut)",
+              "đuôi -er, -el, -en, -chen",
+              "der Lehrer → die Lehrer, der Vater → die Väter"
+            ]
+          ],
+          "caption": {
+            "vi": "Các kiểu số nhiều",
+            "en": "Plural patterns"
+          }
+        },
+        {
+          "type": "tip",
+          "vi": "Danh từ giống cái đuôi -in thêm -nen: die Lehrerin → die Lehrerinnen.",
+          "en": "Feminine nouns in -in add -nen: die Lehrerin → die Lehrerinnen."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "de": "Die Kinder spielen im Garten.",
+              "vi": "Những đứa trẻ chơi trong vườn.",
+              "en": "The children are playing in the garden."
+            },
+            {
+              "de": "Ich habe zwei Brüder.",
+              "vi": "Tôi có hai anh/em trai.",
+              "en": "I have two brothers."
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "q1",
+          "de": "das Kind → die ___",
+          "choices": ["Kinde", "Kinder", "Kinds"],
+          "answer": 1,
+          "explain": {
+            "vi": "das Kind là danh từ das ngắn → số nhiều -er: die Kinder.",
+            "en": "Short das-noun → plural -er: die Kinder."
+          }
+        },
+        {
+          "id": "q2",
+          "de": "die Lampe → die ___",
+          "choices": ["Lampe", "Lampes", "Lampen"],
+          "answer": 2,
+          "explain": {
+            "vi": "Danh từ die tận cùng -e thêm -n: die Lampen.",
+            "en": "Feminine nouns in -e add -n: die Lampen."
+          }
+        },
+        {
+          "id": "q3",
+          "de": "das Auto → die ___",
+          "choices": ["Autos", "Auten", "Autoe"],
+          "answer": 0,
+          "explain": {
+            "vi": "Từ tận cùng nguyên âm (không phải -e) thường thêm -s: die Autos.",
+            "en": "Nouns ending in a vowel other than -e usually add -s: die Autos."
+          }
+        },
+        {
+          "id": "q4",
+          "de": "___ Lehrer sind nett.",
+          "choices": ["Der", "Die", "Das"],
+          "answer": 1,
+          "explain": {
+            "vi": "“sind” cho thấy đây là số nhiều → mạo từ luôn là die.",
+            "en": "“sind” shows plural → the article is always die."
+          }
+        }
+      ]
+    },
+    {
+      "id": "a1.present",
+      "level": "A1",
+      "title": {
+        "vi": "Đại từ nhân xưng và chia động từ ở hiện tại",
+        "en": "Personal pronouns and present tense"
+      },
+      "summary": {
+        "vi": "Gốc động từ + đuôi -e, -st, -t, -en, -t, -en",
+        "en": "Verb stem + -e, -st, -t, -en, -t, -en"
+      },
+      "blocks": [
+        {
+          "type": "text",
+          "vi": "Tiếng Việt không chia động từ (tôi đi, anh đi, họ đi), nhưng tiếng Đức thì đổi đuôi động từ theo chủ ngữ. Lấy động từ nguyên mẫu (Infinitiv), bỏ “-en” để có gốc (Stamm), rồi thêm đuôi.",
+          "en": "German changes the verb ending to match the subject. Take the infinitive, remove “-en” to get the stem, then add the ending."
+        },
+        {
+          "type": "table",
+          "head": ["Đại từ", "Nghĩa", "Đuôi", "wohnen", "arbeiten"],
+          "rows": [
+            ["ich", "tôi", "-e", "wohne", "arbeite"],
+            ["du", "bạn (thân mật)", "-st", "wohnst", "arbeitest"],
+            ["er / sie / es", "anh ấy / cô ấy / nó", "-t", "wohnt", "arbeitet"],
+            ["wir", "chúng tôi", "-en", "wohnen", "arbeiten"],
+            ["ihr", "các bạn (thân mật)", "-t", "wohnt", "arbeitet"],
+            ["sie / Sie", "họ / ông, bà (lịch sự)", "-en", "wohnen", "arbeiten"]
+          ],
+          "caption": {
+            "vi": "Bảng đuôi thì hiện tại (Präsens)",
+            "en": "Present tense endings"
+          }
+        },
+        {
+          "type": "tip",
+          "vi": "Gốc tận cùng -t, -d (arbeit-, find-) hoặc phụ âm + m/n (öffn-) chèn thêm -e-: du arbeitest, er findet. Gốc tận cùng -s, -ß, -z chỉ thêm -t với du: du heißt, du tanzt.",
+          "en": "Stems ending in -t, -d (arbeit-, find-) or consonant + m/n (öffn-) insert -e-: du arbeitest, er findet. Stems ending in -s, -ß, -z add only -t for du: du heißt, du tanzt."
+        },
+        {
+          "type": "tip",
+          "vi": "“Sie” viết hoa = ông/bà/anh/chị (lịch sự, cả số ít lẫn nhiều), chia giống “sie” (họ). Dùng “du” với bạn bè, người nhà, trẻ em.",
+          "en": "Capitalised “Sie” is the polite “you” (singular or plural) and conjugates like “sie” (they). Use “du” with friends, family and children."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "de": "Ich wohne in Berlin.",
+              "vi": "Tôi sống ở Berlin.",
+              "en": "I live in Berlin."
+            },
+            {
+              "de": "Wo arbeitest du?",
+              "vi": "Bạn làm việc ở đâu?",
+              "en": "Where do you work?"
+            },
+            {
+              "de": "Wir lernen Deutsch.",
+              "vi": "Chúng tôi học tiếng Đức.",
+              "en": "We are learning German."
+            },
+            {
+              "de": "Kommen Sie aus Vietnam?",
+              "vi": "Ông/bà đến từ Việt Nam phải không?",
+              "en": "Are you from Vietnam?"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "q1",
+          "de": "Du ___ in Hamburg.",
+          "choices": ["wohne", "wohnst", "wohnt"],
+          "answer": 1,
+          "explain": {
+            "vi": "du → đuôi -st: du wohnst.",
+            "en": "du → ending -st: du wohnst."
+          }
+        },
+        {
+          "id": "q2",
+          "de": "Er ___ bei Siemens.",
+          "choices": ["arbeitet", "arbeit", "arbeitest"],
+          "answer": 0,
+          "explain": {
+            "vi": "Gốc arbeit- tận cùng -t → chèn -e-: er arbeitet.",
+            "en": "Stem ends in -t → insert -e-: er arbeitet."
+          }
+        },
+        {
+          "id": "q3",
+          "de": "Wir ___ Deutsch.",
+          "choices": ["lernt", "lernen", "lerne"],
+          "answer": 1,
+          "explain": {
+            "vi": "wir → đuôi -en: wir lernen.",
+            "en": "wir → ending -en: wir lernen."
+          }
+        },
+        {
+          "id": "q4",
+          "de": "Wie ___ du?",
+          "choices": ["heißst", "heißt", "heiße"],
+          "answer": 1,
+          "explain": {
+            "vi": "Gốc heiß- tận cùng -ß → du chỉ thêm -t: du heißt.",
+            "en": "Stem ends in -ß → du adds only -t: du heißt."
+          }
+        }
+      ]
+    },
+    {
+      "id": "a1.sein-haben",
+      "level": "A1",
+      "title": {
+        "vi": "sein và haben",
+        "en": "sein and haben"
+      },
+      "summary": {
+        "vi": "Hai động từ quan trọng nhất, chia bất quy tắc",
+        "en": "The two key verbs, both irregular"
+      },
+      "blocks": [
+        {
+          "type": "text",
+          "vi": "“sein” (là, thì, ở) và “haben” (có) không theo quy tắc nên phải học thuộc. Chúng còn dùng làm trợ động từ ở thì Perfekt.",
+          "en": "“sein” (to be) and “haben” (to have) are irregular and must be memorised. They are also the auxiliaries of the Perfekt."
+        },
+        {
+          "type": "table",
+          "head": ["", "sein", "haben"],
+          "rows": [
+            ["ich", "bin", "habe"],
+            ["du", "bist", "hast"],
+            ["er/sie/es", "ist", "hat"],
+            ["wir", "sind", "haben"],
+            ["ihr", "seid", "habt"],
+            ["sie/Sie", "sind", "haben"]
+          ]
+        },
+        {
+          "type": "tip",
+          "vi": "Khác tiếng Việt: tuổi dùng “sein” (Ich bin 25 Jahre alt = Tôi 25 tuổi), còn đói/khát… dùng “haben” (Ich habe Hunger = Tôi đói).",
+          "en": "Age uses “sein” (Ich bin 25 Jahre alt), while hunger, thirst etc. use “haben” (Ich habe Hunger)."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "de": "Ich bin Student.",
+              "vi": "Tôi là sinh viên.",
+              "en": "I am a student."
+            },
+            {
+              "de": "Sie ist 30 Jahre alt.",
+              "vi": "Cô ấy 30 tuổi.",
+              "en": "She is 30 years old."
+            },
+            {
+              "de": "Hast du Zeit?",
+              "vi": "Bạn có thời gian không?",
+              "en": "Do you have time?"
+            },
+            {
+              "de": "Wir haben Hunger.",
+              "vi": "Chúng tôi đói.",
+              "en": "We are hungry."
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "q1",
+          "de": "Ich ___ Lehrerin.",
+          "choices": ["bin", "ist", "habe"],
+          "answer": 0,
+          "explain": {
+            "vi": "ich + sein → ich bin.",
+            "en": "ich + sein → ich bin."
+          }
+        },
+        {
+          "id": "q2",
+          "de": "___ du Geschwister?",
+          "choices": ["Bist", "Hast", "Habt"],
+          "answer": 1,
+          "explain": {
+            "vi": "Có anh chị em → haben; du → hast.",
+            "en": "To have siblings → haben; du → hast."
+          }
+        },
+        {
+          "id": "q3",
+          "de": "Ihr ___ sehr nett.",
+          "choices": ["seid", "sind", "seit"],
+          "answer": 0,
+          "explain": {
+            "vi": "ihr + sein → ihr seid. (“seit” là giới từ “từ khi”.)",
+            "en": "ihr + sein → ihr seid. (“seit” is the preposition “since”.)"
+          }
+        },
+        {
+          "id": "q4",
+          "de": "Er ___ Durst.",
+          "choices": ["ist", "hat", "hast"],
+          "answer": 1,
+          "explain": {
+            "vi": "Khát = Durst haben → er hat Durst.",
+            "en": "Thirsty = Durst haben → er hat Durst."
+          }
+        }
+      ]
+    },
+    {
+      "id": "a1.stem-change",
+      "level": "A1",
+      "title": {
+        "vi": "Động từ đổi nguyên âm",
+        "en": "Stem-changing verbs"
+      },
+      "summary": {
+        "vi": "a → ä, e → i, e → ie: chỉ ở du và er/sie/es",
+        "en": "a → ä, e → i, e → ie: only with du and er/sie/es"
+      },
+      "blocks": [
+        {
+          "type": "text",
+          "vi": "Một số động từ mạnh đổi nguyên âm ở gốc, nhưng CHỈ với “du” và “er/sie/es”. Các ngôi khác giữ nguyên (ich fahre, wir fahren, ihr fahrt).",
+          "en": "Some strong verbs change the stem vowel, but ONLY with “du” and “er/sie/es”. Other persons keep it (ich fahre, wir fahren, ihr fahrt)."
+        },
+        {
+          "type": "table",
+          "head": ["Kiểu", "Nguyên mẫu", "du", "er/sie/es"],
+          "rows": [
+            ["a → ä", "fahren", "fährst", "fährt"],
+            ["a → ä", "schlafen", "schläfst", "schläft"],
+            ["e → i", "sprechen", "sprichst", "spricht"],
+            ["e → i", "essen", "isst", "isst"],
+            ["e → i", "nehmen", "nimmst", "nimmt"],
+            ["e → ie", "lesen", "liest", "liest"],
+            ["e → ie", "sehen", "siehst", "sieht"]
+          ]
+        },
+        {
+          "type": "tip",
+          "vi": "Không có quy tắc để đoán động từ nào đổi. Trang chi tiết của mỗi động từ trong app có bảng chia đầy đủ, dạng bất quy tắc được in đậm.",
+          "en": "There is no rule for which verbs change. Each verb's page in the app has the full table with irregular forms in bold."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "de": "Er fährt mit dem Bus.",
+              "vi": "Anh ấy đi bằng xe buýt.",
+              "en": "He goes by bus."
+            },
+            {
+              "de": "Sprichst du Deutsch?",
+              "vi": "Bạn nói tiếng Đức không?",
+              "en": "Do you speak German?"
+            },
+            {
+              "de": "Sie liest ein Buch.",
+              "vi": "Cô ấy đọc một cuốn sách.",
+              "en": "She is reading a book."
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "q1",
+          "de": "Er ___ nach Berlin.",
+          "choices": ["fahrt", "fährt", "fährst"],
+          "answer": 1,
+          "explain": {
+            "vi": "fahren đổi a → ä với er: er fährt.",
+            "en": "fahren changes a → ä with er: er fährt."
+          }
+        },
+        {
+          "id": "q2",
+          "de": "Ich ___ gern Pizza.",
+          "choices": ["esse", "isse", "isst"],
+          "answer": 0,
+          "explain": {
+            "vi": "Với ich không đổi nguyên âm: ich esse.",
+            "en": "No vowel change with ich: ich esse."
+          }
+        },
+        {
+          "id": "q3",
+          "de": "___ du die Zeitung?",
+          "choices": ["Lest", "Liest", "Lies"],
+          "answer": 1,
+          "explain": {
+            "vi": "lesen: e → ie với du → du liest (gốc tận cùng -s nên chỉ thêm -t).",
+            "en": "lesen: e → ie with du → du liest (s-stem adds only -t)."
+          }
+        },
+        {
+          "id": "q4",
+          "de": "Ihr ___ sehr gut Deutsch.",
+          "choices": ["sprecht", "spricht", "sprechen"],
+          "answer": 0,
+          "explain": {
+            "vi": "Với ihr không đổi nguyên âm: ihr sprecht.",
+            "en": "No vowel change with ihr: ihr sprecht."
+          }
+        }
+      ]
+    },
+    {
+      "id": "a1.word-order",
+      "level": "A1",
+      "title": {
+        "vi": "Trật tự từ: động từ ở vị trí 2",
+        "en": "Word order: verb in second position"
+      },
+      "summary": {
+        "vi": "Câu kể, câu hỏi có từ để hỏi, câu hỏi có/không",
+        "en": "Statements, W-questions, yes/no questions"
+      },
+      "blocks": [
+        {
+          "type": "text",
+          "vi": "Trong câu kể, động từ đã chia luôn đứng ở vị trí thứ 2. Vị trí 1 có thể là chủ ngữ, thời gian, nơi chốn… Nếu vị trí 1 không phải chủ ngữ, chủ ngữ chuyển ra sau động từ.",
+          "en": "In a statement the conjugated verb is always in position 2. Position 1 can be the subject, a time, a place… If it is not the subject, the subject moves after the verb."
+        },
+        {
+          "type": "table",
+          "head": ["Vị trí 1", "Vị trí 2 (động từ)", "Phần còn lại"],
+          "rows": [
+            ["Ich", "lerne", "heute Deutsch."],
+            ["Heute", "lerne", "ich Deutsch."],
+            ["Deutsch", "lerne", "ich heute."]
+          ]
+        },
+        {
+          "type": "text",
+          "vi": "Câu hỏi có từ để hỏi (W-Fragen: wer, was, wo, wann, wie, warum, woher…): từ để hỏi ở vị trí 1, động từ vị trí 2. Câu hỏi có/không: động từ đứng đầu câu.",
+          "en": "W-questions (wer, was, wo, wann, wie, warum, woher…): question word first, verb second. Yes/no questions: the verb comes first."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "de": "Wo wohnst du?",
+              "vi": "Bạn sống ở đâu?",
+              "en": "Where do you live?"
+            },
+            {
+              "de": "Morgen fahre ich nach Köln.",
+              "vi": "Ngày mai tôi đi Köln.",
+              "en": "Tomorrow I'm going to Cologne."
+            },
+            {
+              "de": "Trinkst du Kaffee?",
+              "vi": "Bạn uống cà phê không?",
+              "en": "Do you drink coffee?"
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "vi": "Lỗi hay gặp: “Heute ich lerne” (sai). Đúng: “Heute lerne ich”.",
+          "en": "Common mistake: “Heute ich lerne” (wrong). Correct: “Heute lerne ich”."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "q1",
+          "de": "Am Montag ___ Deutsch.",
+          "choices": ["ich lerne", "lerne ich", "lernen ich"],
+          "answer": 1,
+          "explain": {
+            "vi": "Vị trí 1 là “Am Montag” → động từ vị trí 2, rồi tới chủ ngữ: lerne ich.",
+            "en": "“Am Montag” takes position 1 → verb second, then subject: lerne ich."
+          }
+        },
+        {
+          "id": "q2",
+          "de": "___ kommst du?",
+          "choices": ["Woher", "Kommst", "Du"],
+          "answer": 0,
+          "explain": {
+            "vi": "Câu hỏi W: từ để hỏi đứng đầu: Woher kommst du?",
+            "en": "W-question: question word first: Woher kommst du?"
+          }
+        },
+        {
+          "id": "q3",
+          "de": "___ du Kinder?",
+          "choices": ["Hast", "Du hast", "Haben"],
+          "answer": 0,
+          "explain": {
+            "vi": "Câu hỏi có/không: động từ đứng đầu: Hast du Kinder?",
+            "en": "Yes/no question: verb first: Hast du Kinder?"
+          }
+        },
+        {
+          "id": "q4",
+          "de": "Heute ___ wir ins Kino.",
+          "choices": ["gehen", "geht", "gehst"],
+          "answer": 0,
+          "explain": {
+            "vi": "Động từ vị trí 2, chia theo wir: gehen.",
+            "en": "Verb in position 2, agreeing with wir: gehen."
+          }
+        }
+      ]
+    },
+    {
+      "id": "a1.negation",
+      "level": "A1",
+      "title": {
+        "vi": "Phủ định: nicht và kein",
+        "en": "Negation: nicht and kein"
+      },
+      "summary": {
+        "vi": "kein cho danh từ không xác định, nicht cho mọi thứ khác",
+        "en": "kein for indefinite nouns, nicht for everything else"
+      },
+      "blocks": [
+        {
+          "type": "text",
+          "vi": "Dùng “kein/keine” để phủ định danh từ đi với “ein/eine” hoặc không có mạo từ. Dùng “nicht” để phủ định động từ, tính từ, danh từ có mạo từ xác định, hoặc cả câu.",
+          "en": "Use “kein/keine” to negate nouns with “ein/eine” or no article. Use “nicht” for verbs, adjectives, nouns with a definite article, or the whole sentence."
+        },
+        {
+          "type": "table",
+          "head": ["Câu khẳng định", "Câu phủ định"],
+          "rows": [
+            ["Ich habe ein Auto.", "Ich habe kein Auto."],
+            ["Ich trinke Kaffee.", "Ich trinke keinen Kaffee."],
+            ["Ich komme heute.", "Ich komme heute nicht."],
+            ["Das Essen ist gut.", "Das Essen ist nicht gut."],
+            ["Ich kenne den Mann.", "Ich kenne den Mann nicht."]
+          ]
+        },
+        {
+          "type": "tip",
+          "vi": "“nicht” thường đứng cuối câu, nhưng đứng trước tính từ, trạng từ chỉ cách thức và nơi chốn: nicht gut, nicht schnell, nicht in Berlin.",
+          "en": "“nicht” usually goes at the end, but before adjectives, adverbs of manner and places: nicht gut, nicht schnell, nicht in Berlin."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "de": "Ich habe keine Zeit.",
+              "vi": "Tôi không có thời gian.",
+              "en": "I have no time."
+            },
+            {
+              "de": "Er wohnt nicht in München.",
+              "vi": "Anh ấy không sống ở München.",
+              "en": "He doesn't live in Munich."
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "q1",
+          "de": "Ich habe ___ Hunger.",
+          "choices": ["nicht", "keinen", "keine"],
+          "answer": 1,
+          "explain": {
+            "vi": "Hunger không có mạo từ → dùng kein; der Hunger là giống đực, làm tân ngữ (Akkusativ) → keinen.",
+            "en": "Hunger has no article → kein; masculine object (accusative) → keinen."
+          }
+        },
+        {
+          "id": "q2",
+          "de": "Das Hotel ist ___ teuer.",
+          "choices": ["nicht", "kein", "keine"],
+          "answer": 0,
+          "explain": {
+            "vi": "Phủ định tính từ → nicht.",
+            "en": "Negating an adjective → nicht."
+          }
+        },
+        {
+          "id": "q3",
+          "de": "Sie hat ___ Kinder.",
+          "choices": ["nicht", "keine", "kein"],
+          "answer": 1,
+          "explain": {
+            "vi": "Danh từ số nhiều không mạo từ → keine.",
+            "en": "Plural noun without article → keine."
+          }
+        },
+        {
+          "id": "q4",
+          "de": "Ich verstehe das ___.",
+          "choices": ["nicht", "kein", "keine"],
+          "answer": 0,
+          "explain": {
+            "vi": "Phủ định động từ / cả câu → nicht ở cuối câu.",
+            "en": "Negating the verb / whole sentence → nicht at the end."
+          }
+        }
+      ]
+    },
+    {
+      "id": "a1.cases",
+      "level": "A1",
+      "title": {
+        "vi": "Bốn cách: Nominativ, Akkusativ, Dativ, Genitiv",
+        "en": "The four cases"
+      },
+      "summary": {
+        "vi": "Mạo từ đổi theo vai trò của danh từ trong câu",
+        "en": "Articles change with the noun's role in the sentence"
+      },
+      "blocks": [
+        {
+          "type": "text",
+          "vi": "Tiếng Việt dùng trật tự từ để biết ai làm gì. Tiếng Đức đổi mạo từ theo “cách” (Kasus): Nominativ = chủ ngữ (ai/cái gì làm?), Akkusativ = tân ngữ trực tiếp (ai/cái gì bị tác động?), Dativ = tân ngữ gián tiếp (cho ai?), Genitiv = sở hữu (của ai?). Ở A1, quan trọng nhất là Nominativ và Akkusativ.",
+          "en": "German marks a noun's role with case: nominative = subject, accusative = direct object, dative = indirect object (to whom?), genitive = possession (whose?). At A1, nominative and accusative matter most."
+        },
+        {
+          "type": "table",
+          "head": ["Kasus", "maskulin", "feminin", "neutrum", "Plural"],
+          "rows": [
+            ["Nominativ", "der", "die", "das", "die"],
+            ["Akkusativ", "den", "die", "das", "die"],
+            ["Dativ", "dem", "der", "dem", "den (+n)"],
+            ["Genitiv", "des (+s)", "der", "des (+s)", "der"]
+          ],
+          "caption": {
+            "vi": "Mạo từ xác định",
+            "en": "Definite article"
+          }
+        },
+        {
+          "type": "table",
+          "head": ["Kasus", "maskulin", "feminin", "neutrum"],
+          "rows": [
+            ["Nominativ", "ein", "eine", "ein"],
+            ["Akkusativ", "einen", "eine", "ein"],
+            ["Dativ", "einem", "einer", "einem"],
+            ["Genitiv", "eines (+s)", "einer", "eines (+s)"]
+          ],
+          "caption": {
+            "vi": "Mạo từ không xác định (kein/keine đổi giống hệt)",
+            "en": "Indefinite article (kein/keine change the same way)"
+          }
+        },
+        {
+          "type": "tip",
+          "vi": "Ở Akkusativ chỉ giống đực thay đổi: der → den, ein → einen. Giống cái, giống trung và số nhiều giữ nguyên như Nominativ.",
+          "en": "In the accusative only the masculine changes: der → den, ein → einen. Feminine, neuter and plural stay as in the nominative."
+        },
+        {
+          "type": "text",
+          "vi": "Một số giới từ luôn đi với một cách. Với Akkusativ: für, ohne, durch, gegen, um. Với Dativ: mit, bei, von, zu, aus, nach, seit.",
+          "en": "Some prepositions always take one case. Accusative: für, ohne, durch, gegen, um. Dative: mit, bei, von, zu, aus, nach, seit."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "de": "Der Mann kauft einen Tisch.",
+              "vi": "Người đàn ông mua một cái bàn.",
+              "en": "The man buys a table."
+            },
+            {
+              "de": "Ich sehe den Hund.",
+              "vi": "Tôi thấy con chó.",
+              "en": "I see the dog."
+            },
+            {
+              "de": "Ich gebe dem Kind das Buch.",
+              "vi": "Tôi đưa cho đứa trẻ cuốn sách.",
+              "en": "I give the child the book."
+            },
+            {
+              "de": "Ich fahre mit dem Bus.",
+              "vi": "Tôi đi bằng xe buýt.",
+              "en": "I go by bus."
+            },
+            {
+              "de": "Das ist das Auto des Lehrers.",
+              "vi": "Đây là xe của thầy giáo.",
+              "en": "This is the teacher's car."
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "q1",
+          "de": "Ich kaufe ___ Computer.",
+          "choices": ["ein", "einen", "einem"],
+          "answer": 1,
+          "explain": {
+            "vi": "der Computer làm tân ngữ trực tiếp (Akkusativ), giống đực → einen.",
+            "en": "der Computer is the direct object (accusative), masculine → einen."
+          }
+        },
+        {
+          "id": "q2",
+          "de": "Siehst du ___ Frau dort?",
+          "choices": ["die", "der", "den"],
+          "answer": 0,
+          "explain": {
+            "vi": "Giống cái ở Akkusativ không đổi → die Frau.",
+            "en": "Feminine stays the same in the accusative → die Frau."
+          }
+        },
+        {
+          "id": "q3",
+          "de": "Ich fahre mit ___ Zug.",
+          "choices": ["der", "den", "dem"],
+          "answer": 2,
+          "explain": {
+            "vi": "“mit” luôn đi với Dativ; der Zug giống đực → dem Zug.",
+            "en": "“mit” always takes the dative; der Zug is masculine → dem Zug."
+          }
+        },
+        {
+          "id": "q4",
+          "de": "Das Geschenk ist für ___ Vater.",
+          "choices": ["mein", "meinen", "meinem"],
+          "answer": 1,
+          "explain": {
+            "vi": "“für” luôn đi với Akkusativ; der Vater giống đực → meinen Vater (mein đổi như ein).",
+            "en": "“für” takes the accusative; masculine → meinen Vater (mein changes like ein)."
+          }
+        }
+      ]
+    },
+    {
+      "id": "a1.separable",
+      "level": "A1",
+      "title": {
+        "vi": "Động từ tách",
+        "en": "Separable verbs"
+      },
+      "summary": {
+        "vi": "aufstehen → Ich stehe um 7 Uhr auf.",
+        "en": "aufstehen → Ich stehe um 7 Uhr auf."
+      },
+      "blocks": [
+        {
+          "type": "text",
+          "vi": "Nhiều động từ có tiền tố tách được (auf-, an-, ab-, aus-, ein-, mit-, vor-, zu-, um-, zurück-…). Khi chia ở thì hiện tại, phần gốc đứng ở vị trí 2 còn tiền tố bay về cuối câu. Tiền tố thường được nhấn âm: AUFstehen.",
+          "en": "Many verbs have a separable prefix (auf-, an-, ab-, aus-, ein-, mit-, vor-, zu-, um-, zurück-…). In the present tense the verb part goes to position 2 and the prefix goes to the end. The prefix is stressed: AUFstehen."
+        },
+        {
+          "type": "table",
+          "head": ["Nguyên mẫu", "Câu"],
+          "rows": [
+            ["aufstehen (thức dậy)", "Ich stehe um 7 Uhr auf."],
+            ["einkaufen (đi mua sắm)", "Wir kaufen heute ein."],
+            ["anrufen (gọi điện)", "Rufst du mich morgen an?"],
+            ["umziehen (chuyển nhà)", "Sie zieht nach Hamburg um."]
+          ]
+        },
+        {
+          "type": "tip",
+          "vi": "Tiền tố be-, ge-, er-, ver-, zer-, ent-, emp-, miss- KHÔNG tách: verstehen → Ich verstehe das.",
+          "en": "The prefixes be-, ge-, er-, ver-, zer-, ent-, emp-, miss- do NOT separate: verstehen → Ich verstehe das."
+        },
+        {
+          "type": "text",
+          "vi": "Ở thì Perfekt, “ge” chen vào giữa tiền tố và gốc: aufgestanden, eingekauft, angerufen.",
+          "en": "In the Perfekt, “ge” goes between prefix and stem: aufgestanden, eingekauft, angerufen."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "q1",
+          "de": "Ich ___ jeden Tag um 6 Uhr auf.",
+          "choices": ["aufstehe", "stehe", "steht"],
+          "answer": 1,
+          "explain": {
+            "vi": "Phần gốc chia ở vị trí 2, tiền tố “auf” về cuối: Ich stehe … auf.",
+            "en": "The stem goes to position 2, “auf” to the end: Ich stehe … auf."
+          }
+        },
+        {
+          "id": "q2",
+          "de": "Wann rufst du mich ___?",
+          "choices": ["an", "auf", "ein"],
+          "answer": 0,
+          "explain": {
+            "vi": "anrufen → tiền tố “an” đứng cuối câu.",
+            "en": "anrufen → the prefix “an” goes to the end."
+          }
+        },
+        {
+          "id": "q3",
+          "de": "Ich ___ die Frage nicht.",
+          "choices": ["verstehe", "stehe ver", "verstehen"],
+          "answer": 0,
+          "explain": {
+            "vi": "ver- không tách được: ich verstehe.",
+            "en": "ver- does not separate: ich verstehe."
+          }
+        },
+        {
+          "id": "q4",
+          "de": "Wir sind gestern ___.",
+          "choices": ["umgezogen", "geumzogen", "umziehen"],
+          "answer": 0,
+          "explain": {
+            "vi": "Partizip II của động từ tách: tiền tố + ge + gốc → umgezogen.",
+            "en": "Participle of a separable verb: prefix + ge + stem → umgezogen."
+          }
+        }
+      ]
+    },
+    {
+      "id": "a1.modals",
+      "level": "A1",
+      "title": {
+        "vi": "Động từ khuyết thiếu",
+        "en": "Modal verbs"
+      },
+      "summary": {
+        "vi": "können, müssen, wollen, dürfen, sollen, mögen + động từ nguyên mẫu ở cuối câu",
+        "en": "Modal verb + infinitive at the end"
+      },
+      "blocks": [
+        {
+          "type": "text",
+          "vi": "Động từ khuyết thiếu diễn tả khả năng, nghĩa vụ, mong muốn… Động từ khuyết thiếu chia ở vị trí 2, động từ chính ở dạng nguyên mẫu và đứng cuối câu.",
+          "en": "Modal verbs express ability, obligation, wishes… The modal is conjugated in position 2; the main verb stays in the infinitive at the end."
+        },
+        {
+          "type": "table",
+          "head": ["", "können (có thể)", "müssen (phải)", "wollen (muốn)", "dürfen (được phép)"],
+          "rows": [
+            ["ich", "kann", "muss", "will", "darf"],
+            ["du", "kannst", "musst", "willst", "darfst"],
+            ["er/sie/es", "kann", "muss", "will", "darf"],
+            ["wir", "können", "müssen", "wollen", "dürfen"],
+            ["ihr", "könnt", "müsst", "wollt", "dürft"],
+            ["sie/Sie", "können", "müssen", "wollen", "dürfen"]
+          ]
+        },
+        {
+          "type": "tip",
+          "vi": "ich và er/sie/es giống hệt nhau và không có đuôi: ich kann, er kann. “möchte” (muốn, lịch sự) rất hay dùng: Ich möchte einen Kaffee.",
+          "en": "ich and er/sie/es are identical with no ending: ich kann, er kann. “möchte” (would like) is very common: Ich möchte einen Kaffee."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "de": "Ich kann gut schwimmen.",
+              "vi": "Tôi bơi giỏi.",
+              "en": "I can swim well."
+            },
+            {
+              "de": "Du musst heute arbeiten.",
+              "vi": "Hôm nay bạn phải làm việc.",
+              "en": "You have to work today."
+            },
+            {
+              "de": "Hier darf man nicht rauchen.",
+              "vi": "Ở đây không được hút thuốc.",
+              "en": "You may not smoke here."
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "q1",
+          "de": "Er ___ sehr gut kochen.",
+          "choices": ["kann", "kannt", "könnt"],
+          "answer": 0,
+          "explain": {
+            "vi": "können với er → kann (không có đuôi -t).",
+            "en": "können with er → kann (no -t ending)."
+          }
+        },
+        {
+          "id": "q2",
+          "de": "Ich muss heute ___.",
+          "choices": ["arbeite", "arbeiten", "arbeitet"],
+          "answer": 1,
+          "explain": {
+            "vi": "Sau động từ khuyết thiếu, động từ chính ở dạng nguyên mẫu, đứng cuối: arbeiten.",
+            "en": "After a modal, the main verb is an infinitive at the end: arbeiten."
+          }
+        },
+        {
+          "id": "q3",
+          "de": "___ ihr morgen kommen?",
+          "choices": ["Könnt", "Kann", "Können"],
+          "answer": 0,
+          "explain": {
+            "vi": "können với ihr → könnt.",
+            "en": "können with ihr → könnt."
+          }
+        },
+        {
+          "id": "q4",
+          "de": "Ich ___ einen Tee, bitte.",
+          "choices": ["möchte", "möchten", "möchtet"],
+          "answer": 0,
+          "explain": {
+            "vi": "möchte với ich → ich möchte.",
+            "en": "möchte with ich → ich möchte."
+          }
+        }
+      ]
+    },
+    {
+      "id": "a1.perfekt",
+      "level": "A1",
+      "title": {
+        "vi": "Thì Perfekt (quá khứ trong văn nói)",
+        "en": "The Perfekt (spoken past)"
+      },
+      "summary": {
+        "vi": "haben/sein + Partizip II ở cuối câu",
+        "en": "haben/sein + past participle at the end"
+      },
+      "blocks": [
+        {
+          "type": "text",
+          "vi": "Khi kể chuyện đã xảy ra trong văn nói, người Đức dùng Perfekt: trợ động từ “haben” hoặc “sein” chia ở vị trí 2, Partizip II đứng cuối câu.",
+          "en": "To talk about the past in speech, Germans use the Perfekt: “haben” or “sein” conjugated in position 2, the past participle at the end."
+        },
+        {
+          "type": "table",
+          "head": ["Loại", "Cách tạo", "Ví dụ"],
+          "rows": [
+            ["Động từ yếu (đều)", "ge- + gốc + -t", "machen → gemacht, kaufen → gekauft"],
+            [
+              "Động từ mạnh",
+              "ge- + gốc (thường đổi) + -en",
+              "sehen → gesehen, trinken → getrunken"
+            ],
+            ["Động từ tách", "tiền tố + ge + …", "aufstehen → aufgestanden"],
+            [
+              "Tiền tố không tách / đuôi -ieren",
+              "không có ge-",
+              "verstehen → verstanden, studieren → studiert"
+            ]
+          ],
+          "caption": {
+            "vi": "Tạo Partizip II",
+            "en": "Forming the participle"
+          }
+        },
+        {
+          "type": "text",
+          "vi": "Phần lớn động từ dùng “haben”. Dùng “sein” với động từ chỉ di chuyển (gehen, fahren, kommen) hoặc thay đổi trạng thái (aufstehen, einschlafen), và với sein, bleiben.",
+          "en": "Most verbs use “haben”. Use “sein” with verbs of motion (gehen, fahren, kommen) or change of state (aufstehen, einschlafen), and with sein, bleiben."
+        },
+        {
+          "type": "tip",
+          "vi": "Trang chi tiết mỗi động từ trong app ghi sẵn trợ động từ và Partizip II, ví dụ “ist gefahren”, “hat gelesen”.",
+          "en": "Each verb's page in the app shows the auxiliary and participle, e.g. “ist gefahren”, “hat gelesen”."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "de": "Ich habe gestern Pizza gegessen.",
+              "vi": "Hôm qua tôi đã ăn pizza.",
+              "en": "I ate pizza yesterday."
+            },
+            {
+              "de": "Wir sind nach Berlin gefahren.",
+              "vi": "Chúng tôi đã đi Berlin.",
+              "en": "We went to Berlin."
+            },
+            {
+              "de": "Hast du das Buch gelesen?",
+              "vi": "Bạn đã đọc cuốn sách đó chưa?",
+              "en": "Have you read the book?"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "q1",
+          "de": "Ich ___ einen Film gesehen.",
+          "choices": ["bin", "habe", "hat"],
+          "answer": 1,
+          "explain": {
+            "vi": "sehen không chỉ di chuyển → haben; ich → habe.",
+            "en": "sehen is not motion → haben; ich → habe."
+          }
+        },
+        {
+          "id": "q2",
+          "de": "Sie ___ nach Hause gegangen.",
+          "choices": ["hat", "ist", "sind"],
+          "answer": 1,
+          "explain": {
+            "vi": "gehen là di chuyển → sein; sie (cô ấy) → ist.",
+            "en": "gehen is motion → sein; sie (she) → ist."
+          }
+        },
+        {
+          "id": "q3",
+          "de": "Wir haben Deutsch ___.",
+          "choices": ["gelernt", "gelernen", "lernt"],
+          "answer": 0,
+          "explain": {
+            "vi": "lernen là động từ yếu → ge- + lern + -t: gelernt.",
+            "en": "lernen is weak → ge- + lern + -t: gelernt."
+          }
+        },
+        {
+          "id": "q4",
+          "de": "Hast du meine Frage ___?",
+          "choices": ["geverstanden", "verstanden", "verstehen"],
+          "answer": 1,
+          "explain": {
+            "vi": "Tiền tố ver- không tách → không thêm ge-: verstanden.",
+            "en": "ver- is inseparable → no ge-: verstanden."
+          }
+        }
+      ]
+    }
+  ]
+}

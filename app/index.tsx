@@ -113,11 +113,16 @@ export default function HomeScreen() {
         />
         <Button
           kind="secondary"
-          label={t('home.settings')}
-          onPress={() => router.push('/settings')}
+          label={t('home.grammar')}
+          onPress={() => router.push('/grammar')}
           style={styles.flex}
         />
       </View>
+      <Button
+        kind="secondary"
+        label={t('home.settings')}
+        onPress={() => router.push('/settings')}
+      />
     </Screen>
   );
 }

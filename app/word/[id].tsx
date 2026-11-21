@@ -5,6 +5,7 @@ import type { Card as StudyCard } from '@/db/types';
 import { localeFor } from '@/i18n';
 import { useApp } from '@/state/AppContext';
 import { addToStudy } from '@/state/study';
+import { ConjugationTable } from '@/ui/components/ConjugationTable';
 import { Button, Card, Screen, T } from '@/ui/components/primitives';
 import {
   ExampleBlock,
@@ -98,6 +99,13 @@ export default function WordScreen() {
               </T>
             </View>
           ))}
+        </Card>
+      )}
+
+      {word.verb && (
+        <Card style={styles.block}>
+          <T variant="small">{t('conj.title')}</T>
+          <ConjugationTable lemma={word.lemma} verb={word.verb} t={t} />
         </Card>
       )}
 

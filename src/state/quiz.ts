@@ -2,7 +2,7 @@ import type { Repository } from '@/db/repository';
 import { summarizeProgress, type ProgressSummary } from '@/progress';
 import { buildQuiz } from '@/quiz/build';
 import { shuffle, type Rng } from '@/quiz/random';
-import type { Question, QuizLog, QuizResult, QuizType } from '@/quiz/types';
+import type { Question, QuizLog, QuizLogType, QuizResult, QuizType } from '@/quiz/types';
 import type { Word } from '@/vocab/types';
 import type { AppSettings } from './settings';
 import type { IdFactory, StudySnapshot } from './study';
@@ -39,7 +39,7 @@ export function createQuizSession(
 
 export async function saveQuizAnswer(
   repo: Repository,
-  q: Pick<Question, 'type' | 'wordId'>,
+  q: { type: QuizLogType; wordId: string },
   result: QuizResult,
   now: number,
   durationMs: number | null,

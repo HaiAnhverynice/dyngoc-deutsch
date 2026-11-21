@@ -1,5 +1,5 @@
 import type { Card, ReviewLog, UserDataSnapshot } from '@/db/types';
-import { QUIZ_TYPES, type QuizLog } from '@/quiz/types';
+import { LOG_TYPES, type QuizLog } from '@/quiz/types';
 import { RATINGS } from '@/srs/types';
 import { validateWord } from '@/vocab/validate';
 import type { Word } from '@/vocab/types';
@@ -80,7 +80,7 @@ function isQuizLog(v: unknown): v is QuizLog {
   return (
     syncOk(v) &&
     str(v, 'wordId') &&
-    (QUIZ_TYPES as readonly string[]).includes(v.type as string) &&
+    (LOG_TYPES as readonly string[]).includes(v.type as string) &&
     ['correct', 'close', 'wrong'].includes(v.result as string) &&
     num(v, 'answeredAt') &&
     numOrNull(v, 'durationMs')

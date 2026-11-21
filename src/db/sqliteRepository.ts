@@ -1,5 +1,5 @@
 import type { SQLiteDatabase } from 'expo-sqlite';
-import type { QuizLog, QuizResult, QuizType } from '@/quiz/types';
+import type { QuizLog, QuizLogType, QuizResult } from '@/quiz/types';
 import type { CardPhase, Rating } from '@/srs/types';
 import type { Article, Level, PartOfSpeech, VerbForms, Word, WordSource } from '@/vocab/types';
 import { pendingMigrations } from './migrations';
@@ -132,7 +132,7 @@ const toLog = (r: LogRow): ReviewLog => ({
 const toQuizLog = (r: QuizLogRow): QuizLog => ({
   id: r.id,
   wordId: r.word_id,
-  type: r.type as QuizType,
+  type: r.type as QuizLogType,
   result: r.result as QuizResult,
   answeredAt: r.answered_at,
   durationMs: r.duration_ms,
