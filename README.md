@@ -74,7 +74,7 @@ node -v        # phải ra v24.x
 ## 3. Cài đặt từ GitHub
 
 ```bash
-git clone https://github.com/HaiAnhverynice/dyngoc-deustch.git dyngoc-deutsch
+git clone https://github.com/HaiAnhverynice/dyngoc-deutsch.git
 cd dyngoc-deutsch
 npm install
 ```
