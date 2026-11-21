@@ -21,6 +21,7 @@ import {
   T,
   TimeStepper,
 } from '@/ui/components/primitives';
+import { WebPushSection } from '@/ui/components/WebPushSection';
 import { spacing, useTheme } from '@/ui/theme';
 import { importCsv, importJson, type ImportReport } from '@/vocab/import';
 import { LEVELS } from '@/vocab/types';
@@ -91,7 +92,7 @@ export default function SettingsScreen() {
         </Field>
       </Section>
 
-      <NotificationSection />
+      {Platform.OS === 'web' ? <WebPushSection /> : <NotificationSection />}
       <DataSection />
 
       <T variant="small" style={[styles.footer, { color: c.textMuted }]}>
@@ -114,14 +115,6 @@ function NotificationSection() {
       void getPermission().then((p) => setDenied(p === 'denied'));
     }
   }, [n.enabled]);
-
-  if (!notificationsSupported) {
-    return (
-      <Section title={t('notif.section')}>
-        <T variant="muted">{t('notif.webUnsupported')}</T>
-      </Section>
-    );
-  }
 
   const toggle = async (on: boolean) => {
     if (!on) return set({ enabled: false });

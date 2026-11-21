@@ -18,7 +18,7 @@ export async function rescheduleNotifications(
 ): Promise<RescheduleResult> {
   if (!notificationsSupported) return { status: 'unsupported', count: 0, lastAt: null };
   if (!settings.notifications.enabled) {
-    await cancelAll();
+    await cancelAll(settings.uiLang);
     return { status: 'disabled', count: 0, lastAt: null };
   }
   if ((await getPermission()) !== 'granted') {
@@ -44,6 +44,6 @@ export async function rescheduleNotifications(
     candidates,
     now,
   });
-  await replaceScheduled(plan);
+  await replaceScheduled(plan, settings.uiLang);
   return { status: 'scheduled', count: plan.length, lastAt: plan[plan.length - 1]?.at ?? null };
 }

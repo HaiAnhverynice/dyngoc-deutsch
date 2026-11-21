@@ -1,0 +1,42 @@
+# Vocabulary reminders for the web app (see README, "Notifications for the web app").
+#
+# ⚠️ GitHub runs scheduled workflows late (typically 5–30 minutes, sometimes more) and may
+# skip a run when busy. GitHub also disables schedules after 60 days without repository
+# activity; re-enable under Actions → "Vocab push" if reminders stop.
+name: Vocab push
+
+on:
+  schedule:
+    # Times are UTC. Vietnam is UTC+7, so this means 08:00, 10:00, …, 20:00 in Vietnam.
+    # Edit to change when reminders are sent (crontab.guru helps).
+    - cron: '0 1-13/2 * * *'
+  workflow_dispatch: # "Run workflow" button for testing
+
+permissions: {}
+
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          sparse-checkout: scripts/send-push.mjs
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      # web-push runs only here, never in the app. Installed in a scratch folder so the
+      # app's own dependencies are not needed.
+      - name: Send
+        run: |
+          mkdir -p "$RUNNER_TEMP/push" && cp scripts/send-push.mjs "$RUNNER_TEMP/push/"
+          cd "$RUNNER_TEMP/push"
+          npm init -y > /dev/null
+          npm install --no-audit --no-fund web-push@3.6.7
+          node send-push.mjs
+        env:
+          VAPID_PUBLIC_KEY: ${{ vars.VAPID_PUBLIC_KEY }}
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+          VAPID_SUBJECT: https://github.com/${{ github.repository }}
+          PUSH_SUBSCRIPTIONS: ${{ secrets.PUSH_SUBSCRIPTIONS }}

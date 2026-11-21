@@ -103,7 +103,6 @@ export const en: Record<TranslationKey, string> = {
   'notif.none': 'No notifications scheduled.',
   'notif.batchHint':
     'iOS keeps at most 64 pending notifications, so the app schedules a batch of up to 60 whenever you open it or change settings. If you do not open the app for several days the batch runs out until next launch.',
-  'notif.webUnsupported': 'Scheduled notifications are not supported on web. Use the iPhone.',
 
   'data.section': 'Data',
   'data.import': 'Import vocabulary (CSV / JSON)',
@@ -182,4 +181,26 @@ export const en: Record<TranslationKey, string> = {
   'quiz.perfect': 'No mistakes. Excellent!',
   'quiz.again': 'New quiz',
   'quiz.home': 'Back to home',
+  'push.needsHomeScreen':
+    'On iPhone, notifications only work when the app is opened from the Home Screen. In Safari tap Share → “Add to Home Screen”, then open the app from that icon and come back to Settings.',
+  'push.unsupported': 'This browser does not support push notifications (Web Push).',
+  'push.noKey':
+    'This web build has no push key (VAPID) configured. The repo owner should follow the README section “Notifications for the web app”.',
+  'push.delayWarning':
+    '⚠️ On the web app, notifications are sent on a GitHub Actions schedule, so they usually arrive 5–30 minutes late, sometimes later, and a run may be skipped when GitHub is busy. Send times come from the schedule file in the repo (by default every 2 hours, 08:00–20:00 Vietnam time) and cannot be changed in the app.',
+  'push.denied':
+    'Notification permission was denied. On iPhone: Settings → Notifications → DYNgoc → turn on “Allow Notifications”, then try again.',
+  'push.error': 'Could not enable notifications: {msg}',
+  'push.codeTitle': 'Push subscription code',
+  'push.codeHint':
+    'Send this code to the repo owner to add to the PUSH_SUBSCRIPTIONS secret on GitHub (once per device). Turning notifications off and on again changes the code, so it must be sent again.',
+  'push.copy': 'Copy code',
+  'push.copied': 'Code copied.',
+  'push.copyFailed': 'Could not copy. Long-press the code to select and copy it.',
+  'push.test': 'Show a test notification now',
+  'push.testTitle': 'DYNgoc Deutsch',
+  'push.testBody': 'Notifications are working! 🎉',
+  'push.queue': '{n} words queued for upcoming notifications (learning and due words first).',
+  'push.badgeHint':
+    'The Home Screen icon shows how many cards are left today (updated each time you open the app).',
 };

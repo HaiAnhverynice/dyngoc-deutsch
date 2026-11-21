@@ -36,8 +36,8 @@ export async function requestPermission(): Promise<PermissionState> {
   );
 }
 
-/** Replaces the whole pending batch. */
-export async function replaceScheduled(plan: PlannedNotification[]): Promise<void> {
+/** Replaces the whole pending batch. `lang` is used by the web build only. */
+export async function replaceScheduled(plan: PlannedNotification[], _lang?: string): Promise<void> {
   await Notifications.cancelAllScheduledNotificationsAsync();
   for (const n of plan) {
     await Notifications.scheduleNotificationAsync({
@@ -47,7 +47,7 @@ export async function replaceScheduled(plan: PlannedNotification[]): Promise<voi
   }
 }
 
-export async function cancelAll(): Promise<void> {
+export async function cancelAll(_lang?: string): Promise<void> {
   await Notifications.cancelAllScheduledNotificationsAsync();
 }
 

@@ -1,12 +1,14 @@
 # DYNgoc Deutsch: học tiếng Đức cho người Việt
 
-Ứng dụng flashcard học từ vựng tiếng Đức, giải nghĩa song ngữ Việt–Anh. Chạy trên **iPhone (qua Expo Go)** và trên **máy tính (trình duyệt web)**.
+Ứng dụng flashcard học từ vựng tiếng Đức, giải nghĩa song ngữ Việt–Anh. Chạy trên **iPhone** (cài như app từ Safari, hoặc qua Expo Go) và trên **máy tính** (trình duyệt web).
+
+> **Dùng hằng ngày trên iPhone:** mở **https://haianhverynice.github.io/dyngoc-deutsch/** bằng Safari → Chia sẻ → **Thêm vào MH chính**. Không cần laptop. Xem [mục 7](#7-bản-web-cho-iphone-github-pages--thông-báo).
 
 - **Miễn phí 100%:** không tài khoản, không server, không API key, không quảng cáo.
 - **Offline hoàn toàn:** toàn bộ từ vựng và tiến độ học nằm trên máy.
 - **Nền tảng:** Expo SDK 58 · React Native 0.88 · TypeScript (strict) · expo-router.
 
-> **Trạng thái:** Giai đoạn 1 (MVP) và Giai đoạn 2 (quiz, streak, XP, biểu đồ tuần) đã xong. Xem [Lộ trình](#11-lộ-trình).
+> **Trạng thái:** Giai đoạn 1 (MVP) và Giai đoạn 2 (quiz, streak, XP, biểu đồ tuần) đã xong. Xem [Lộ trình](#12-lộ-trình).
 
 ---
 
@@ -18,12 +20,13 @@
 4. [Chạy trên iPhone](#4-chạy-trên-iphone)
 5. [Không kết nối được iPhone? Khắc phục sự cố](#5-không-kết-nối-được-iphone-khắc-phục-sự-cố)
 6. [Chạy trên máy tính (web)](#6-chạy-trên-máy-tính-web)
-7. [Hướng dẫn sử dụng](#7-hướng-dẫn-sử-dụng)
-8. [Thêm và sửa từ vựng](#8-thêm-và-sửa-từ-vựng)
-9. [Dành cho lập trình viên](#9-dành-cho-lập-trình-viên)
-10. [Hạn chế đã biết](#10-hạn-chế-đã-biết)
-11. [Lộ trình](#11-lộ-trình)
-12. [Checklist kiểm thử trên iPhone](#12-checklist-kiểm-thử-trên-iphone)
+7. [Bản web cho iPhone: GitHub Pages + thông báo](#7-bản-web-cho-iphone-github-pages--thông-báo)
+8. [Hướng dẫn sử dụng](#8-hướng-dẫn-sử-dụng)
+9. [Thêm và sửa từ vựng](#9-thêm-và-sửa-từ-vựng)
+10. [Dành cho lập trình viên](#10-dành-cho-lập-trình-viên)
+11. [Hạn chế đã biết](#11-hạn-chế-đã-biết)
+12. [Lộ trình](#12-lộ-trình)
+13. [Checklist kiểm thử trên iPhone](#13-checklist-kiểm-thử-trên-iphone)
 
 ---
 
@@ -185,11 +188,99 @@ Mở http://localhost:8081 bằng Chrome hoặc Firefox.
 
 **Phím tắt khi ôn tập:** `Space`/`Enter` để lật thẻ; `1` Again · `2` Hard · `3` Good · `4` Easy.
 
-Trên web, tiến độ lưu trong trình duyệt (localStorage). Web không có thông báo, xem [Hạn chế](#10-hạn-chế-đã-biết).
+Trên web, tiến độ lưu trong trình duyệt (localStorage). Bản chạy trên máy (`npm run web`) không có thông báo; bản GitHub Pages có thông báo qua GitHub Actions, xem [mục 7](#7-bản-web-cho-iphone-github-pages--thông-báo).
 
 ---
 
-## 7. Hướng dẫn sử dụng
+## 7. Bản web cho iPhone: GitHub Pages + thông báo
+
+Expo Go cần laptop chạy server mỗi lần mở app. Để dùng hằng ngày, app được đăng **miễn phí** lên GitHub Pages và cài vào iPhone như một app (PWA):
+
+- Mở từ icon trên Màn hình chính, toàn màn hình, **không cần laptop**, chạy được cả khi **offline** (sau lần mở đầu có mạng).
+- Mỗi lần push lên nhánh `main`, GitHub tự build và đăng lại (workflow `.github/workflows/pages.yml`, có chạy `npm run check` trước).
+- **Thông báo từ vựng** do GitHub Actions gửi theo lịch (workflow `.github/workflows/push.yml`).
+
+> ⚠️ **Thông báo trên bản web KHÔNG đúng giờ chính xác.** GitHub chạy lịch hẹn giờ trễ, thường **5–30 phút**, đôi khi hơn, và **có thể bỏ lượt** khi GitHub quá tải. Lời nhắc học từ thì không cần chính xác đến phút, nhưng đừng dùng nó như đồng hồ báo thức. App cũng hiện cảnh báo này trong Cài đặt.
+
+### Cách hoạt động
+
+```
+GitHub Actions (cron)  ──push rỗng──▶  Máy chủ push của Apple  ──▶  iPhone
+                                                                     │
+                                         service worker (public/sw.js) đọc hàng đợi từ
+                                         IndexedDB, chọn từ đang học/đến hạn, hiện
+                                         thông báo "der Tisch · bàn"
+```
+
+- Push **không chứa nội dung**: GitHub chỉ báo "đến giờ". Từ nào được hiện là do app trên điện thoại chọn, từ hàng đợi 60 từ mà app chuẩn bị mỗi lần mở (ưu tiên từ đang học, đến hạn, rồi từ mới). **Tiến độ học không bao giờ rời khỏi điện thoại.**
+- Chạm vào thông báo thì mở đúng từ đó.
+- Icon app hiện **số thẻ cần học hôm nay** (cập nhật mỗi lần mở app).
+
+### Cài đặt lần đầu (chủ repo làm, khoảng 10 phút)
+
+1. **Bật GitHub Pages:** repo trên GitHub → **Settings → Pages** → mục _Build and deployment_, _Source_ chọn **GitHub Actions**.
+2. **Tạo cặp khóa push (VAPID)** trên laptop:
+   ```bash
+   npx web-push@3.6.7 generate-vapid-keys
+   ```
+   Lệnh in ra `Public Key` và `Private Key`.
+3. **Lưu khóa vào repo:** **Settings → Secrets and variables → Actions**
+   - Tab **Variables** → _New repository variable_: tên `VAPID_PUBLIC_KEY`, giá trị là Public Key.
+   - Tab **Secrets** → _New repository secret_: tên `VAPID_PRIVATE_KEY`, giá trị là Private Key.
+
+   > 🔒 **Private Key phải giữ bí mật.** Chỉ dán vào Secrets, không commit vào code, không gửi qua chat. Lỡ lộ thì tạo cặp khóa mới, thay cả hai, và mọi máy phải đăng ký lại.
+
+4. **Build lại để app có khóa:** tab **Actions** → **Deploy web app** → **Run workflow**. Đợi khoảng 3 phút, có dấu ✅ là xong. Địa chỉ app: **https://haianhverynice.github.io/dyngoc-deutsch/**
+
+### Cài app lên iPhone (người học làm)
+
+1. Mở **Safari** (bắt buộc Safari) → vào https://haianhverynice.github.io/dyngoc-deutsch/
+2. Bấm nút **Chia sẻ** (ô vuông có mũi tên) → **Thêm vào MH chính** → **Thêm**.
+3. **Từ giờ luôn mở app bằng icon "DYNgoc"** trên Màn hình chính. Dữ liệu của app mở từ icon **tách biệt** với tab Safari.
+4. Trong app: **Cài đặt → Thông báo từ vựng → Bật thông báo** → **Cho phép**.
+5. Bấm **Thử hiện thông báo ngay** để kiểm tra quyền.
+6. Bấm **Sao chép mã** rồi gửi mã cho chủ repo (Zalo, Messenger…). Mã này chỉ dùng để gửi lời nhắc tới máy đó.
+
+Cần iOS 16.4 trở lên.
+
+### Thêm mã của máy vào GitHub (chủ repo làm)
+
+**Settings → Secrets and variables → Actions → Secrets** → _New repository secret_: tên `PUSH_SUBSCRIPTIONS`, giá trị là mã vừa nhận.
+
+- Nhiều máy: đặt các mã trong ngoặc vuông, cách nhau dấu phẩy: `[mã_máy_1, mã_máy_2]`.
+- Thử ngay: tab **Actions → Vocab push → Run workflow**. Thông báo đến trong khoảng 1 phút (chạy tay thì không bị trễ như chạy theo lịch).
+
+### Đổi giờ gửi
+
+Sửa dòng `cron` trong `.github/workflows/push.yml`. Giờ trong cron là **giờ UTC** (Việt Nam = UTC+7, nên trừ 7 tiếng):
+
+| Muốn gửi (giờ Việt Nam)          | Dòng cron          |
+| -------------------------------- | ------------------ |
+| Mỗi 2 giờ, 8:00–20:00 (mặc định) | `'0 1-13/2 * * *'` |
+| Mỗi giờ, 7:00–22:00              | `'0 0-15 * * *'`   |
+| 3 lần/ngày: 8:00, 12:00, 19:00   | `'0 1,5,12 * * *'` |
+
+Giờ yên tĩnh trên bản web chính là khoảng thời gian **không có** trong cron. Các tùy chọn giờ/giờ yên tĩnh trong app chỉ áp dụng cho bản Expo Go. GitHub giới hạn lịch tối thiểu 5 phút một lần; repo Public thì không tính phí.
+
+### Khi thông báo ngừng đến
+
+| Hiện tượng                                              | Cách xử lý                                                                                                                                                   |
+| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Workflow **Vocab push** báo ❌ "has expired (HTTP 410)" | Mã của máy đã hết hạn (gỡ app, xóa dữ liệu, hoặc tắt/bật thông báo). Trên máy đó: tắt rồi bật thông báo, sao chép mã mới và thay trong `PUSH_SUBSCRIPTIONS`. |
+| Workflow không chạy nữa                                 | GitHub **tự tắt lịch sau 60 ngày repo không có commit**. Vào **Actions → Vocab push → Enable workflow**.                                                     |
+| Workflow ✅ nhưng không thấy thông báo                  | Kiểm tra Cài đặt iOS → Thông báo → DYNgoc; tắt chế độ Tập trung (Focus); mở app từ icon (không phải tab Safari).                                             |
+| Chỉ thấy "Đến giờ ôn từ vựng" thay vì một từ cụ thể     | Hàng đợi từ trống: mở app một lần để app chuẩn bị lại.                                                                                                       |
+
+GitHub gửi email cho chủ repo khi workflow lỗi, nên mã hết hạn sẽ được phát hiện sớm.
+
+### Lưu ý về dữ liệu
+
+- Tiến độ của bản web nằm trong app trên iPhone (localStorage), **tách biệt** với Expo Go. Muốn chuyển tiến độ từ Expo Go sang: Expo Go → Cài đặt → Xuất sao lưu; bản web → Cài đặt → Khôi phục sao lưu.
+- **Xóa app khỏi Màn hình chính là mất dữ liệu.** Hãy dùng **Xuất sao lưu** định kỳ.
+
+---
+
+## 8. Hướng dẫn sử dụng
 
 ### Màn hình "Hôm nay"
 
@@ -277,7 +368,7 @@ Tìm theo tiếng Đức, Việt hoặc Anh, lọc theo cấp và chủ đề. C
 
 ---
 
-## 8. Thêm và sửa từ vựng
+## 9. Thêm và sửa từ vựng
 
 ### Cách 1: Import trong app (CSV hoặc JSON)
 
@@ -347,7 +438,7 @@ File nằm ở `content/vocab/a1.json`, `a2.json`, `b1.json`, `b2.json`:
 
 ---
 
-## 9. Dành cho lập trình viên
+## 10. Dành cho lập trình viên
 
 ### Lệnh
 
@@ -355,7 +446,8 @@ File nằm ở `content/vocab/a1.json`, `a2.json`, `b1.json`, `b2.json`:
 npm start            # expo start
 npm run start:lan    # expo start, ép IP LAN vào QR
 npm run tunnel       # expo start --tunnel ngrok
-npm run web          # bản web
+npm run web          # bản web (dev)
+npm run build:web    # build bản web production vào dist/ (GitHub Pages dùng lệnh này)
 npm test             # Jest: SRS, hàng đợi, thông báo, import, seed, backup, quiz, streak/XP
 npm run typecheck    # tsc --noEmit
 npm run lint         # ESLint (eslint-config-expo)
@@ -369,16 +461,17 @@ Test chạy với `TZ=Europe/Berlin` (đặt trong `jest.config.js`) để kiể
 
 Runtime chỉ dùng **module chính thức của Expo** (đều có sẵn trong Expo Go), **không có thư viện bên thứ ba**:
 
-| Thư viện                                                                                                     | Lý do                                                   |
-| ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------- |
-| `expo-router` (+ `react-native-screens`, `react-native-safe-area-context`, `expo-linking`, `expo-constants`) | Điều hướng theo file, deep link từ thông báo, safe area |
-| `expo-sqlite`                                                                                                | Lưu tiến độ cục bộ                                      |
-| `expo-notifications`                                                                                         | Thông báo cục bộ lên lịch trước                         |
-| `expo-speech`                                                                                                | TTS `de-DE`                                             |
-| `expo-file-system` + `expo-sharing`                                                                          | Xuất file sao lưu qua share sheet                       |
-| `expo-document-picker`                                                                                       | Chọn file để import hoặc khôi phục                      |
-| `expo-crypto`                                                                                                | `randomUUID()`                                          |
-| `react-native-web`, `react-dom`                                                                              | Bản web                                                 |
+| Thư viện                                                                                                     | Lý do                                                                                    |
+| ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- |
+| `expo-router` (+ `react-native-screens`, `react-native-safe-area-context`, `expo-linking`, `expo-constants`) | Điều hướng theo file, deep link từ thông báo, safe area                                  |
+| `expo-sqlite`                                                                                                | Lưu tiến độ cục bộ                                                                       |
+| `expo-notifications`                                                                                         | Thông báo cục bộ lên lịch trước                                                          |
+| `expo-speech`                                                                                                | TTS `de-DE`                                                                              |
+| `expo-file-system` + `expo-sharing`                                                                          | Xuất file sao lưu qua share sheet                                                        |
+| `expo-document-picker`                                                                                       | Chọn file để import hoặc khôi phục                                                       |
+| `expo-crypto`                                                                                                | `randomUUID()`                                                                           |
+| `web-push` (**chỉ trong GitHub Actions**, không nằm trong app)                                               | Ký VAPID và mã hóa Web Push; tự viết dễ sai mà không kiểm thử được với máy chủ push thật |
+| `react-native-web`, `react-dom`                                                                              | Bản web                                                                                  |
 
 Thuật toán SRS (SM-2), parser CSV, i18n và validate đều tự viết. Dev tools: `jest` + `jest-expo`, `eslint` + `eslint-config-expo`, `prettier`.
 
@@ -408,7 +501,15 @@ src/
 content/
   vocab/                # a1.json … b2.json
   examples/             # file import mẫu
-scripts/start-lan.sh    # khởi động Expo với IP LAN
+public/                 # file tĩnh của bản web: sw.js (offline + push), manifest.json, icon
+scripts/
+  start-lan.sh          # khởi động Expo với IP LAN
+  build-web.mjs         # expo export + thẻ PWA + 404.html cho GitHub Pages
+  send-push.mjs         # gửi Web Push (chạy trong GitHub Actions)
+.github/workflows/
+  pages.yml             # build + đăng GitHub Pages mỗi lần push main
+  push.yml              # gửi thông báo theo lịch (cron)
+app.config.js           # thêm baseUrl khi build cho GitHub Pages
 ```
 
 File `*.web.ts` là bản thay thế dành riêng cho web (Metro tự chọn theo nền tảng).
@@ -431,7 +532,7 @@ File `*.web.ts` là bản thay thế dành riêng cho web (Metro tự chọn the
 
 ---
 
-## 10. Hạn chế đã biết
+## 11. Hạn chế đã biết
 
 **iOS / Expo Go**
 
@@ -445,7 +546,9 @@ File `*.web.ts` là bản thay thế dành riêng cho web (Metro tự chọn the
 **Web**
 
 - Không dùng SQLite (bản web cần WASM và header COOP/COEP). Thay vào đó dùng **localStorage** (khoảng 5 MB, riêng từng trình duyệt; xóa dữ liệu trang web là mất).
-- Không có thông báo lên lịch. Xuất sao lưu sẽ **tải file về** thay vì mở share sheet.
+- Không có thông báo lên lịch kiểu iOS. Bản GitHub Pages dùng **Web Push qua GitHub Actions**: **trễ 5–30 phút**, có thể bỏ lượt, giờ gửi đặt trong file workflow, lịch tự tắt sau 60 ngày repo không có commit (xem [mục 7](#7-bản-web-cho-iphone-github-pages--thông-báo)).
+- Trên iPhone, thông báo web chỉ hoạt động khi app được **thêm vào Màn hình chính** và mở từ icon (iOS 16.4+).
+- Xuất sao lưu sẽ **tải file về** thay vì mở share sheet.
 - TTS dùng giọng của trình duyệt. Trên Linux, nếu không có tiếng, hãy cài `speech-dispatcher` và `espeak-ng`.
 
 **Khác**
@@ -458,7 +561,7 @@ File `*.web.ts` là bản thay thế dành riêng cho web (Metro tự chọn the
 
 ---
 
-## 11. Lộ trình
+## 12. Lộ trình
 
 - [x] **Giai đoạn 1:** từ vựng có giống, flashcard SRS, SQLite, thông báo, sáng/tối, song ngữ, sao lưu, import
 - [x] **Giai đoạn 2:** quiz (trắc nghiệm, điền từ, sắp xếp câu, chọn der/die/das, nghe rồi chọn), streak, XP, biểu đồ tuần
@@ -468,7 +571,7 @@ File `*.web.ts` là bản thay thế dành riêng cho web (Metro tự chọn the
 
 ---
 
-## 12. Checklist kiểm thử trên iPhone
+## 13. Checklist kiểm thử trên iPhone
 
 - [ ] Mở lần đầu: "Hôm nay" hiện **0 thẻ đến hạn · 10 từ mới**.
 - [ ] **Lật thẻ** bằng cách chạm vào từ hoặc nút dưới đáy. Mặt sau đủ giống (badge + màu), số nhiều, nghĩa VI/EN, ví dụ kèm dịch.
@@ -495,3 +598,13 @@ File `*.web.ts` là bản thay thế dành riêng cho web (Metro tự chọn the
 - [ ] **Streak/XP:** sau khi ôn hoặc làm quiz, "Hôm nay" hiện 🔥 1 ngày liên tiếp, XP hôm nay > 0, cột hôm nay trên biểu đồ có giá trị.
 - [ ] **Nâng cấp từ Giai đoạn 1:** cài bản mới lên máy đã có tiến độ cũ: tiến độ vẫn còn, streak tính cả lượt ôn cũ.
 - [ ] Khôi phục một file sao lưu cũ (v1) vẫn thành công.
+
+**Bản web (GitHub Pages)**
+
+- [ ] Safari → link → Thêm vào MH chính: icon "DE" xanh với 3 vạch màu hiện trên Màn hình chính; mở ra toàn màn hình.
+- [ ] Bật chế độ máy bay rồi mở app từ icon: app vẫn mở được.
+- [ ] Cài đặt → Bật thông báo → Cho phép → **Thử hiện thông báo ngay**: có thông báo.
+- [ ] Cài đặt hiện cảnh báo thông báo trễ 5–30 phút.
+- [ ] Sao chép mã, thêm vào `PUSH_SUBSCRIPTIONS`, chạy **Actions → Vocab push → Run workflow**: trong khoảng 1 phút nhận thông báo dạng `der Tisch · bàn` khi app đang đóng.
+- [ ] Chạm vào thông báo: mở đúng từ đó.
+- [ ] Sau khi ôn vài thẻ, icon app hiện số thẻ còn lại hôm nay.

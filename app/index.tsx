@@ -1,7 +1,8 @@
 import { useRouter } from 'expo-router';
-import { useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { createT, type TranslationKey } from '@/i18n';
+import { setAppBadge } from '@/notifications/webPush';
 import type { DayStat } from '@/progress';
 import { useApp } from '@/state/AppContext';
 import { useProgress } from '@/state/useProgress';
@@ -20,6 +21,11 @@ export default function HomeScreen() {
   const due = snap?.dueToday ?? 0;
   const fresh = snap?.newToday ?? 0;
   const hasWork = due + fresh > 0;
+
+  // Web: cards left today on the Home Screen icon (refreshed whenever this screen loads).
+  useEffect(() => {
+    if (snap) void setAppBadge(snap.dueToday + snap.newToday);
+  }, [snap]);
 
   // Bar labels must stay short, so "both" uses Vietnamese day names.
   const dayT = useMemo(() => createT(settings.uiLang === 'en' ? 'en' : 'vi'), [settings.uiLang]);

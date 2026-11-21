@@ -101,7 +101,6 @@ export const vi = {
   'notif.none': 'Chưa có thông báo nào được xếp lịch.',
   'notif.batchHint':
     'iOS chỉ giữ tối đa 64 thông báo chờ, nên app xếp lô tối đa 60 cái mỗi lần mở app hoặc đổi cài đặt. Nếu nhiều ngày không mở app, lô sẽ hết và thông báo dừng cho tới lần mở tiếp theo.',
-  'notif.webUnsupported': 'Trình duyệt web không hỗ trợ thông báo lên lịch. Dùng iPhone để thử.',
 
   'data.section': 'Dữ liệu',
   'data.import': 'Nhập từ vựng (CSV / JSON)',
@@ -180,6 +179,28 @@ export const vi = {
   'quiz.perfect': 'Không sai câu nào. Tuyệt vời!',
   'quiz.again': 'Làm bài mới',
   'quiz.home': 'Về trang chính',
+  'push.needsHomeScreen':
+    'Trên iPhone, thông báo chỉ hoạt động khi app được mở từ Màn hình chính. Trong Safari, bấm nút Chia sẻ → “Thêm vào MH chính”, rồi mở app từ icon đó và vào lại Cài đặt.',
+  'push.unsupported': 'Trình duyệt này không hỗ trợ thông báo đẩy (Web Push).',
+  'push.noKey':
+    'Bản web này chưa được cấu hình khóa push (VAPID). Chủ repo xem README, mục “Thông báo cho bản web”.',
+  'push.delayWarning':
+    '⚠️ Thông báo trên bản web được gửi theo lịch của GitHub Actions nên thường trễ 5–30 phút so với giờ hẹn, đôi khi trễ hơn hoặc bị bỏ lượt khi GitHub quá tải. Giờ gửi do file lịch trong repo quyết định (mặc định mỗi 2 giờ, 8:00–20:00 giờ Việt Nam), không chỉnh được trong app.',
+  'push.denied':
+    'Quyền thông báo bị từ chối. Trên iPhone: Cài đặt → Thông báo → DYNgoc → bật “Cho phép thông báo”, rồi thử lại.',
+  'push.error': 'Không bật được thông báo: {msg}',
+  'push.codeTitle': 'Mã đăng ký thông báo',
+  'push.codeHint':
+    'Gửi mã này cho chủ repo để thêm vào secret PUSH_SUBSCRIPTIONS trên GitHub (mỗi máy làm một lần). Nếu tắt rồi bật lại thông báo, mã sẽ đổi và phải gửi lại.',
+  'push.copy': 'Sao chép mã',
+  'push.copied': 'Đã sao chép mã.',
+  'push.copyFailed': 'Không sao chép được. Hãy chạm giữ vào mã để chọn và sao chép.',
+  'push.test': 'Thử hiện thông báo ngay',
+  'push.testTitle': 'DYNgoc Deutsch',
+  'push.testBody': 'Thông báo đã hoạt động! 🎉',
+  'push.queue': 'Đã chuẩn bị {n} từ cho các thông báo tới (ưu tiên từ đang học và đến hạn).',
+  'push.badgeHint':
+    'Icon app trên Màn hình chính hiện số thẻ cần học hôm nay (cập nhật mỗi lần mở app).',
 } as const;
 
 export type TranslationKey = keyof typeof vi;
